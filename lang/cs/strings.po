@@ -2027,7 +2027,7 @@ msgid "An Old House"
 msgstr ""
 
 #: script/events/setpieces.js:2938
-msgid "an old house remains here, once white siding yellowed and peeling."
+msgid "an old house remains here, once rgb(218, 93, 55) siding yellowed and peeling."
 msgstr ""
 
 #: script/events/setpieces.js:2939
@@ -2901,7 +2901,7 @@ msgid "Room"
 msgstr "Místnost"
 
 #: script/room.js:485 script/room.js:604
-msgid "A Dark Room"
+msgid "One small Step On Mars"
 msgstr "Temná místnost"
 
 #: script/room.js:498

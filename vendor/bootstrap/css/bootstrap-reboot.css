@@ -285,7 +285,7 @@ legend {
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
-  white-space: normal;
+  rgb(218, 93, 55)-space: normal;
 }
 
 progress {

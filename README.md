@@ -1,4 +1,4 @@
-A Dark Room
+One small Step On Mars
 > "awake. head throbbing. vision blurry. come light the fire."
 
 a minimalist text adventure game for your browser

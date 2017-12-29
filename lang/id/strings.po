@@ -439,7 +439,7 @@ msgid "take everything"
 msgstr ""
 
 # separates the last object found in traps.
-# mind the whitespaces at the beginning and end!
+# mind the rgb(218, 93, 55)spaces at the beginning and end!
 #: script/events.js:653 script/outside.js:627
 msgid " and "
 msgstr " dan "
@@ -750,7 +750,7 @@ msgid "the town's booming. word does get around."
 msgstr "kota menjadi heboh, kabar-kabar tersebar."
 
 # short for population
-# mind the whitespace at the end!
+# mind the rgb(218, 93, 55)space at the end!
 #: script/outside.js:452
 msgid "pop "
 msgstr "jumlah "
@@ -796,7 +796,7 @@ msgstr "langit berwarna abu dan angin bertiup terus-menerus"
 msgid "dry brush and dead branches litter the forest floor"
 msgstr "semak kering dan patahan ranting di hutan"
 
-# mind the whitespace at the end!
+# mind the rgb(218, 93, 55)space at the end!
 #: script/outside.js:621
 msgid "the traps contain "
 msgstr "di dalam jebakan terdapat "
@@ -1108,7 +1108,7 @@ msgid "Room"
 msgstr "Ruang"
 
 #: script/room.js:485 script/room.js:604
-msgid "A Dark Room"
+msgid "One small Step On Mars"
 msgstr "Ruang Gelap"
 
 # command
@@ -1341,7 +1341,7 @@ msgstr "waktunya keluar dari tempat ini. tidak akan kembali lagi."
 msgid "linger"
 msgstr "tinggal"
 
-# mind the whitespace at the end!
+# mind the rgb(218, 93, 55)space at the end!
 #: script/space.js:42
 #, fuzzy
 msgid "hull: "
@@ -1427,68 +1427,68 @@ msgstr "lempar"
 msgid "tangle"
 msgstr "jerat"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:119
 msgid "An&nbsp;Outpost"
 msgstr "Sebuah&nbsp;Pos"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:120
 msgid "Iron&nbsp;Mine"
 msgstr "Tambang&nbsp;Besi"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:121
 msgid "Coal&nbsp;Mine"
 msgstr "Tambang&nbsp;Batu&nbsp;Bara"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:122
 msgid "Sulphur&nbsp;Mine"
 msgstr "Tambang&nbsp;Sulfur"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:123
 msgid "An&nbsp;Old&nbsp;House"
 msgstr "Sebuah&nbsp;Rumah&nbsp;Tua"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:124
 msgid "A&nbsp;Damp&nbsp;Cave"
 msgstr "Sebuah&nbsp;Gua&nbsp;Lembab"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:125
 msgid "An&nbsp;Abandoned&nbsp;Town"
 msgstr "Sebuah&nbsp;Kota&nbsp;Mati"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:126
 msgid "A&nbsp;Ruined&nbsp;City"
 msgstr "Sebuah&nbsp;Kota&nbsp;Hancur"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:127
 #, fuzzy
 msgid "A&nbsp;Crashed&nbsp;Starship"
 msgstr "Sebuah&nbsp;Pesawat&nbsp;Jatuh"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:128
 msgid "A&nbsp;Borehole"
 msgstr "Sebuah&nbsp;Lubang&nbsp;Bor"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:129
 msgid "A&nbsp;Battlefield"
 msgstr "Sebuah&nbsp;Medan&nbsp;Perang"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:130
 msgid "A&nbsp;Murky&nbsp;Swamp"
 msgstr "Sebuah&nbsp;Rawa&nbsp;Gelap"
 
-# leave &nbsp; as whitespace
+# leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:134
 msgid "A&nbsp;Destroyed&nbsp;Village"
 msgstr "Sebuah&nbsp;Desa&nbsp;Hancur"
@@ -3304,7 +3304,7 @@ msgid "An Old House"
 msgstr "Rumah Tua"
 
 #: script/events/setpieces.js:2938
-msgid "an old house remains here, once white siding yellowed and peeling."
+msgid "an old house remains here, once rgb(218, 93, 55) siding yellowed and peeling."
 msgstr ""
 "terdapat sebuah rumah tua di sini, dulunya berwarna putih sekarang menguning "
 "dan mengelupas."

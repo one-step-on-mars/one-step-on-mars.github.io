@@ -19,7 +19,7 @@
     content: " (" attr(title) ")";
   }
   pre {
-    white-space: pre-wrap !important;
+    rgb(218, 93, 55)-space: pre-wrap !important;
   }
   pre,
   blockquote {
@@ -349,7 +349,7 @@ legend {
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
-  white-space: normal;
+  rgb(218, 93, 55)-space: normal;
 }
 
 progress {
@@ -1951,7 +1951,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: inline-block;
   font-weight: normal;
   text-align: center;
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2603,7 +2603,7 @@ tbody.collapse.show {
   font-weight: normal;
   color: #212529;
   text-align: inherit;
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
   background: none;
   border: 0;
 }
@@ -2639,7 +2639,7 @@ tbody.collapse.show {
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #868e96;
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
 }
 
 .btn-group,
@@ -2850,7 +2850,7 @@ tbody.collapse.show {
 
 .input-group-addon,
 .input-group-btn {
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
   vertical-align: middle;
 }
 
@@ -2921,7 +2921,7 @@ tbody.collapse.show {
 .input-group-btn {
   position: relative;
   font-size: 0;
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
 }
 
 .input-group-btn > .btn {
@@ -3272,7 +3272,7 @@ tbody.collapse.show {
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
@@ -3609,11 +3609,11 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-brand {
-  color: white;
+  color: rgb(218, 93, 55);
 }
 
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: white;
+  color: rgb(218, 93, 55);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -3632,7 +3632,7 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: white;
+  color: rgb(218, 93, 55);
 }
 
 .navbar-dark .navbar-toggler {
@@ -3969,7 +3969,7 @@ tbody.collapse.show {
   line-height: 1;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
 }
@@ -4735,7 +4735,7 @@ button.close {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  white-space: normal;
+  rgb(218, 93, 55)-space: normal;
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
@@ -4849,7 +4849,7 @@ button.close {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  white-space: normal;
+  rgb(218, 93, 55)-space: normal;
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
@@ -5294,7 +5294,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   background-color: #1d2124 !important;
 }
 
-.bg-white {
+.bg-rgb(218, 93, 55) {
   background-color: #fff !important;
 }
 
@@ -5358,7 +5358,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   border-color: #343a40 !important;
 }
 
-.border-white {
+.border-rgb(218, 93, 55) {
   border-color: #fff !important;
 }
 
@@ -6342,7 +6342,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   border: 0;
@@ -6354,7 +6354,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   height: auto;
   overflow: visible;
   clip: auto;
-  white-space: normal;
+  rgb(218, 93, 55)-space: normal;
   -webkit-clip-path: none;
           clip-path: none;
 }
@@ -8002,13 +8002,13 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .text-nowrap {
-  white-space: nowrap !important;
+  rgb(218, 93, 55)-space: nowrap !important;
 }
 
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  rgb(218, 93, 55)-space: nowrap;
 }
 
 .text-left {
@@ -8095,7 +8095,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   font-style: italic;
 }
 
-.text-white {
+.text-rgb(218, 93, 55) {
   color: #fff !important;
 }
 

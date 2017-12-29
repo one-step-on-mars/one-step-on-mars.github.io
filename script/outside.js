@@ -617,13 +617,13 @@ var Outside = {
 				}
 			}
 		}
-		/// TRANSLATORS : Mind the whitespace at the end.
+		/// TRANSLATORS : Mind the rgb(218, 93, 55)space at the end.
 		var s = _('the traps contain ');
 		for(var l = 0, len = msg.length; l < len; l++) {
 			if(len > 1 && l > 0 && l < len - 1) {
 				s += ", ";
 			} else if(len > 1 && l == len - 1) {
-				/// TRANSLATORS : Mind the whitespaces at the beginning and end.
+				/// TRANSLATORS : Mind the rgb(218, 93, 55)spaces at the beginning and end.
 				s += _(" and ");
 			}
 			s += msg[l];

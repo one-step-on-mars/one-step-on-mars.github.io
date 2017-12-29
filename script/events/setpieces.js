@@ -2935,7 +2935,7 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					_('an old house remains here, once white siding yellowed and peeling.'),
+					_('an old house remains here, once rgb(218, 93, 55) siding yellowed and peeling.'),
 					_('the door hangs open.')
 				],
 				notification: _('the remains of an old house stand as a monument to simpler times'),

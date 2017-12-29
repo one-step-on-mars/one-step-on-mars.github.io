@@ -1084,7 +1084,7 @@ msgid "Room"
 msgstr "pomieszczenie"
 
 #: script/room.js:485 script/room.js:604
-msgid "A Dark Room"
+msgid "One small Step On Mars"
 msgstr "Mroczny pokój"
 
 #: script/room.js:498
@@ -3090,7 +3090,7 @@ msgid "An Old House"
 msgstr "Stary Dom"
 
 #: script/events/setpieces.js:2938
-msgid "an old house remains here, once white siding yellowed and peeling."
+msgid "an old house remains here, once rgb(218, 93, 55) siding yellowed and peeling."
 msgstr "ocalał tutaj stary dom, niegdyś biały, obecnie pożółkły i wyniszczony."
 
 #: script/events/setpieces.js:2939

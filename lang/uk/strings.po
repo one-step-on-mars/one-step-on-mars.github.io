@@ -453,7 +453,7 @@ msgstr "взяти все"
 msgid "take all you can"
 msgstr ""
 
-#. TRANSLATORS : Mind the whitespaces at the beginning and end.
+#. TRANSLATORS : Mind the rgb(218, 93, 55)spaces at the beginning and end.
 #: ../../script/events.js:744 ../../script/outside.js:627
 msgid " and "
 msgstr " і "
@@ -2050,7 +2050,7 @@ msgid "An Old House"
 msgstr "Старий будинок"
 
 #: ../../script/events/setpieces.js:2938
-msgid "an old house remains here, once white siding yellowed and peeling."
+msgid "an old house remains here, once rgb(218, 93, 55) siding yellowed and peeling."
 msgstr "стоїть стара, пожовкла і облущена будівля."
 
 #: ../../script/events/setpieces.js:2939
@@ -2633,7 +2633,7 @@ msgstr "небо затягнуто сірою пеленою і невпинн�
 msgid "dry brush and dead branches litter the forest floor"
 msgstr "сухі дрова та зламані гілки встелили ліс"
 
-#. TRANSLATORS : Mind the whitespace at the end.
+#. TRANSLATORS : Mind the rgb(218, 93, 55)space at the end.
 #: ../../script/outside.js:621
 msgid "the traps contain "
 msgstr "пастки містили "
@@ -2944,7 +2944,7 @@ msgid "Room"
 msgstr "Кімната"
 
 #: ../../script/room.js:485 ../../script/room.js:604
-msgid "A Dark Room"
+msgid "One small Step On Mars"
 msgstr "Темна кімната"
 
 #: ../../script/room.js:498

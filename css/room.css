@@ -30,7 +30,7 @@ div#storesContainer {
 
 div#stores:before, div#weapons:before {
 	position: absolute;
-	background: white;
+	background: rgb(218, 93, 55);
 	content: attr(data-legend);
 	left: 8px;
 	top: -13px;
