@@ -988,7 +988,7 @@ msgstr "на складе кто-то есть"
 
 #: ../../script/events/room.js:129 ../../script/events/room.js:149
 #: ../../script/events/room.js:169
-msgid "some wood is missing."
+msgid "some energy is missing."
 msgstr "пропало несколько дров."
 
 #: ../../script/events/room.js:130
@@ -1056,7 +1056,7 @@ msgstr "Таинственный странник"
 
 #: ../../script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "прибыл странник с пустой тележкой. говорит, что если вы дадите ему "
@@ -1075,11 +1075,11 @@ msgid "give 500"
 msgstr "дать 500"
 
 #: ../../script/events/room.js:293 ../../script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with energy"
 msgstr "странник уходит с дровами в тележке"
 
 #: ../../script/events/room.js:299 ../../script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with energy."
 msgstr ""
 "таинственный странник возвращается, тележка доверху наполнена древесиной."
 
@@ -2273,7 +2273,7 @@ msgid "saved."
 msgstr "сохранено."
 
 #: ../../script/localization.js:5
-msgid "wood"
+msgid "energy"
 msgstr "дрова"
 
 #: ../../script/localization.js:6
@@ -2289,7 +2289,7 @@ msgid "meat"
 msgstr "мясо"
 
 #: ../../script/localization.js:9
-msgid "fur"
+msgid "shell"
 msgstr "мех"
 
 #: ../../script/localization.js:10
@@ -2434,7 +2434,7 @@ msgid "not enough fur"
 msgstr "недостаточно меха"
 
 #: ../../script/localization.js:47
-msgid "not enough wood"
+msgid "not enough energy"
 msgstr "недостаточно древесины"
 
 #: ../../script/localization.js:48
@@ -2542,7 +2542,7 @@ msgid "A Silent Forest"
 msgstr "Тихий лес"
 
 #: ../../script/outside.js:169
-msgid "gather wood"
+msgid "gather energy"
 msgstr "собирать дрова"
 
 #: ../../script/outside.js:188
@@ -2681,11 +2681,11 @@ msgid "cart"
 msgstr "тележка"
 
 #: ../../script/room.js:34
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying energy"
 msgstr "строитель говорит, что может сделать тележку для перевозки дров"
 
 #: ../../script/room.js:35
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more energy from the forest"
 msgstr "хлипкая тележка позволит перевозить больше дров"
 
 #: ../../script/room.js:44
@@ -2989,11 +2989,11 @@ msgid "A Firelit Room"
 msgstr "Очаг"
 
 #: ../../script/room.js:642
-msgid "not enough wood to get the fire going"
+msgid "not enough energy to get the fire going"
 msgstr "недостаточно дров для зажигания огня"
 
 #: ../../script/room.js:655
-msgid "the wood has run out"
+msgid "the energy has run out"
 msgstr "дрова закончились"
 
 #: ../../script/room.js:675
@@ -3010,7 +3010,7 @@ msgid "the wind howls outside"
 msgstr "снаружи свистит ветер"
 
 #: ../../script/room.js:719
-msgid "the wood is running out"
+msgid "the energy is running out"
 msgstr "дрова скоро закончатся"
 
 #: ../../script/room.js:726

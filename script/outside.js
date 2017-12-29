@@ -15,7 +15,7 @@ var Outside = {
 			name: _('gatherer'),
 			delay: 10,
 			stores: {
-				'wood': 1
+				'energy': 1
 			}
 		},
 		'hunter': {
@@ -47,7 +47,7 @@ var Outside = {
 			delay: 10,
 			stores: {
 				'meat': -5,
-				'wood': -5,
+				'energy': -5,
 				'cured meat': 1
 			}
 		},
@@ -166,8 +166,8 @@ var Outside = {
 		// Create the gather button
 		new Button.Button({
 			id: 'gatherButton',
-			text: _("gather wood"),
-			click: Outside.gatherWood,
+			text: _("gather energy"),
+			click: Outside.gatherenergy,
 			cooldown: Outside._GATHER_DELAY,
 			width: '80px'
 		}).appendTo('div#outsidePanel');
@@ -590,10 +590,10 @@ var Outside = {
 		Engine.moveStoresView($('#village'), transition_diff);
 	},
 	
-	gatherWood: function() {
+	gatherenergy: function() {
 		Notifications.notify(Outside, _("dry brush and dead branches litter the forest floor"));
 		var gatherAmt = $SM.get('game.buildings["cart"]', true) > 0 ? 50 : 10;
-		$SM.add('stores.wood', gatherAmt);
+		$SM.add('stores.energy', gatherAmt);
 	},
 	
 	checkTraps: function() {

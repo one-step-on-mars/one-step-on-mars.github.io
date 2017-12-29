@@ -2,7 +2,7 @@
 	//only used for poedit to find translatable strings
 	var keywords = [ 
 		_('saved.'),
-		_('wood'),
+		_('energy'),
 		_('builder'),
 		_('teeth'),
 		_('meat'),
@@ -44,7 +44,7 @@
 		_('cured meat'),
 		_('thieves'),
 		_('not enough fur'),
-		_('not enough wood'),
+		_('not enough energy'),
 		_('not enough coal'),
 		_('not enough iron'),
 		_('not enough steel'),

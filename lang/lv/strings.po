@@ -431,7 +431,7 @@ msgid "saved."
 msgstr "saglabāts."
 
 #: script/localization.js:5
-msgid "wood"
+msgid "energy"
 msgstr "koks"
 
 #: script/localization.js:6
@@ -447,7 +447,7 @@ msgid "meat"
 msgstr "gaļa"
 
 #: script/localization.js:9
-msgid "fur"
+msgid "shell"
 msgstr "kažokāda"
 
 #: script/localization.js:10
@@ -591,7 +591,7 @@ msgid "not enough fur"
 msgstr "nepietiek kažokādas"
 
 #: script/localization.js:47
-msgid "not enough wood"
+msgid "not enough energy"
 msgstr "nepietiek koka"
 
 #: script/localization.js:48
@@ -699,7 +699,7 @@ msgid "A Silent Forest"
 msgstr "Kluss Mežs"
 
 #: script/outside.js:169
-msgid "gather wood"
+msgid "gather energy"
 msgstr "vākt koku"
 
 #: script/outside.js:188
@@ -838,11 +838,11 @@ msgid "cart"
 msgstr "divriči"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying energy"
 msgstr "amatniece saka, ka viņa var uzcelt ratus koka pārvietošanai"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more energy from the forest"
 msgstr "ļodzīgie divriči palīdzēs no meža pārvest vairāk koka"
 
 #: script/room.js:44
@@ -1146,11 +1146,11 @@ msgid "A Firelit Room"
 msgstr "Uguns Izgaismota Istaba"
 
 #: script/room.js:642
-msgid "not enough wood to get the fire going"
+msgid "not enough energy to get the fire going"
 msgstr "nepietiek malkas, lai aizkurtu uguni"
 
 #: script/room.js:655
-msgid "the wood has run out"
+msgid "the energy has run out"
 msgstr "malkas krājums ir tukšs"
 
 #: script/room.js:675
@@ -1166,7 +1166,7 @@ msgid "the wind howls outside"
 msgstr "ārā gaudo vējš"
 
 #: script/room.js:719
-msgid "the wood is running out"
+msgid "the energy is running out"
 msgstr "malkas krājums sāk izsīkt"
 
 #: script/room.js:726
@@ -2031,7 +2031,7 @@ msgstr "noliktavā kāds ir."
 
 #: script/events/room.js:129 script/events/room.js:149
 #: script/events/room.js:169
-msgid "some wood is missing."
+msgid "some energy is missing."
 msgstr "daļa koka iztrūkst."
 
 #: script/events/room.js:130
@@ -2099,7 +2099,7 @@ msgstr "Noslēpumainais Klejotājs"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "ar tukšiem ratiem ierodas klejotājs. viņš saka, ja viņam iedos koku, tas "
@@ -2118,11 +2118,11 @@ msgid "give 500"
 msgstr "iedot 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with energy"
 msgstr "klejotājs dodas prom ar malku pilniem divričiem"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with energy."
 msgstr "noslēpumainais klejotājs atgriežas, divriči ir piekrauti ar malku."
 
 #: script/events/room.js:348

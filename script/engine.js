@@ -204,7 +204,7 @@
 			Events.init();
 			Room.init();
 
-			if(typeof $SM.get('stores.wood') != 'undefined') {
+			if(typeof $SM.get('stores.energy') != 'undefined') {
 				Outside.init();
 			}
 			if($SM.get('stores.compass', true) > 0) {
@@ -576,7 +576,7 @@
 				var diff = Math.abs(panelIndex - currentIndex);
 				slider.animate({left: -(panelIndex * 700) + 'px'}, 300 * diff);
 
-				if($SM.get('stores.wood') !== undefined) {
+				if($SM.get('stores.energy') !== undefined) {
 				// FIXME Why does this work if there's an animation queue...?
 					stores.animate({right: -(panelIndex * 700) + 'px'}, 300 * diff);
 				}
@@ -812,7 +812,6 @@
 	function eventPassthrough(e) {
 		return true;
 	}
-
 })();
 
 function inView(dir, elem){
