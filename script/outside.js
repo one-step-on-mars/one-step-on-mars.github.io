@@ -22,7 +22,7 @@ var Outside = {
 			name: _('hunter'),
 			delay: 10,
 			stores: {
-				'fur': 0.5,
+				'shell': 0.5,
 				'meat': 0.5
 			}
 		},
@@ -38,7 +38,7 @@ var Outside = {
 			name: _('tanner'),
 			delay: 10,
 			stores: {
-				'fur': -5,
+				'shell': -5,
 				'leather': 1
 			}
 		},
@@ -98,8 +98,8 @@ var Outside = {
 	TrapDrops: [
 		{
 			rollUnder: 0.5,
-			name: 'fur',
-			message: _('scraps of fur')
+			name: 'shell',
+			message: _('scraps of shell')
 		},
 		{
 			rollUnder: 0.75,
@@ -248,7 +248,7 @@ var Outside = {
 				dead += inhabitants;
 			}
 		}
-		// this method returns the total number of victims, for further actions
+		// this method returns the total number of victims, for ferther actions
 		return dead;
 	},
 	

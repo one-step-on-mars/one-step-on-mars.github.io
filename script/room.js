@@ -65,7 +65,7 @@ var Room = {
 			cost: function() {
 				return {
 					energy: 200,
-					fur: 10,
+					shell: 10,
 					meat: 5
 				};
 			}
@@ -80,7 +80,7 @@ var Room = {
 			cost: function() {
 				return {
 					'energy': 400,
-					'fur': 100
+					'shell': 100
 				};
 			}
 		},
@@ -94,7 +94,7 @@ var Room = {
 			cost: function() {
 				return {
 					'energy': 500,
-					'fur': 50
+					'shell': 50
 				};
 			}
 		},
@@ -338,20 +338,20 @@ var Room = {
 		'scales': {
 			type: 'good',
 			cost: function() {
-				return { fur: 150 };
+				return { shell: 150 };
 			}
 		},
 		'teeth': {
 			type: 'good',
 			cost: function() {
-				return { fur: 300 };
+				return { shell: 300 };
 			}
 		},
 		'iron': {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 150,
+					'shell': 150,
 					'scales': 50
 				};
 			}
@@ -360,7 +360,7 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 200,
+					'shell': 200,
 					'teeth': 50
 				};
 			}
@@ -369,7 +369,7 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 300,
+					'shell': 300,
 					'scales': 50,
 					'teeth': 50
 				};
@@ -430,7 +430,7 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 1500,
+					'shell': 1500,
 					'scales': 750,
 					'teeth': 300
 				};
@@ -441,7 +441,7 @@ var Room = {
 			maximum: 1,
 			cost: function() {
 				return { 
-					fur: 400, 
+					shell: 400, 
 					scales: 20, 
 					teeth: 10 
 				};

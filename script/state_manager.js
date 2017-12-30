@@ -411,7 +411,7 @@ var StateManager = {
 			delay: 10,
 			stores: {
 				'energy': -10,
-				'fur': -5,
+				'shell': -5,
 				'meat': -5
 			}
 		});
