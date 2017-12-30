@@ -479,7 +479,7 @@ msgstr "karbo"
 
 #: script/localization.js:17
 msgid "sulphur"
-msgstr "sulfuro"
+msgstr "sulshello"
 
 #: script/localization.js:18
 msgid "energy cell"
@@ -539,11 +539,11 @@ msgstr "karba minejo"
 
 #: script/localization.js:32 script/outside.js:71
 msgid "sulphur miner"
-msgstr "sulfura ministo"
+msgstr "sulshella ministo"
 
 #: script/localization.js:33
 msgid "sulphur mine"
-msgstr "sulfura minejo"
+msgstr "sulshella minejo"
 
 #: script/localization.js:34 script/outside.js:88
 msgid "armourer"
@@ -586,7 +586,7 @@ msgid "thieves"
 msgstr "ŝtelistoj"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "ne estas sufiĉe da felo"
 
 #: script/localization.js:47
@@ -607,7 +607,7 @@ msgstr "ne estas sufiĉe da ŝtalo"
 
 #: script/localization.js:51
 msgid "not enough sulphur"
-msgstr "ne estas sufiĉe da sulfuro"
+msgstr "ne estas sufiĉe da sulshello"
 
 #: script/localization.js:52
 msgid "baited trap"
@@ -670,7 +670,7 @@ msgid "Outside"
 msgstr "Eksteraĵo"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "felerojn"
 
 #: script/outside.js:107
@@ -1068,7 +1068,7 @@ msgid "light fire"
 msgstr "ekbruligi fajron"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "hejti fajron"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1130,7 +1130,7 @@ msgid "roaring"
 msgstr "brulas forte"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Luma Ĉambro"
 
 #: script/room.js:642
@@ -1340,7 +1340,7 @@ msgstr "Karba&nbsp;Minejo"
 
 #: script/world.js:122
 msgid "Sulphur&nbsp;Mine"
-msgstr "Sulfura&nbsp;Minejo"
+msgstr "Sulshella&nbsp;Minejo"
 
 #: script/world.js:123
 msgid "An&nbsp;Old&nbsp;House"
@@ -1725,7 +1725,7 @@ msgid "go home"
 msgstr "iri hejmen"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr "ne multe for de la vilaĝo restas granda besto. ĝia felo sangsorbiĝis."
 
 #: script/events/outside.js:51
@@ -1742,7 +1742,7 @@ msgstr "Fajro"
 
 #: script/events/outside.js:76
 msgid "a fire rampages through one of the huts, destroying it."
-msgstr "fajro furioze disiris tra unu el la kabanoj, ĝin detruinta."
+msgstr "fajro shellioze disiris tra unu el la kabanoj, ĝin detruinta."
 
 #: script/events/outside.js:77
 msgid "all residents in the hut perished in the fire."
@@ -1996,7 +1996,7 @@ msgstr "reen"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr ""
 "fasko da bastonoj restas preter la pordolimo, kovrita per malglataj feloj."
 
@@ -2042,7 +2042,7 @@ msgid "a beggar arrives."
 msgstr "alvenas almozulo."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "li petas ajnajn felojn doneblajn por varmigi lin nokte."
 
 #: script/events/room.js:200
@@ -2114,7 +2114,7 @@ msgstr "revenas la mistera vaganto. ĉaro portas lignamason."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "alvenas vaganto kun malplena ĉaro. diras, ke se ŝi foriras kun feloj ŝi "
@@ -2129,11 +2129,11 @@ msgid "turn her away"
 msgstr "forsendi ŝin"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "la vaganto foriras, feloj en la ĉaro"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "revenas la mistera vaganto. ĉaro portas multajn felojn."
 
 #: script/events/room.js:420
@@ -3155,7 +3155,7 @@ msgstr "plibonigi"
 
 #: script/events/setpieces.js:3156
 msgid "The Sulphur Mine"
-msgstr "La Sulfura Minejo"
+msgstr "La Sulshella Minejo"
 
 #: script/events/setpieces.js:3160
 msgid "the military is already set up at the mine's entrance."
@@ -3201,7 +3201,7 @@ msgstr "nun la minejo sendanĝeras por la laboristoj."
 
 #: script/events/setpieces.js:3289
 msgid "the sulphur mine is clear of dangers"
-msgstr "la sulfura minejo sendanĝeras"
+msgstr "la sulshella minejo sendanĝeras"
 
 #: script/events/setpieces.js:3305
 msgid "The Coal Mine"

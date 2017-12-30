@@ -592,7 +592,7 @@ msgid "thieves"
 msgstr "tjyvar"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "inte tillräckligt med skinn"
 
 #: script/localization.js:47
@@ -677,7 +677,7 @@ msgid "Outside"
 msgstr "Utanför"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "bitar av päls"
 
 #: script/outside.js:107
@@ -1082,7 +1082,7 @@ msgid "light fire"
 msgstr "tänd brasa"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "elda"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1142,7 +1142,7 @@ msgid "roaring"
 msgstr "sprakande"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Ett Eldupplyst Rum"
 
 #: script/room.js:642
@@ -1740,7 +1740,7 @@ msgid "go home"
 msgstr "gå hem"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr "inte lång från byn ligger en stor best. Pälsen är blodig."
 
 #: script/events/outside.js:51
@@ -2014,7 +2014,7 @@ msgstr "gå tillbaka in"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr ""
 "en bunt av pinnar ligger just utanför tröskeln, inlindade i grovt skinn."
 
@@ -2060,7 +2060,7 @@ msgid "a beggar arrives."
 msgstr "en tiggare kommer."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr ""
 "frågar efter om det finns några pälsar över, för att hålla honom varm på "
 "natten."
@@ -2134,7 +2134,7 @@ msgstr "den mystiska vandraren kommer tillbaka, kälken full med ved."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "en vandrare anlämder med en tom kälke, säger att om hon får pälsar kommer "
@@ -2149,11 +2149,11 @@ msgid "turn her away"
 msgstr "be henne att gå"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "vandraren lämar, kälken full med pälsar"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "den mystiska vandraren kommer tillbaka, kälken full med pälsar."
 
 #: script/events/room.js:420

@@ -594,7 +594,7 @@ msgid "thieves"
 msgstr "도둑"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "모피가 부족하다"
 
 #: script/localization.js:47
@@ -678,7 +678,7 @@ msgid "Outside"
 msgstr "바깥"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "모피 조각"
 
 #: script/outside.js:107
@@ -1074,7 +1074,7 @@ msgid "light fire"
 msgstr "불 피우기"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "불 때기"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1132,7 +1132,7 @@ msgid "roaring"
 msgstr "이글거린다"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "불이 지펴진 방"
 
 #: script/room.js:642
@@ -1722,7 +1722,7 @@ msgid "go home"
 msgstr "집으로"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr "마을에서 얼마 못가 큰 짐승을 발견했다. 짐승의 가죽은 피로 덮여있다."
 
 #: script/events/outside.js:51
@@ -1995,7 +1995,7 @@ msgstr "되돌아간다"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "조잡한 모피로 감싼 막대가 문 앞에 놓여있다."
 
 #: script/events/room.js:92
@@ -2040,7 +2040,7 @@ msgid "a beggar arrives."
 msgstr "거지가 찾아온다."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "밤을 따뜻이 보내도록 남는 모피를 나눠달라고 한다."
 
 #: script/events/room.js:200
@@ -2111,7 +2111,7 @@ msgstr "수상한 떠돌이가 수레에 나무를 가득 싣고 돌아온다."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "빈 수레를 끌고 떠돌이가 나타난다. 모피를 주면 더 많은 모피를 가져온다고 한다."
@@ -2125,11 +2125,11 @@ msgid "turn her away"
 msgstr "그냥 보내기"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "수레 가득 모피를 싣고, 떠돌이가 떠난다"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "수상한 떠돌이가 수레에 모피를 가득 싣고 돌아온다."
 
 #: script/events/room.js:420

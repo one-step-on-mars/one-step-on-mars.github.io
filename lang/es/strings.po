@@ -592,7 +592,7 @@ msgid "thieves"
 msgstr "ladrones"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "no hay suficiente pelaje"
 
 #: script/localization.js:47
@@ -676,7 +676,7 @@ msgid "Outside"
 msgstr "Afuera"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "trozos de pelaje"
 
 #: script/outside.js:107
@@ -1089,7 +1089,7 @@ msgid "light fire"
 msgstr "encender hoguera"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "avivar el fuego"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1149,7 +1149,7 @@ msgid "roaring"
 msgstr "rugiendo"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Una Habitación Iluminada"
 
 #: script/room.js:642
@@ -1750,7 +1750,7 @@ msgid "go home"
 msgstr "ir a casa"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr ""
 "no lejos de la aldea se encuentra una gran bestia, su pelaje manchado con "
 "sangre."
@@ -2022,7 +2022,7 @@ msgstr "regresar adentro"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr ""
 "un montón de ramas se encuentran junto al umbral, envueltas en pelajes "
 "gruesos."
@@ -2069,7 +2069,7 @@ msgid "a beggar arrives."
 msgstr "llega un mendigo."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "pide el pelaje que sobre para mantenerse caliente por la noche."
 
 #: script/events/room.js:200
@@ -2141,7 +2141,7 @@ msgstr "el vagabundo misterioso regresa, su carro está muy lleno de madera."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "una vagabunda llega con un carro vacío. dice que si se va con pelajes, "
@@ -2156,11 +2156,11 @@ msgid "turn her away"
 msgstr "rechazarla"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "la vagabunda se retira, su carro está lleno de pelaje"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "la vagabunda misteriosa regresa, su carro está muy lleno de pelaje."
 
 #: script/events/room.js:420

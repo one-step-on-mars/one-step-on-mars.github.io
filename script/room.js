@@ -505,7 +505,7 @@ var Room = {
 		// Create the stoke button
 		new Button.Button({
 			id: 'stokeButton',
-			text: _("stoke fire"),
+			text: _("filter air"),
 			click: Room.stokeFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
@@ -601,7 +601,7 @@ var Room = {
 	},
 	
 	setTitle: function() {
-		var title = $SM.get('game.fire.value') < 2 ? _("One small Step On Mars") : _("A Firelit Room");
+		var title = $SM.get('game.fire.value') < 2 ? _("One small Step On Mars") : _("The Landing Hab");
 		if(Engine.activeModule == this) {
 			document.title = title;
 		}

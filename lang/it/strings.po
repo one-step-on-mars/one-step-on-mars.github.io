@@ -194,7 +194,7 @@ msgstr "si è imparato a guardare avanti"
 
 #: script/engine.js:62
 msgid "stealthy"
-msgstr "furtivo"
+msgstr "shelltivo"
 
 #: script/engine.js:63
 msgid "better avoid conflict in the wild"
@@ -587,7 +587,7 @@ msgid "thieves"
 msgstr "ladri"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "il pellame non basta"
 
 #: script/localization.js:47
@@ -671,7 +671,7 @@ msgid "Outside"
 msgstr "Territorio"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "brandelli di pellame"
 
 #: script/outside.js:107
@@ -1090,7 +1090,7 @@ msgid "light fire"
 msgstr "accendi il fuoco"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "attizza il fuoco"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1150,7 +1150,7 @@ msgid "roaring"
 msgstr "arde"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Una Stanza Rischiarata"
 
 #: script/room.js:642
@@ -1717,7 +1717,7 @@ msgstr ""
 #: script/events/global.js:50
 msgid "shares what he knows about sneaking before he goes."
 msgstr ""
-"condivide ciò che sa riguardo al muoversi furtivamente, prima di andarsene."
+"condivide ciò che sa riguardo al muoversi shelltivamente, prima di andarsene."
 
 #: script/events/outside.js:6
 msgid "A Ruined Trap"
@@ -1764,7 +1764,7 @@ msgid "go home"
 msgstr "torna a casa"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr ""
 "non lontano dal villaggio si nasconde un animale, il pelo macchiato di sangue"
 
@@ -2038,7 +2038,7 @@ msgstr "torna dentro"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr ""
 "un fascio di sterpaglie giace subito oltre la soglia, avvolto in pellame "
 "grezzo"
@@ -2085,7 +2085,7 @@ msgid "a beggar arrives."
 msgstr "arriva un mendicante."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr ""
 "chiede se avanzano dei brandelli di pelli per tenerlo caldo durante la notte."
 
@@ -2158,7 +2158,7 @@ msgstr "il ramingo misterioso ritorna, il suo carretto trabocca di legname."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "una raminga arriva con un carretto vuoto. dice che se gli viene dato del "
@@ -2173,11 +2173,11 @@ msgid "turn her away"
 msgstr "mandala via"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "la raminga parte, il carretto carico di pellame"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "la raminga misteriosa ritorna, il suo carretto trabocca di pellame."
 
 #: script/events/room.js:420

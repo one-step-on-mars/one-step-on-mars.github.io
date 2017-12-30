@@ -504,7 +504,7 @@ msgstr "batu bara"
 
 #: script/localization.js:17
 msgid "sulphur"
-msgstr "sulfur"
+msgstr "sulshell"
 
 #: script/localization.js:18
 msgid "energy cell"
@@ -564,11 +564,11 @@ msgstr "tambang batu bara"
 
 #: script/localization.js:32 script/outside.js:71
 msgid "sulphur miner"
-msgstr "penambang sulfur"
+msgstr "penambang sulshell"
 
 #: script/localization.js:33
 msgid "sulphur mine"
-msgstr "tambang sulfur"
+msgstr "tambang sulshell"
 
 #: script/localization.js:34 script/outside.js:88
 msgid "armourer"
@@ -613,7 +613,7 @@ msgid "thieves"
 msgstr "pencuri"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "tidak cukup bulu"
 
 #: script/localization.js:47
@@ -634,7 +634,7 @@ msgstr "tidak cukup baja"
 
 #: script/localization.js:51
 msgid "not enough sulphur"
-msgstr "tidak cukup sulfur"
+msgstr "tidak cukup sulshell"
 
 #: script/localization.js:52
 msgid "baited trap"
@@ -697,7 +697,7 @@ msgid "Outside"
 msgstr "Luar"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "potongan bulu"
 
 #: script/outside.js:107
@@ -1119,7 +1119,7 @@ msgstr "nyalakan api"
 # command
 #: script/room.js:508
 #, fuzzy
-msgid "stoke fire"
+msgid "filter air"
 msgstr "perbesar api"
 
 # introduces "room state"
@@ -1198,7 +1198,7 @@ msgstr "menyala besar"
 
 #: script/room.js:604
 #, fuzzy
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Ruangan Berapi"
 
 #: script/room.js:642
@@ -1445,7 +1445,7 @@ msgstr "Tambang&nbsp;Batu&nbsp;Bara"
 # leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:122
 msgid "Sulphur&nbsp;Mine"
-msgstr "Tambang&nbsp;Sulfur"
+msgstr "Tambang&nbsp;Sulshell"
 
 # leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:123
@@ -1869,7 +1869,7 @@ msgid "go home"
 msgstr "pulang"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr ""
 "tidak jauh dari desa terdapat seekor binatang besar, bulunya penuh darah."
 
@@ -2172,7 +2172,7 @@ msgstr "masuk ke dalam"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "seikat tongkat berada di ambang pintu, terbungkus bulu-bulu kasar."
 
 #: script/events/room.js:92
@@ -2221,7 +2221,7 @@ msgid "a beggar arrives."
 msgstr "seorang pengemis tiba."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "meminta beberapa bulu untuk menghangatkan dirinya di malam hari."
 
 #: script/events/room.js:200
@@ -2302,7 +2302,7 @@ msgstr "pengembara misterius itu kembali, dengan segerobak penuh kayu."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "seorang pengembara tiba dengan sebuah gerobak kosong. dia mengatakan jika "
@@ -2318,11 +2318,11 @@ msgid "turn her away"
 msgstr "usir"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "pengembara itu pergi, dengan gerobak berisi bulu"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "pengembara misterius itu kembali, dengan segerobak penuh bulu."
 
 #: script/events/room.js:420
@@ -3396,7 +3396,7 @@ msgstr "selamatkan"
 
 #: script/events/setpieces.js:3156
 msgid "The Sulphur Mine"
-msgstr "Tambang Sulfur"
+msgstr "Tambang Sulshell"
 
 #: script/events/setpieces.js:3160
 msgid "the military is already set up at the mine's entrance."
@@ -3446,7 +3446,7 @@ msgstr "tambang telah aman bagi pekerja."
 
 #: script/events/setpieces.js:3289
 msgid "the sulphur mine is clear of dangers"
-msgstr "tambang sulfur telah aman"
+msgstr "tambang sulshell telah aman"
 
 #: script/events/setpieces.js:3305
 msgid "The Coal Mine"

@@ -685,7 +685,7 @@ msgid "go home"
 msgstr "返回"
 
 #: ../../script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr "村外不遠處躺著一隻巨獸，它的毛皮上染滿了鮮血"
 
 #: ../../script/events/outside.js:51
@@ -961,7 +961,7 @@ msgstr "回屋"
 
 #: ../../script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "一捆用粗糙的毛皮紮起來的柴火斜倚在門檻上"
 
 #: ../../script/events/room.js:92
@@ -1006,7 +1006,7 @@ msgid "a beggar arrives."
 msgstr "乞丐徘徊在門前"
 
 #: ../../script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "祈求能施捨給他一些多餘的毛皮，好讓他不在夜裡受凍"
 
 #: ../../script/events/room.js:200
@@ -1076,7 +1076,7 @@ msgstr "神秘的流浪者回來了，貨車上木頭堆得更高了"
 
 #: ../../script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr "一名流浪者推著貨車來到村子，聲稱如果讓她帶著毛皮離開，她會帶回更多毛皮"
 
@@ -1089,11 +1089,11 @@ msgid "turn her away"
 msgstr "攆走她"
 
 #: ../../script/events/room.js:372 ../../script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "流浪者帶著滿載毛皮的貨車離開了"
 
 #: ../../script/events/room.js:378 ../../script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "神秘的流浪者回來了，貨車上毛皮堆得更高了"
 
 #: ../../script/events/room.js:420
@@ -2432,7 +2432,7 @@ msgid "thieves"
 msgstr "小偷"
 
 #: ../../script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "皮毛不夠了"
 
 #: ../../script/localization.js:47
@@ -2516,7 +2516,7 @@ msgid "Outside"
 msgstr "野外"
 
 #: ../../script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "皮毛碎片"
 
 #: ../../script/outside.js:107
@@ -2912,7 +2912,7 @@ msgid "light fire"
 msgstr "生火"
 
 #: ../../script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "添柴"
 
 #: ../../script/room.js:545 ../../script/room.js:555 ../../script/room.js:703
@@ -2971,7 +2971,7 @@ msgid "roaring"
 msgstr "熊熊燃燒"
 
 #: ../../script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "生火間"
 
 #: ../../script/room.js:642

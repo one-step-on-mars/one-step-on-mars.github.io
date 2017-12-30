@@ -713,7 +713,7 @@ msgid "go home"
 msgstr "йти додому"
 
 #: ../../script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr ""
 "неподалік від поселення лежить здоровенна тварюка, її хутро вкрито кров'ю."
 
@@ -985,7 +985,7 @@ msgstr "повернутись в середину"
 
 #: ../../script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "біля порогу лежить купа дров, загорнутих в шкуру."
 
 #: ../../script/events/room.js:92
@@ -1030,7 +1030,7 @@ msgid "a beggar arrives."
 msgstr "прибув жебрак."
 
 #: ../../script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "питає, чи не маємо ми трохи шкур, аби було чим зігрітися вночі."
 
 #: ../../script/events/room.js:200
@@ -1103,7 +1103,7 @@ msgstr ""
 
 #: ../../script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "прибула мандрівниця з пустим возиком. каже, що якщо дасте їй трохи шкур, "
@@ -1118,11 +1118,11 @@ msgid "turn her away"
 msgstr "відправити її геть"
 
 #: ../../script/events/room.js:372 ../../script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "мандрівниця їде з возиком шкур"
 
 #: ../../script/events/room.js:378 ../../script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "загадкова мандрівниця повертається, возик доверху наповнений шкурами."
 
 #: ../../script/events/room.js:420
@@ -2453,7 +2453,7 @@ msgid "thieves"
 msgstr "злодії"
 
 #: ../../script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "недостатньо шкур"
 
 #: ../../script/localization.js:47
@@ -2537,7 +2537,7 @@ msgid "Outside"
 msgstr "Назовні"
 
 #: ../../script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "обривки шкур"
 
 #: ../../script/outside.js:107
@@ -2952,7 +2952,7 @@ msgid "light fire"
 msgstr "розпалити вогонь"
 
 #: ../../script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "підкинути"
 
 #: ../../script/room.js:545 ../../script/room.js:555 ../../script/room.js:703
@@ -3012,7 +3012,7 @@ msgid "roaring"
 msgstr "палає"
 
 #: ../../script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Освітлена кімната"
 
 #: ../../script/room.js:642

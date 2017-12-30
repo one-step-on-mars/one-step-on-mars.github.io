@@ -617,7 +617,7 @@ msgid "thieves"
 msgstr "κλέφτες"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "δεν επαρκεί η γούνα"
 
 #: script/localization.js:47
@@ -701,7 +701,7 @@ msgid "Outside"
 msgstr "Έξω"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "κομμάτια γούνας"
 
 #: script/outside.js:107
@@ -1127,7 +1127,7 @@ msgstr "άναψε φωτιά"
 
 # command
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "βάλε ξύλα"
 
 # introduces "room state"
@@ -1199,7 +1199,7 @@ msgid "roaring"
 msgstr "βρυχάται"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Φωτεινό Δωμάτιο"
 
 #: script/room.js:642
@@ -1832,7 +1832,7 @@ msgid "go home"
 msgstr "γύρνα πίσω"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr "όχι πολύ μακρυά, κείτεται ένα θηρίο μέσα στα αίματα."
 
 #: script/events/outside.js:51
@@ -2121,7 +2121,7 @@ msgstr "ξαναγύρνα μέσα"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "ξύλα τυλιγμένα σε γούνες βρίσκονται κοντά στην είσοδο."
 
 #: script/events/room.js:92
@@ -2166,7 +2166,7 @@ msgid "a beggar arrives."
 msgstr "ήρθε ένας ζητιάνος."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "ζητάει ότι περισσεύει από γούνες για να ζεσταθεί τα βράδια."
 
 #: script/events/room.js:200
@@ -2244,7 +2244,7 @@ msgstr "ο μυστηριώδης οδοιπόρος ξανά ήρθε, το κ�
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "ένας οδοιπόρος καταφτάνει με ένα άδειο καρότσι. λέει ότι αν πάρει γούνες, θα "
@@ -2260,11 +2260,11 @@ msgid "turn her away"
 msgstr "να φύγει"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "η οδοιπόρος φεύγει, το κάρο γεμάτο γούνες."
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "η μυστηριώδης οδοιπόρος ξανά ήρθε, το καρότσι γεμάτο γούνες."
 
 #: script/events/room.js:420

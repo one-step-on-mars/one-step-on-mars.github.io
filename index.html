@@ -6,9 +6,10 @@
 		One small Step On Mars (v1.4)
 		==================
 		
-		A minimalist text adventure by Michael Townsend and all his friends.
-		Inspired by Candy Box (http://candies.aniwey.net/)
-		Contribute on GitHub! (https://github.com/doublespeakgames/adarkroom/)
+		A minimalist text adventure by douglas alderman
+		Inspired by A dark room by Michael Townsend and all his friends.
+		inturn Inspired by Candy Box (http://candies.aniwey.net/) 		
+	
 	-->
 	<title>One small Step On Mars</title>
 	<meta itemprop="description" name="description" property="og:description" content="A minimalist text adventure">
@@ -27,9 +28,11 @@
 	<script src="lib/jquery.event.move.js"></script>
 	<script src="lib/jquery.event.swipe.js"></script>
 	<script src="lib/base64.js"></script>
+
+	
 	<script src="lib/translate.js"></script>
 	
-	<script src="lang/langs.js"></script>
+	<!--<script src="lang/langs.js"></script>-->
 	
 	<script>
 		// try to read "lang" param's from url
@@ -45,7 +48,12 @@
 			document.write('<script src="lang/'+lang+'/strings.js"><\/script>');
 			document.write('<link rel="stylesheet" type="text/css" href="lang/'+lang+'/main.css" \/>');
 		}
-	</script>
+	</script><!--
+		langwage bar commented out in main.css
+		use
+			bottom: 10px;
+		to help find it
+	-->
 	
 	<script src="script/Button.js"></script>
 	<script src="script/engine.js"></script>
@@ -101,6 +109,7 @@
 	<div id="wrapper">
 		<div id="saveNotify"><script>document.write(_("saved."));</script></div>
 		<div id="content">
+			
 			<div id="outerSlider">
 				<div id="main">
 					<div id="header"></div>

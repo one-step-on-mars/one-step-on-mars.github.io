@@ -592,7 +592,7 @@ msgid "thieves"
 msgstr "złodzieje"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "za mało futra"
 
 #: script/localization.js:47
@@ -677,7 +677,7 @@ msgid "Outside"
 msgstr "Na zewnątrz"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "skrawki futra"
 
 #: script/outside.js:107
@@ -1017,11 +1017,11 @@ msgstr ""
 
 #: script/room.js:235
 msgid "wagon"
-msgstr "furgon"
+msgstr "shellgon"
 
 #: script/room.js:239
 msgid "the wagon can carry a lot of supplies"
-msgstr "furgon może przenieść dużo zasobów"
+msgstr "shellgon może przenieść dużo zasobów"
 
 #: script/room.js:248
 msgid "convoy"
@@ -1092,7 +1092,7 @@ msgid "light fire"
 msgstr "rozpal ogień"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "napal w piecu"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1152,7 +1152,7 @@ msgid "roaring"
 msgstr "ostro bucha"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Oświetlony pokój"
 
 #: script/room.js:642
@@ -1747,7 +1747,7 @@ msgid "go home"
 msgstr "idź do domu"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its shell matted with blood."
 msgstr ""
 "nie tak daleko od wioski leży ciało ogromnej bestii, której futro pokryte "
 "jest krwią."
@@ -2021,7 +2021,7 @@ msgstr "wróć do środka"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "kupka patyków leży zaraz za progiem, przewiązana grubymi futrami."
 
 #: script/events/room.js:92
@@ -2066,7 +2066,7 @@ msgid "a beggar arrives."
 msgstr "żebrak przybył."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "prosi o jakieś futra na zbyciu, dzięki którym może się ogrzać w nocy."
 
 #: script/events/room.js:200
@@ -2138,7 +2138,7 @@ msgstr "tajemniczy wędrowiec powraca, w wózku piętrzy się drewno"
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "wędrowiec przybywa z pustym wózkiem. mówi, że jeśli odejdzie z futrami, "
@@ -2153,11 +2153,11 @@ msgid "turn her away"
 msgstr "spław ją"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "wędrowiec odchodzi, wózek załadowany futrem"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "tajemniczy wędrowiec powraca, w wózku piętrzy się drewno"
 
 #: script/events/room.js:420

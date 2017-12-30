@@ -689,7 +689,7 @@ msgid "go home"
 msgstr "gehe nach hause"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr ""
 "nicht weit vom dorf entfernt liegt eine bestie am waldboden. ihr fell "
 "blutgetränkt."
@@ -963,7 +963,7 @@ msgstr "geh wieder rein"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr ""
 "ein bündel äste liegt knapp außerhalb der grenze. in grobem fell gewickelt."
 
@@ -1009,7 +1009,7 @@ msgid "a beggar arrives."
 msgstr "ein bettler trifft ein"
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "fragt nach ein paar fellen, um ihn in der nacht zu wärmen."
 
 #: script/events/room.js:200
@@ -1082,7 +1082,7 @@ msgstr ""
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "ein wanderer taucht mit einem leeren karren auf. sagt, wenn sie mit fellen "
@@ -1097,11 +1097,11 @@ msgid "turn her away"
 msgstr "schicke sie weg"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "der wanderer zieht davon, karren mit fellen beladen"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr ""
 "der geheimnisvolle wanderer kommt wieder, karren hoch mit fellen beladen."
 
@@ -2454,7 +2454,7 @@ msgid "thieves"
 msgstr "diebe"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "nicht genügend felle"
 
 #: script/localization.js:47
@@ -2538,7 +2538,7 @@ msgid "Outside"
 msgstr "Außen"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "fellreste"
 
 #: script/outside.js:107
@@ -2954,7 +2954,7 @@ msgid "light fire"
 msgstr "feuer machen"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "feuer schüren"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -3014,7 +3014,7 @@ msgid "roaring"
 msgstr "brennt lichterloh"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Ein Erleuchteter Raum"
 
 #: script/room.js:642

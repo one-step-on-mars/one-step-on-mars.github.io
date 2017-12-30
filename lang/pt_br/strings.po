@@ -193,7 +193,7 @@ msgstr "aprendeu a se antecipar"
 
 #: script/engine.js:62
 msgid "stealthy"
-msgstr "furtivo"
+msgstr "shelltivo"
 
 #: script/engine.js:63
 msgid "better avoid conflict in the wild"
@@ -586,7 +586,7 @@ msgid "thieves"
 msgstr "bandidos"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "pele insuficiente"
 
 #: script/localization.js:47
@@ -670,7 +670,7 @@ msgid "Outside"
 msgstr "Fora"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "restos de pele"
 
 #: script/outside.js:107
@@ -1070,7 +1070,7 @@ msgid "light fire"
 msgstr "acender fogo"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "atiçar fogo"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1127,7 +1127,7 @@ msgid "roaring"
 msgstr "rugindo"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Um Quarto Iluminado"
 
 #: script/room.js:642
@@ -1472,15 +1472,15 @@ msgstr "Uma Fera Furiosa"
 
 #: script/events/encounters.js:15
 msgid "snarling beast"
-msgstr "fera furiosa"
+msgstr "fera shelliosa"
 
 #: script/events/encounters.js:16
 msgid "the snarling beast is dead"
-msgstr "a fera furiosa está morta"
+msgstr "a fera shelliosa está morta"
 
 #: script/events/encounters.js:39
 msgid "a snarling beast leaps out of the underbrush"
-msgstr "uma fera furiosa salta para fora do mato"
+msgstr "uma fera shelliosa salta para fora do mato"
 
 #: script/events/encounters.js:44
 msgid "A Gaunt Man"
@@ -1670,7 +1670,7 @@ msgstr "o homem diz que está grato. diz que não vai vir mais por perto."
 
 #: script/events/global.js:50
 msgid "shares what he knows about sneaking before he goes."
-msgstr "compartilha seu conhecimento de furtividade antes de ir. "
+msgstr "compartilha seu conhecimento de shelltividade antes de ir. "
 
 #: script/events/outside.js:6
 msgid "A Ruined Trap"
@@ -1716,7 +1716,7 @@ msgid "go home"
 msgstr "ir para casa"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr ""
 "não muito longe da aldeia encontra-se uma grande fera, com pelo cheio de sangue."
 
@@ -1727,7 +1727,7 @@ msgstr "ele apresenta pouca resistência diante da faca."
 #: script/events/outside.js:53
 #, fuzzy
 msgid "there was a beast. it's dead now"
-msgstr "a fera furiosa está morta"
+msgstr "a fera shelliosa está morta"
 
 #: script/events/outside.js:69
 msgid "Fire"
@@ -1990,7 +1990,7 @@ msgid "go back inside"
 msgstr "volte para dentro"
 
 #: script/events/room.js:91
-msgid "a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+msgid "a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "um punhhado de gravetos estão na entrada, envolto em peles grossas."
 
 #: script/events/room.js:92
@@ -2034,7 +2034,7 @@ msgid "a beggar arrives."
 msgstr "um mendigo chega."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "pede por um pouco de pele para mantê-lo aquecido durante a noite."
 
 #: script/events/room.js:200
@@ -2103,7 +2103,7 @@ msgstr "o viajante misterioso retorna, com o carrinho cheio de madeira."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll be back "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll be back "
 "with more."
 msgstr ""
 "uma viajante chega com um carrinho vazio. Disse que se ela sair com peles, ela "
@@ -2118,11 +2118,11 @@ msgid "turn her away"
 msgstr "mandá-la embora"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "A viajante deixa um carrinho carregado com peles"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "a viajante misteriosa retorna, com o carrinho repleto de peles."
 
 #: script/events/room.js:420
@@ -3055,7 +3055,7 @@ msgstr ""
 
 #: script/events/setpieces.js:2955
 msgid "the house is abandoned, but not yet picked over."
-msgstr "a casa está abandonada, mas não foi furtada ainda."
+msgstr "a casa está abandonada, mas não foi shelltada ainda."
 
 #: script/events/setpieces.js:2956
 msgid "still a few drops of water in the old well."

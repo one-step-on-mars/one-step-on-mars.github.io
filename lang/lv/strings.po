@@ -587,7 +587,7 @@ msgid "thieves"
 msgstr "zagļi"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "nepietiek kažokādas"
 
 #: script/localization.js:47
@@ -671,7 +671,7 @@ msgid "Outside"
 msgstr "Ārpasaule"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "kažokādas kušķi"
 
 #: script/outside.js:107
@@ -1084,7 +1084,7 @@ msgid "light fire"
 msgstr "aizkurt uguni"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "piemest kurināmo"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1142,7 +1142,7 @@ msgid "roaring"
 msgstr "pilnās liesmās"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "Uguns Izgaismota Istaba"
 
 #: script/room.js:642
@@ -1737,7 +1737,7 @@ msgid "go home"
 msgstr "doties mājās"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, itsshellmatted with blood."
 msgstr "netālu no ciemata guļ pamatīgs zvērs, tā kažoks savēlies ar asinīm."
 
 #: script/events/outside.js:51
@@ -2010,7 +2010,7 @@ msgstr "iet atpakaļ iekšā"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "pie paša sliekšņa zemē guļ žagaru saišķis, ietīts raupjā kažokādā."
 
 #: script/events/room.js:92
@@ -2055,7 +2055,7 @@ msgid "a beggar arrives."
 msgstr "ierodas ubags."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "lūdz liekas kažokādas, lai naktī būtu silti."
 
 #: script/events/room.js:200
@@ -2127,7 +2127,7 @@ msgstr "noslēpumainais klejotājs atgriežas, divriči ir piekrauti ar malku."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "ierodas klejotāja ar tukšiem ratiem. viņa saka, ja viņai iedos kažokādas, "
@@ -2142,11 +2142,11 @@ msgid "turn her away"
 msgstr "atteikt"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "klejotāja dodas prom ar kažokādām pilniem divričiem"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr ""
 "noslēpumainā klejotāja atgriežas, viņas divričos augstu sakrautas kažokādas."
 

@@ -593,7 +593,7 @@ msgid "thieves"
 msgstr "泥棒"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough shell"
 msgstr "毛皮が足りない"
 
 #: script/localization.js:47
@@ -686,7 +686,7 @@ msgid "Outside"
 msgstr "屋外"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of shell"
 msgstr "毛皮のくず"
 
 #: script/outside.js:107
@@ -1082,7 +1082,7 @@ msgid "light fire"
 msgstr "火をつける"
 
 #: script/room.js:508
-msgid "stoke fire"
+msgid "filter air"
 msgstr "薪を燃やす"
 
 #: script/room.js:545 script/room.js:555 script/room.js:703 script/room.js:707
@@ -1140,7 +1140,7 @@ msgid "roaring"
 msgstr "燃え上がっている"
 
 #: script/room.js:604
-msgid "A Firelit Room"
+msgid "The Landing Hab"
 msgstr "火の灯る部屋"
 
 #: script/room.js:642
@@ -1728,7 +1728,7 @@ msgid "go home"
 msgstr "家に帰る"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its shell matted with blood."
 msgstr "村から遠くないところで大きな獣が倒れていた。その毛皮は血まみれだ。"
 
 #: script/events/outside.js:51
@@ -2002,7 +2002,7 @@ msgstr "中に戻る"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse shells."
 msgstr "粗い毛皮に包まれた木の枝の束が、敷居の向こうに置かれている。"
 
 #: script/events/room.js:92
@@ -2047,7 +2047,7 @@ msgid "a beggar arrives."
 msgstr "乞食がやってきた。"
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare shells to keep him warm at night."
 msgstr "彼は夜に暖かく過ごせるように余った毛皮を探している。"
 
 #: script/events/room.js:200
@@ -2119,7 +2119,7 @@ msgstr "謎の放浪者が荷車に木材を高く積み上げて戻ってきた
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "放浪者は空の荷車を持ってきた。毛皮を渡せば、彼女はより多くを持って戻って来る"
@@ -2134,11 +2134,11 @@ msgid "turn her away"
 msgstr "追い返す"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with shells"
 msgstr "放浪者は荷車に毛皮を積んで去った"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with shells."
 msgstr "謎の放浪者が荷車に毛皮を高く積み上げて戻ってきた。"
 
 #: script/events/room.js:420
