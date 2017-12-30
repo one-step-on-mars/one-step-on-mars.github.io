@@ -694,11 +694,11 @@ msgid "a crudely made charm"
 msgstr "aĉe faritan talismanon"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "Silenta Arbaro"
 
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "kolekti lignon"
 
 #: script/outside.js:188
@@ -738,7 +738,7 @@ msgid "check traps"
 msgstr "kontroli kaptilojn"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "Soleca Kabano"
 
 #: script/outside.js:566

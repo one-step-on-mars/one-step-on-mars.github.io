@@ -702,11 +702,11 @@ msgid "a crudely made charm"
 msgstr "싸구려 장신구"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "침묵의 숲"
 
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "나무 모으기"
 
 #: script/outside.js:188
@@ -746,7 +746,7 @@ msgid "check traps"
 msgstr "덫 확인"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "외로운 오두막"
 
 #: script/outside.js:566

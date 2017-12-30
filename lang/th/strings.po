@@ -716,12 +716,12 @@ msgid "a crudely made charm"
 msgstr "เครื่องรางที่แกะขึ้นอย่างหยาบ ๆ "
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "ป่าเงียบงัน"
 
 # command
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "เก็บไม้"
 
 #: script/outside.js:188
@@ -764,7 +764,7 @@ msgid "check traps"
 msgstr "ตรวจดูกับดัก"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "กระท่อมเดียวดาย"
 
 #: script/outside.js:566

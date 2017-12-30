@@ -698,11 +698,11 @@ msgid "a crudely made charm"
 msgstr "et sammenskrapt smykke"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "En Stille Skog"
 
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "samle ved"
 
 #: script/outside.js:188
@@ -742,7 +742,7 @@ msgid "check traps"
 msgstr "sjekk på fellene"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "En Enslig Hytte"
 
 #: script/outside.js:566

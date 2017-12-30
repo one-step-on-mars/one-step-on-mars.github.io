@@ -2554,11 +2554,11 @@ msgid "a crudely made charm"
 msgstr "kabaca yapılmış muska"
 
 #: ../../script/outside.js:143 ../../script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "Sessiz bir Orman"
 
 #: ../../script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "odun kes"
 
 #: ../../script/outside.js:188
@@ -2599,7 +2599,7 @@ msgid "check traps"
 msgstr "tuzakları kontrol et"
 
 #: ../../script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "Yalnız Bir Klübe"
 
 #: ../../script/outside.js:566

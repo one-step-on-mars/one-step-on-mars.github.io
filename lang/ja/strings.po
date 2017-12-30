@@ -710,11 +710,11 @@ msgid "a crudely made charm"
 msgstr "雑な作りのお守り"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "静かな森"
 
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "木を集める"
 
 #: script/outside.js:188
@@ -754,7 +754,7 @@ msgid "check traps"
 msgstr "罠を確認する"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "孤独な小屋"
 
 #: script/outside.js:566

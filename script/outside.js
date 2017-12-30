@@ -140,7 +140,7 @@ var Outside = {
 		}
 		
 		// Create the outside tab
-		this.tab = Header.addLocation(_("A Silent Forest"), "outside", Outside);
+		this.tab = Header.addLocation(_("Martian volcano"), "outside", Outside);
 		
 		// Create the Outside panel
 		this.panel = $('<div>').attr('id', "outsidePanel")
@@ -166,7 +166,7 @@ var Outside = {
 		// Create the gather button
 		new Button.Button({
 			id: 'gatherButton',
-			text: _("gather energy"),
+			text: _("Clean solar panels"),
 			click: Outside.gatherenergy,
 			cooldown: Outside._GATHER_DELAY,
 			width: '80px'
@@ -559,9 +559,9 @@ var Outside = {
 		var numHuts = $SM.get('game.buildings["hut"]', true);
 		var title;
 		if(numHuts === 0) {
-			title = _("A Silent Forest");
+			title = _("Martian volcano");
 		} else if(numHuts == 1) {
-			title = _("A Lonely Hut");
+			title = _("A Small Bunker");
 		} else if(numHuts <= 4) {
 			title = _("A Tiny Village");
 		} else if(numHuts <= 8) {

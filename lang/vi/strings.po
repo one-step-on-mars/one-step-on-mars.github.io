@@ -696,11 +696,11 @@ msgid "a crudely made charm"
 msgstr "bùa nguyên thô"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "Khu Rừng Yên Ắng"
 
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "lấy gỗ"
 
 #: script/outside.js:188
@@ -740,7 +740,7 @@ msgid "check traps"
 msgstr "thăm bẫy"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "Một Túp Lều Đơn Độc"
 
 #: script/outside.js:566

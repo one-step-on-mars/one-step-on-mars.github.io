@@ -701,11 +701,11 @@ msgid "a crudely made charm"
 msgstr "topornie wykonany talizman"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "Cichy las"
 
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "zbierz drewno"
 
 #: script/outside.js:188
@@ -749,7 +749,7 @@ msgid "check traps"
 msgstr "sprawdź pułapki"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "Samotna chata"
 
 #: script/outside.js:566

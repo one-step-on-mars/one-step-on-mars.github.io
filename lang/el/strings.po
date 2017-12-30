@@ -725,12 +725,12 @@ msgid "a crudely made charm"
 msgstr "ένα κακοφτιαγμένο φυλαχτό"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "Αθόρυβο Δάσος"
 
 # command
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "μάζεψε ξύλα"
 
 #: script/outside.js:188
@@ -773,7 +773,7 @@ msgid "check traps"
 msgstr "έλεγξε τις παγίδες"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "Μοναχική Καλύβα"
 
 #: script/outside.js:566

@@ -2540,11 +2540,11 @@ msgid "a crudely made charm"
 msgstr "做工粗糙的符咒"
 
 #: ../../script/outside.js:143 ../../script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "靜謐森林"
 
 #: ../../script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "伐木"
 
 #: ../../script/outside.js:188
@@ -2584,7 +2584,7 @@ msgid "check traps"
 msgstr "查看陷阱"
 
 #: ../../script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "孤獨小屋"
 
 #: ../../script/outside.js:566

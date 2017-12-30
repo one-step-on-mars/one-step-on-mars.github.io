@@ -2532,11 +2532,11 @@ msgid "a crudely made charm"
 msgstr "hurbě vyrobená amulet"
 
 #: script/outside.js:143 script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "Tichý les"
 
 #: script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "sbírat dřevo"
 
 #: script/outside.js:188
@@ -2577,7 +2577,7 @@ msgid "check traps"
 msgstr "zkontrolovat pasti"
 
 #: script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "Osamělá chata"
 
 #: script/outside.js:566

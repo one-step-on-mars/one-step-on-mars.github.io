@@ -2538,11 +2538,11 @@ msgid "a crudely made charm"
 msgstr "небрежно сделанный амулет"
 
 #: ../../script/outside.js:143 ../../script/outside.js:562
-msgid "A Silent Forest"
+msgid "Martian volcano"
 msgstr "Тихий лес"
 
 #: ../../script/outside.js:169
-msgid "gather energy"
+msgid "Clean solar panels"
 msgstr "собирать дрова"
 
 #: ../../script/outside.js:188
@@ -2583,7 +2583,7 @@ msgid "check traps"
 msgstr "проверить ловушки"
 
 #: ../../script/outside.js:564
-msgid "A Lonely Hut"
+msgid "A Small Bunker"
 msgstr "Одинокая хижина"
 
 #: ../../script/outside.js:566
