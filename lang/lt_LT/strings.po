@@ -747,7 +747,7 @@ msgid "A Tiny Village"
 msgstr "Mažytis Kaimelis"
 
 #: script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "Nemenkas Kaimelis"
 
 #: script/outside.js:570

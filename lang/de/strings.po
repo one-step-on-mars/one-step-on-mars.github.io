@@ -2617,7 +2617,7 @@ msgid "A Tiny Village"
 msgstr "Ein Winziges Dorf"
 
 #: script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "Ein kleines Dorf"
 
 #: script/outside.js:570

@@ -2614,7 +2614,7 @@ msgid "A Tiny Village"
 msgstr "Невеличке поселення"
 
 #: ../../script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "Середнє поселення"
 
 #: ../../script/outside.js:570

@@ -754,7 +754,7 @@ msgid "A Tiny Village"
 msgstr "작은 마을"
 
 #: script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "보통 마을"
 
 #: script/outside.js:570

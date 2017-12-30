@@ -748,7 +748,7 @@ msgid "A Tiny Village"
 msgstr "Một Ngôi Làng Nhỏ"
 
 #: script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "Một Ngôi Làng Vừa"
 
 #: script/outside.js:570

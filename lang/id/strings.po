@@ -777,7 +777,7 @@ msgid "A Tiny Village"
 msgstr "Desa Kecil"
 
 #: script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "Desa Sederhana"
 
 #: script/outside.js:570

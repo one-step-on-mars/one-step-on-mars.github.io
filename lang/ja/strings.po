@@ -762,7 +762,7 @@ msgid "A Tiny Village"
 msgstr "小さな村"
 
 #: script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "ささやかな村"
 
 #: script/outside.js:570

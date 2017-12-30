@@ -2607,7 +2607,7 @@ msgid "A Tiny Village"
 msgstr "Küçük Bir Köy"
 
 #: ../../script/outside.js:568
-msgid "A Modest Village"
+msgid "A Large Bunker"
 msgstr "Modern Bir Köy"
 
 #: ../../script/outside.js:570
