@@ -433,7 +433,7 @@ msgid "saved."
 msgstr "lagret."
 
 #: script/localization.js:5
-msgid "wood"
+msgid "energy"
 msgstr "ved"
 
 #: script/localization.js:6
@@ -449,7 +449,7 @@ msgid "meat"
 msgstr "kjøtt"
 
 #: script/localization.js:9
-msgid "fur"
+msgid "Roche shells"
 msgstr "pels"
 
 #: script/localization.js:10
@@ -589,11 +589,11 @@ msgid "thieves"
 msgstr "tyver"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough Roche shells"
 msgstr "ikke nok pels"
 
 #: script/localization.js:47
-msgid "not enough wood"
+msgid "not enough energy"
 msgstr "ikke nok ved"
 
 #: script/localization.js:48
@@ -674,7 +674,7 @@ msgid "Outside"
 msgstr "Ute"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of Roche shells"
 msgstr "deler av pels"
 
 #: script/outside.js:107
@@ -702,7 +702,7 @@ msgid "A Silent Forest"
 msgstr "En Stille Skog"
 
 #: script/outside.js:169
-msgid "gather wood"
+msgid "gather energy"
 msgstr "samle ved"
 
 #: script/outside.js:188
@@ -842,11 +842,11 @@ msgid "cart"
 msgstr "vogn"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying energy"
 msgstr "byggeren sier hun kan lage en vogn for å frakte ved"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more energy from the forest"
 msgstr "den ustabile vognen bærer mer ved fra skogen"
 
 #: script/room.js:44
@@ -1141,11 +1141,11 @@ msgid "A Firelit Room"
 msgstr "Et Opplyst Rom"
 
 #: script/room.js:642
-msgid "not enough wood to get the fire going"
+msgid "not enough energy to get the fire going"
 msgstr "ikke nok ved for å starte bålet"
 
 #: script/room.js:655
-msgid "the wood has run out"
+msgid "the energy has run out"
 msgstr "ikke mer ved igjen"
 
 #: script/room.js:675
@@ -1161,7 +1161,7 @@ msgid "the wind howls outside"
 msgstr "vinden uler ute"
 
 #: script/room.js:719
-msgid "the wood is running out"
+msgid "the energy is running out"
 msgstr "ikke mer ved igjen"
 
 #: script/room.js:726
@@ -1735,7 +1735,7 @@ msgid "go home"
 msgstr "gå hjem"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its Roche shells matted with blood."
 msgstr ""
 "ikke langt fra landsbyen ligger et stort beist, og pelsen er dekket av blod."
 
@@ -2015,7 +2015,7 @@ msgstr "gå tilbake"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse Roche shellss."
 msgstr ""
 "en liten samling pinner ligger rett utenfor døråpningen, innpakket i  grov "
 "pels"
@@ -2038,7 +2038,7 @@ msgstr "noe er inne i lager-rommet"
 
 #: script/events/room.js:129 script/events/room.js:149
 #: script/events/room.js:169
-msgid "some wood is missing."
+msgid "some energy is missing."
 msgstr "noe ved mangler."
 
 #: script/events/room.js:130
@@ -2062,7 +2062,7 @@ msgid "a beggar arrives."
 msgstr "en tigger ankommer"
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare Roche shellss to keep him warm at night."
 msgstr "spør etter noen ekstra biter pels for å holde ham varm om natten."
 
 #: script/events/room.js:200
@@ -2106,7 +2106,7 @@ msgstr "Den Mystiske Vandreren"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "en vandrer ankommer med en tom vogn. sier at hvis han reiser bort med ved "
@@ -2125,16 +2125,16 @@ msgid "give 500"
 msgstr "gi 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with energy"
 msgstr "vandreren reiser bort, vognen full av ved"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with energy."
 msgstr "den mystiske vandreren returnerer, vognen stablet høyt med ved."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with Roche shellss, she'll "
 "be back with more."
 msgstr ""
 "en vandrer ankommer med en tom vogn, sier at hvis han reiser bort med pels "
@@ -2149,11 +2149,11 @@ msgid "turn her away"
 msgstr "få ham til å snu"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with Roche shellss"
 msgstr "vandreren reiser bort, vognen fylt med pels"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with Roche shellss."
 msgstr "den mystiske vandreren returnerer, vognen stablet høyt med pels."
 
 #: script/events/room.js:420

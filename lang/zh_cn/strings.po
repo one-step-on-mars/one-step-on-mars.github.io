@@ -436,7 +436,7 @@ msgid "saved."
 msgstr "已保存"
 
 #: script/localization.js:5
-msgid "wood"
+msgid "energy"
 msgstr "木头"
 
 #: script/localization.js:6
@@ -452,7 +452,7 @@ msgid "meat"
 msgstr "肉"
 
 #: script/localization.js:9
-msgid "fur"
+msgid "Roche shells"
 msgstr "毛皮"
 
 #: script/localization.js:10
@@ -592,11 +592,11 @@ msgid "thieves"
 msgstr "小偷"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough Roche shells"
 msgstr "皮毛不够了"
 
 #: script/localization.js:47
-msgid "not enough wood"
+msgid "not enough energy"
 msgstr "木头不够了"
 
 #: script/localization.js:48
@@ -676,7 +676,7 @@ msgid "Outside"
 msgstr "野外"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of Roche shells"
 msgstr "皮毛碎片"
 
 #: script/outside.js:107
@@ -704,7 +704,7 @@ msgid "A Silent Forest"
 msgstr "静谧森林"
 
 #: script/outside.js:169
-msgid "gather wood"
+msgid "gather energy"
 msgstr "伐木"
 
 #: script/outside.js:188
@@ -842,11 +842,11 @@ msgid "cart"
 msgstr "货车"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying energy"
 msgstr "建造者说她能够制造出货车，用来运载木头"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more energy from the forest"
 msgstr "摇摇晃晃的货车满载从森林运出的木头"
 
 #: script/room.js:44
@@ -1134,11 +1134,11 @@ msgid "A Firelit Room"
 msgstr "生火间"
 
 #: script/room.js:642
-msgid "not enough wood to get the fire going"
+msgid "not enough energy to get the fire going"
 msgstr "生火的木头不够了"
 
 #: script/room.js:655
-msgid "the wood has run out"
+msgid "the energy has run out"
 msgstr "木头用光了"
 
 #: script/room.js:675
@@ -1154,7 +1154,7 @@ msgid "the wind howls outside"
 msgstr "屋外寒风呼啸"
 
 #: script/room.js:719
-msgid "the wood is running out"
+msgid "the energy is running out"
 msgstr "木头就快烧完了"
 
 #: script/room.js:726
@@ -1715,7 +1715,7 @@ msgid "go home"
 msgstr "返回"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its Roche shells matted with blood."
 msgstr "村外不远处躺着一只巨兽，它的毛皮上染满了鲜血"
 
 #: script/events/outside.js:51
@@ -1984,7 +1984,7 @@ msgstr "回屋"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse Roche shellss."
 msgstr "一捆用粗糙的毛皮扎起来的柴火斜倚在门槛上"
 
 #: script/events/room.js:92
@@ -2005,7 +2005,7 @@ msgstr "不速之客闯入了仓库"
 
 #: script/events/room.js:129 script/events/room.js:149
 #: script/events/room.js:169
-msgid "some wood is missing."
+msgid "some energy is missing."
 msgstr "有些木头不见了"
 
 #: script/events/room.js:130
@@ -2029,7 +2029,7 @@ msgid "a beggar arrives."
 msgstr "乞丐徘徊在门前"
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare Roche shellss to keep him warm at night."
 msgstr "祈求能施舍给他一些多余的毛皮，好让他不在夜里受冻"
 
 #: script/events/room.js:200
@@ -2073,7 +2073,7 @@ msgstr "神秘流浪者"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
 "back with more."
 msgstr "一名流浪者推着货车来到村子，声称如果让他带着木头离开，他会带回更多木头"
 
@@ -2090,16 +2090,16 @@ msgid "give 500"
 msgstr "给500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with energy"
 msgstr "流浪者带着满载木头的货车离开了"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with energy."
 msgstr "神秘的流浪者回来了，货车上木头堆得更高了"
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with Roche shellss, she'll "
 "be back with more."
 msgstr "一名流浪者推着货车来到村子，声称如果让她带着毛皮离开，她会带回更多毛皮"
 
@@ -2112,11 +2112,11 @@ msgid "turn her away"
 msgstr "撵走她"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with Roche shellss"
 msgstr "流浪者带着满载毛皮的货车离开了"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with Roche shellss."
 msgstr "神秘的流浪者回来了，货车上毛皮堆得更高了"
 
 #: script/events/room.js:420

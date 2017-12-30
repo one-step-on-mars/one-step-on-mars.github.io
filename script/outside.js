@@ -15,14 +15,14 @@ var Outside = {
 			name: _('gatherer'),
 			delay: 10,
 			stores: {
-				'wood': 1
+				'energy': 1
 			}
 		},
 		'hunter': {
 			name: _('hunter'),
 			delay: 10,
 			stores: {
-				'fur': 0.5,
+				'Roche shells': 0.5,
 				'meat': 0.5
 			}
 		},
@@ -38,7 +38,7 @@ var Outside = {
 			name: _('tanner'),
 			delay: 10,
 			stores: {
-				'fur': -5,
+				'Roche shells': -5,
 				'leather': 1
 			}
 		},
@@ -47,7 +47,7 @@ var Outside = {
 			delay: 10,
 			stores: {
 				'meat': -5,
-				'wood': -5,
+				'energy': -5,
 				'cured meat': 1
 			}
 		},
@@ -98,8 +98,8 @@ var Outside = {
 	TrapDrops: [
 		{
 			rollUnder: 0.5,
-			name: 'fur',
-			message: _('scraps of fur')
+			name: 'Roche shells',
+			message: _('scraps of Roche shells')
 		},
 		{
 			rollUnder: 0.75,
@@ -166,8 +166,8 @@ var Outside = {
 		// Create the gather button
 		new Button.Button({
 			id: 'gatherButton',
-			text: _("gather wood"),
-			click: Outside.gatherWood,
+			text: _("gather energy"),
+			click: Outside.gatherenergy,
 			cooldown: Outside._GATHER_DELAY,
 			width: '80px'
 		}).appendTo('div#outsidePanel');
@@ -248,7 +248,7 @@ var Outside = {
 				dead += inhabitants;
 			}
 		}
-		// this method returns the total number of victims, for further actions
+		// this method returns the total number of victims, for Roche shellsther actions
 		return dead;
 	},
 	
@@ -590,10 +590,10 @@ var Outside = {
 		Engine.moveStoresView($('#village'), transition_diff);
 	},
 	
-	gatherWood: function() {
+	gatherenergy: function() {
 		Notifications.notify(Outside, _("dry brush and dead branches litter the forest floor"));
 		var gatherAmt = $SM.get('game.buildings["cart"]', true) > 0 ? 50 : 10;
-		$SM.add('stores.wood', gatherAmt);
+		$SM.add('stores.energy', gatherAmt);
 	},
 	
 	checkTraps: function() {

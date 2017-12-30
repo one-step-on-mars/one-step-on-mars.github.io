@@ -5,7 +5,7 @@ Events.Room = [
 	{ /* The Nomad  --  Merchant */
 		title: _('The Nomad'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.fur', true) > 0;
+			return Engine.activeModule == Room && $SM.get('stores.Roche shells', true) > 0;
 		},
 		scenes: {
 			'start': {
@@ -18,17 +18,17 @@ Events.Room = [
 				buttons: {
 					'buyScales': {
 						text: _('buy scales'),
-						cost: { 'fur': 100 },
+						cost: { 'Roche shells': 100 },
 						reward: { 'scales': 1 }
 					},
 					'buyTeeth': {
 						text: _('buy teeth'),
-						cost: { 'fur': 200 },
+						cost: { 'Roche shells': 200 },
 						reward: { 'teeth': 1 }
 					},
 					'buyBait': {
 						text: _('buy bait'),
-						cost: { 'fur': 5 },
+						cost: { 'Roche shells': 5 },
 						reward: { 'bait': 1 },
 						notification: _('traps are more effective with bait.')
 					},
@@ -37,7 +37,7 @@ Events.Room = [
 							return $SM.get('stores.compass', true) < 1;
 						},
 						text: _('buy compass'),
-						cost: { fur: 300, scales: 15, teeth: 5 },
+						cost: { Roche shells: 300, scales: 15, teeth: 5 },
 						reward: { 'compass': 1 },
 						notification: _('the old compass is dented and dusty, but it looks to work.')
 					},
@@ -49,10 +49,10 @@ Events.Room = [
 			}
 		}
 	},
-	{ /* Noises Outside  --  gain wood/fur */
+	{ /* Noises Outside  --  gain energy/Roche shells */
 		title: _('Noises'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.wood');
+			return Engine.activeModule == Room && $SM.get('stores.energy');
 		},
 		scenes: {
 			'start': {
@@ -86,9 +86,9 @@ Events.Room = [
 				}
 			},
 			'stuff': {
-				reward: { wood: 100, fur: 10 },
+				reward: { energy: 100, Roche shells: 10 },
 				text: [
-					_('a bundle of sticks lies just beyond the threshold, wrapped in coarse furs.'),
+					_('a bundle of sticks lies just beyond the threshold, wrapped in coarse Roche shellss.'),
 					_('the night is silent.')
 				],
 				buttons: {
@@ -100,10 +100,10 @@ Events.Room = [
 			}
 		}
 	},
-	{ /* Noises Inside  --  trade wood for better good */
+	{ /* Noises Inside  --  trade energy for better good */
 		title: _('Noises'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.wood');
+			return Engine.activeModule == Room && $SM.get('stores.energy');
 		},
 		scenes: {
 			start: {
@@ -126,16 +126,16 @@ Events.Room = [
 			},
 			scales: {
 				text: [
-					_('some wood is missing.'),
+					_('some energy is missing.'),
 					_('the ground is littered with small scales')
 				],
 				onLoad: function() {
-					var numWood = $SM.get('stores.wood', true);
-					numWood = Math.floor(numWood * 0.1);
-					if(numWood === 0) numWood = 1;
-					var numScales = Math.floor(numWood / 5);
+					var numenergy = $SM.get('stores.energy', true);
+					numenergy = Math.floor(numenergy * 0.1);
+					if(numenergy === 0) numenergy = 1;
+					var numScales = Math.floor(numenergy / 5);
 					if(numScales === 0) numScales = 1;
-					$SM.addM('stores', {'wood': -numWood, 'scales': numScales});
+					$SM.addM('stores', {'energy': -numenergy, 'scales': numScales});
 				},
 				buttons: {
 					'leave': {
@@ -146,16 +146,16 @@ Events.Room = [
 			},
 			teeth: {
 				text: [
-					_('some wood is missing.'),
+					_('some energy is missing.'),
 					_('the ground is littered with small teeth')
 				],
 				onLoad: function() {
-					var numWood = $SM.get('stores.wood', true);
-					numWood = Math.floor(numWood * 0.1);
-					if(numWood === 0) numWood = 1;
-					var numTeeth = Math.floor(numWood / 5);
+					var numenergy = $SM.get('stores.energy', true);
+					numenergy = Math.floor(numenergy * 0.1);
+					if(numenergy === 0) numenergy = 1;
+					var numTeeth = Math.floor(numenergy / 5);
 					if(numTeeth === 0) numTeeth = 1;
-					$SM.addM('stores', {'wood': -numWood, 'teeth': numTeeth});
+					$SM.addM('stores', {'energy': -numenergy, 'teeth': numTeeth});
 				},
 				buttons: {
 					'leave': {
@@ -166,16 +166,16 @@ Events.Room = [
 			},
 			cloth: {
 				text: [
-					_('some wood is missing.'),
+					_('some energy is missing.'),
 					_('the ground is littered with scraps of cloth')
 				],
 				onLoad: function() {
-					var numWood = $SM.get('stores.wood', true);
-					numWood = Math.floor(numWood * 0.1);
-					if(numWood === 0) numWood = 1;
-					var numCloth = Math.floor(numWood / 5);
+					var numenergy = $SM.get('stores.energy', true);
+					numenergy = Math.floor(numenergy * 0.1);
+					if(numenergy === 0) numenergy = 1;
+					var numCloth = Math.floor(numenergy / 5);
 					if(numCloth === 0) numCloth = 1;
-					$SM.addM('stores', {'wood': -numWood, 'cloth': numCloth});
+					$SM.addM('stores', {'energy': -numenergy, 'cloth': numCloth});
 				},
 				buttons: {
 					'leave': {
@@ -186,28 +186,28 @@ Events.Room = [
 			}
 		}
 	},
-	{ /* The Beggar  --  trade fur for better good */
+	{ /* The Beggar  --  trade Roche shells for better good */
 		title: _('The Beggar'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.fur');
+			return Engine.activeModule == Room && $SM.get('stores.Roche shells');
 		},
 		scenes: {
 			start: {
 				text: [
 					_('a beggar arrives.'),
-					_('asks for any spare furs to keep him warm at night.')
+					_('asks for any spare Roche shellss to keep him warm at night.')
 				],
 				notification: _('a beggar arrives'),
 				blink: true,
 				buttons: {
-					'50furs': {
+					'50Roche shellss': {
 						text: _('give 50'),
-						cost: {fur: 50},
+						cost: {Roche shells: 50},
 						nextScene: { 0.5: 'scales', 0.8: 'teeth', 1: 'cloth' }
 					},
-					'100furs': {
+					'100Roche shellss': {
 						text: _('give 100'),
-						cost: {fur: 100},
+						cost: {Roche shells: 100},
 						nextScene: { 0.5: 'teeth', 0.8: 'scales', 1: 'cloth' }
 					},
 					'deny': {
@@ -266,13 +266,13 @@ Events.Room = [
 			'start':{
 				text: [
 					_('a shady builder passes through'),
-					_('says he can build you a hut for less wood')
+					_('says he can build you a hut for less energy')
 				],
 				notification: _('a shady builder passes through'),
 				buttons: {
 					'build': {
-						text: _('300 wood'),
-						cost: { 'wood' : 300 },
+						text: _('300 energy'),
+						cost: { 'energy' : 300 },
 						nextScene: {0.6: 'steal', 1: 'build'}
 					},
 					'deny': {
@@ -283,9 +283,9 @@ Events.Room = [
 			},
 			'steal': {
 				text:[
-					_("the shady builder has made off with your wood")
+					_("the shady builder has made off with your energy")
 				],
-				notification: _('the shady builder has made off with your wood'),
+				notification: _('the shady builder has made off with your energy'),
 				buttons: {
 					'end': {
 						text: _('go home'),
@@ -314,29 +314,29 @@ Events.Room = [
 		}
 	},
 
-	{ /* Mysterious Wanderer  --  wood gambling */
+	{ /* Mysterious Wanderer  --  energy gambling */
 		title: _('The Mysterious Wanderer'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.wood');
+			return Engine.activeModule == Room && $SM.get('stores.energy');
 		},
 		scenes: {
 			start: {
 				text: [
-					_('a wanderer arrives with an empty cart. says if he leaves with wood, he\'ll be back with more.'),
+					_('a wanderer arrives with an empty cart. says if he leaves with energy, he\'ll be back with more.'),
 					_("builder's not sure he's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
 				blink: true,
 				buttons: {
-					'wood100': {
+					'energy100': {
 						text: _('give 100'),
-						cost: {wood: 100},
-						nextScene: { 1: 'wood100'}
+						cost: {energy: 100},
+						nextScene: { 1: 'energy100'}
 					},
-					'wood500': {
+					'energy500': {
 						text: _('give 500'),
-						cost: {wood: 500},
-						nextScene: { 1: 'wood500' }
+						cost: {energy: 500},
+						nextScene: { 1: 'energy500' }
 					},
 					'deny': {
 						text: _('turn him away'),
@@ -344,16 +344,16 @@ Events.Room = [
 					}
 				}
 			},
-			'wood100': {
+			'energy100': {
 				text: [
-					_('the wanderer leaves, cart loaded with wood')
+					_('the wanderer leaves, cart loaded with energy')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
-						$SM.add('stores.wood', 300);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with wood.'));
-					}, 'Room[4].scenes.wood100.action', delay);
+						$SM.add('stores.energy', 300);
+						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with energy.'));
+					}, 'Room[4].scenes.energy100.action', delay);
 				},
 				onLoad: function() {
 					if(Math.random() < 0.5) {
@@ -367,16 +367,16 @@ Events.Room = [
 					}
 				}
 			},
-			'wood500': {
+			'energy500': {
 				text: [
-					_('the wanderer leaves, cart loaded with wood')
+					_('the wanderer leaves, cart loaded with energy')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
-						$SM.add('stores.wood', 1500);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with wood.'));
-					}, 'Room[4].scenes.wood500.action', delay);
+						$SM.add('stores.energy', 1500);
+						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with energy.'));
+					}, 'Room[4].scenes.energy500.action', delay);
 				},
 				onLoad: function() {
 					if(Math.random() < 0.3) {
@@ -393,29 +393,29 @@ Events.Room = [
 		}
 	},
 
-	{ /* Mysterious Wanderer  --  fur gambling */
+	{ /* Mysterious Wanderer  --  Roche shells gambling */
 		title: _('The Mysterious Wanderer'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.fur');
+			return Engine.activeModule == Room && $SM.get('stores.Roche shells');
 		},
 		scenes: {
 			start: {
 				text: [
-					_('a wanderer arrives with an empty cart. says if she leaves with furs, she\'ll be back with more.'),
+					_('a wanderer arrives with an empty cart. says if she leaves with Roche shellss, she\'ll be back with more.'),
 					_("builder's not sure she's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
 				blink: true,
 				buttons: {
-					'fur100': {
+					'Roche shells100': {
 						text: _('give 100'),
-						cost: {fur: 100},
-						nextScene: { 1: 'fur100'}
+						cost: {Roche shells: 100},
+						nextScene: { 1: 'Roche shells100'}
 					},
-					'fur500': {
+					'Roche shells500': {
 						text: _('give 500'),
-						cost: {fur: 500},
-						nextScene: { 1: 'fur500' }
+						cost: {Roche shells: 500},
+						nextScene: { 1: 'Roche shells500' }
 					},
 					'deny': {
 						text: _('turn her away'),
@@ -423,16 +423,16 @@ Events.Room = [
 					}
 				}
 			},
-			'fur100': {
+			'Roche shells100': {
 				text: [
-					_('the wanderer leaves, cart loaded with furs')
+					_('the wanderer leaves, cart loaded with Roche shellss')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
-						$SM.add('stores.fur', 300);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with furs.'));
-					}, 'Room[5].scenes.fur100.action', delay);
+						$SM.add('stores.Roche shells', 300);
+						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with Roche shellss.'));
+					}, 'Room[5].scenes.Roche shells100.action', delay);
 				},
 				onLoad: function() {
 					if(Math.random() < 0.5) {
@@ -446,16 +446,16 @@ Events.Room = [
 					}
 				}
 			},
-			'fur500': {
+			'Roche shells500': {
 				text: [
-					_('the wanderer leaves, cart loaded with furs')
+					_('the wanderer leaves, cart loaded with Roche shellss')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
-						$SM.add('stores.fur', 1500);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with furs.'));
-					}, 'Room[5].scenes.fur500.action', delay);
+						$SM.add('stores.Roche shells', 1500);
+						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with Roche shellss.'));
+					}, 'Room[5].scenes.Roche shells500.action', delay);
 				},
 				onLoad: function() {
 					if(Math.random() < 0.3) {
@@ -488,7 +488,7 @@ Events.Room = [
 				buttons: {
 					'buyMap': {
 						text: _('buy map'),
-						cost: { 'fur': 200, 'scales': 10 },
+						cost: { 'Roche shells': 200, 'scales': 10 },
 						available: function() {
 							return !World.seenAll;
 						},
@@ -497,7 +497,7 @@ Events.Room = [
 					},
 					'learn': {
 						text: _('learn scouting'),
-						cost: { 'fur': 1000, 'scales': 50, 'teeth': 20 },
+						cost: { 'Roche shells': 1000, 'scales': 50, 'teeth': 20 },
 						available: function() {
 							return !$SM.hasPerk('scout');
 						},
@@ -532,7 +532,7 @@ Events.Room = [
 						text: _('agree'),
 						cost: {
 							'cured meat': 100,
-							'fur': 100,
+							'Roche shells': 100,
 							'torch': 1
 						},
 						nextScene: {1: 'agree'}

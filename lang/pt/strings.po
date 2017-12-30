@@ -193,7 +193,7 @@ msgstr "Aprendi a olhar para frente"
 
 #: script/engine.js:62
 msgid "stealthy"
-msgstr "furtivo"
+msgstr "Roche shellstivo"
 
 #: script/engine.js:63
 msgid "better avoid conflict in the wild"
@@ -434,7 +434,7 @@ msgid "saved."
 msgstr "salvos."
 
 #: script/localization.js:5
-msgid "wood"
+msgid "energy"
 msgstr "madeira"
 
 #: script/localization.js:6
@@ -450,7 +450,7 @@ msgid "meat"
 msgstr "carne"
 
 #: script/localization.js:9
-msgid "fur"
+msgid "Roche shells"
 msgstr "pele"
 
 #: script/localization.js:10
@@ -591,12 +591,12 @@ msgid "thieves"
 msgstr "thieves"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough Roche shells"
 msgstr "Não pele suficiente"
 
 #: script/localization.js:47
-msgid "not enough wood"
-msgstr "not enough wood"
+msgid "not enough energy"
+msgstr "not enough energy"
 
 #: script/localization.js:48
 msgid "not enough coal"
@@ -676,7 +676,7 @@ msgid "Outside"
 msgstr "Fora"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of Roche shells"
 msgstr "pedaços de pele"
 
 #: script/outside.js:107
@@ -704,7 +704,7 @@ msgid "A Silent Forest"
 msgstr "Uma Floresta Silenciosa"
 
 #: script/outside.js:169
-msgid "gather wood"
+msgid "gather energy"
 msgstr "recolher madeira"
 
 #: script/outside.js:188
@@ -844,11 +844,11 @@ msgid "cart"
 msgstr "carrinho"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying energy"
 msgstr "construtor diz que ela pode fazer um carrinho para transportar madeira"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more energy from the forest"
 msgstr "o carrinho raquítico vai transportar mais madeira da floresta"
 
 #: script/room.js:44
@@ -1148,11 +1148,11 @@ msgid "A Firelit Room"
 msgstr "Um fogo aceso quarto"
 
 #: script/room.js:642
-msgid "not enough wood to get the fire going"
+msgid "not enough energy to get the fire going"
 msgstr "Não madeira suficiente para iniciar o fogo"
 
 #: script/room.js:655
-msgid "the wood has run out"
+msgid "the energy has run out"
 msgstr "a madeira se esgotou"
 
 #: script/room.js:675
@@ -1168,7 +1168,7 @@ msgid "the wind howls outside"
 msgstr "o vento uiva fora"
 
 #: script/room.js:719
-msgid "the wood is running out"
+msgid "the energy is running out"
 msgstr "a madeira está se esgotando"
 
 #: script/room.js:726
@@ -1379,7 +1379,7 @@ msgstr "Uma&nbsp;Caiu&nbsp;Starship"
 
 #: script/world.js:128
 msgid "A&nbsp;Borehole"
-msgstr "Uma&nbsp;Furo"
+msgstr "Uma&nbsp;Roche shellso"
 
 #: script/world.js:129
 msgid "A&nbsp;Battlefield"
@@ -1692,7 +1692,7 @@ msgstr "o homem diz que ele é grato. diz que não vai vir em torno de mais."
 
 #: script/events/global.js:50
 msgid "shares what he knows about sneaking before he goes."
-msgstr "compartilha o que sabe sobre furtivamente antes que ele vá."
+msgstr "compartilha o que sabe sobre Roche shellstivamente antes que ele vá."
 
 #: script/events/outside.js:6
 msgid "A Ruined Trap"
@@ -1739,7 +1739,7 @@ msgid "go home"
 msgstr "ir para casa"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its Roche shells matted with blood."
 msgstr ""
 "não muito longe da aldeia encontra-se uma grande besta, seu pêlo emaranhado "
 "com sangue."
@@ -2024,7 +2024,7 @@ msgstr "go back inside"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse Roche shellss."
 msgstr ""
 "um feixe de varas está um pouco além do limite, envolto em peles grossas."
 
@@ -2046,7 +2046,7 @@ msgstr "algo está na sala de loja"
 
 #: script/events/room.js:129 script/events/room.js:149
 #: script/events/room.js:169
-msgid "some wood is missing."
+msgid "some energy is missing."
 msgstr "um pouco de madeira está em falta."
 
 #: script/events/room.js:130
@@ -2070,7 +2070,7 @@ msgid "a beggar arrives."
 msgstr "um mendigo chega."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare Roche shellss to keep him warm at night."
 msgstr "pede nenhum peles peças para mantê-lo quente durante a noite."
 
 #: script/events/room.js:200
@@ -2114,7 +2114,7 @@ msgstr "O andarilho misterioso"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "um andarilho chega com um carrinho vazio. diz que se ele sair com a madeira, "
@@ -2133,16 +2133,16 @@ msgid "give 500"
 msgstr "dar 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with energy"
 msgstr "as folhas andarilho, carro carregado com madeira"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with energy."
 msgstr "as andarilho misterioso retorno, carrinho repletas de madeira."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with Roche shellss, she'll "
 "be back with more."
 msgstr ""
 "um andarilho chega com um carrinho vazio. diz que se ela sai com peles, ela "
@@ -2157,11 +2157,11 @@ msgid "turn her away"
 msgstr "mandá-la embora"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with Roche shellss"
 msgstr "as folhas andarilho, carro carregado com peles"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with Roche shellss."
 msgstr "as andarilho misterioso retorno, carrinho repletas de peles."
 
 #: script/events/room.js:420
@@ -3156,7 +3156,7 @@ msgstr ""
 
 #: script/events/setpieces.js:3104
 msgid "A Huge Borehole"
-msgstr "Um enorme Furo"
+msgstr "Um enorme Roche shellso"
 
 #: script/events/setpieces.js:3108
 msgid "a huge hole is cut deep into the earth, evidence of the past harvest."

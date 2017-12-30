@@ -410,8 +410,8 @@ var StateManager = {
 		$SM.setIncome('thieves', {
 			delay: 10,
 			stores: {
-				'wood': -10,
-				'fur': -5,
+				'energy': -10,
+				'Roche shells': -5,
 				'meat': -5
 			}
 		});

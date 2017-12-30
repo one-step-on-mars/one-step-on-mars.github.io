@@ -453,7 +453,7 @@ msgid "saved."
 msgstr "tersimpan."
 
 #: script/localization.js:5
-msgid "wood"
+msgid "energy"
 msgstr "hutan"
 
 #: script/localization.js:6
@@ -470,7 +470,7 @@ msgid "meat"
 msgstr "daging"
 
 #: script/localization.js:9
-msgid "fur"
+msgid "Roche shells"
 msgstr "bulu"
 
 #: script/localization.js:10
@@ -504,7 +504,7 @@ msgstr "batu bara"
 
 #: script/localization.js:17
 msgid "sulphur"
-msgstr "sulfur"
+msgstr "sulRoche shells"
 
 #: script/localization.js:18
 msgid "energy cell"
@@ -564,11 +564,11 @@ msgstr "tambang batu bara"
 
 #: script/localization.js:32 script/outside.js:71
 msgid "sulphur miner"
-msgstr "penambang sulfur"
+msgstr "penambang sulRoche shells"
 
 #: script/localization.js:33
 msgid "sulphur mine"
-msgstr "tambang sulfur"
+msgstr "tambang sulRoche shells"
 
 #: script/localization.js:34 script/outside.js:88
 msgid "armourer"
@@ -613,11 +613,11 @@ msgid "thieves"
 msgstr "pencuri"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough Roche shells"
 msgstr "tidak cukup bulu"
 
 #: script/localization.js:47
-msgid "not enough wood"
+msgid "not enough energy"
 msgstr "tidak cukup kayu"
 
 #: script/localization.js:48
@@ -634,7 +634,7 @@ msgstr "tidak cukup baja"
 
 #: script/localization.js:51
 msgid "not enough sulphur"
-msgstr "tidak cukup sulfur"
+msgstr "tidak cukup sulRoche shells"
 
 #: script/localization.js:52
 msgid "baited trap"
@@ -697,7 +697,7 @@ msgid "Outside"
 msgstr "Luar"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of Roche shells"
 msgstr "potongan bulu"
 
 #: script/outside.js:107
@@ -726,7 +726,7 @@ msgstr "Hutan Sunyi"
 
 # command
 #: script/outside.js:169
-msgid "gather wood"
+msgid "gather energy"
 msgstr "kumpulkan kayu"
 
 #: script/outside.js:188
@@ -872,11 +872,11 @@ msgid "cart"
 msgstr "gerobak"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying energy"
 msgstr "pembangun mengatakan dia dapat membuat gerobak untuk menampung kayu"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more energy from the forest"
 msgstr "gerobak sederhana dapat mengangkut lebih banyak kayu dari hutan"
 
 #: script/room.js:44
@@ -1202,11 +1202,11 @@ msgid "A Firelit Room"
 msgstr "Ruangan Berapi"
 
 #: script/room.js:642
-msgid "not enough wood to get the fire going"
+msgid "not enough energy to get the fire going"
 msgstr "tidak cukup kayu untuk perapian"
 
 #: script/room.js:655
-msgid "the wood has run out"
+msgid "the energy has run out"
 msgstr "kayu telah habis"
 
 #: script/room.js:675
@@ -1224,7 +1224,7 @@ msgid "the wind howls outside"
 msgstr "angin berhembus di luar"
 
 #: script/room.js:719
-msgid "the wood is running out"
+msgid "the energy is running out"
 msgstr "kayu hampir habis"
 
 #: script/room.js:726
@@ -1445,7 +1445,7 @@ msgstr "Tambang&nbsp;Batu&nbsp;Bara"
 # leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:122
 msgid "Sulphur&nbsp;Mine"
-msgstr "Tambang&nbsp;Sulfur"
+msgstr "Tambang&nbsp;SulRoche shells"
 
 # leave &nbsp; as rgb(218, 93, 55)space
 #: script/world.js:123
@@ -1869,7 +1869,7 @@ msgid "go home"
 msgstr "pulang"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its Roche shells matted with blood."
 msgstr ""
 "tidak jauh dari desa terdapat seekor binatang besar, bulunya penuh darah."
 
@@ -2172,7 +2172,7 @@ msgstr "masuk ke dalam"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse Roche shellss."
 msgstr "seikat tongkat berada di ambang pintu, terbungkus bulu-bulu kasar."
 
 #: script/events/room.js:92
@@ -2194,7 +2194,7 @@ msgstr "ada sesuatu di dalam gudang"
 
 #: script/events/room.js:129 script/events/room.js:149
 #: script/events/room.js:169
-msgid "some wood is missing."
+msgid "some energy is missing."
 msgstr "beberapa kayu menghilang."
 
 #: script/events/room.js:130
@@ -2221,7 +2221,7 @@ msgid "a beggar arrives."
 msgstr "seorang pengemis tiba."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare Roche shellss to keep him warm at night."
 msgstr "meminta beberapa bulu untuk menghangatkan dirinya di malam hari."
 
 #: script/events/room.js:200
@@ -2272,7 +2272,7 @@ msgstr "Pengembara Misterius"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "seorang pengembara tiba dengan sebuah gerobak kosong. dia mengatakan jika "
@@ -2293,16 +2293,16 @@ msgid "give 500"
 msgstr "beri 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with energy"
 msgstr "pengembara itu pergi, dengan gerobak berisi kayu"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with energy."
 msgstr "pengembara misterius itu kembali, dengan segerobak penuh kayu."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with Roche shellss, she'll "
 "be back with more."
 msgstr ""
 "seorang pengembara tiba dengan sebuah gerobak kosong. dia mengatakan jika "
@@ -2318,11 +2318,11 @@ msgid "turn her away"
 msgstr "usir"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with Roche shellss"
 msgstr "pengembara itu pergi, dengan gerobak berisi bulu"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with Roche shellss."
 msgstr "pengembara misterius itu kembali, dengan segerobak penuh bulu."
 
 #: script/events/room.js:420
@@ -3396,7 +3396,7 @@ msgstr "selamatkan"
 
 #: script/events/setpieces.js:3156
 msgid "The Sulphur Mine"
-msgstr "Tambang Sulfur"
+msgstr "Tambang SulRoche shells"
 
 #: script/events/setpieces.js:3160
 msgid "the military is already set up at the mine's entrance."
@@ -3446,7 +3446,7 @@ msgstr "tambang telah aman bagi pekerja."
 
 #: script/events/setpieces.js:3289
 msgid "the sulphur mine is clear of dangers"
-msgstr "tambang sulfur telah aman"
+msgstr "tambang sulRoche shells telah aman"
 
 #: script/events/setpieces.js:3305
 msgid "The Coal Mine"

@@ -194,7 +194,7 @@ msgstr "si è imparato a guardare avanti"
 
 #: script/engine.js:62
 msgid "stealthy"
-msgstr "furtivo"
+msgstr "Roche shellstivo"
 
 #: script/engine.js:63
 msgid "better avoid conflict in the wild"
@@ -431,7 +431,7 @@ msgid "saved."
 msgstr "salvato."
 
 #: script/localization.js:5
-msgid "wood"
+msgid "energy"
 msgstr "legname"
 
 #: script/localization.js:6
@@ -447,7 +447,7 @@ msgid "meat"
 msgstr "carne"
 
 #: script/localization.js:9
-msgid "fur"
+msgid "Roche shells"
 msgstr "pellame"
 
 #: script/localization.js:10
@@ -587,11 +587,11 @@ msgid "thieves"
 msgstr "ladri"
 
 #: script/localization.js:46
-msgid "not enough fur"
+msgid "not enough Roche shells"
 msgstr "il pellame non basta"
 
 #: script/localization.js:47
-msgid "not enough wood"
+msgid "not enough energy"
 msgstr "il legname  non basta"
 
 #: script/localization.js:48
@@ -671,7 +671,7 @@ msgid "Outside"
 msgstr "Territorio"
 
 #: script/outside.js:102
-msgid "scraps of fur"
+msgid "scraps of Roche shells"
 msgstr "brandelli di pellame"
 
 #: script/outside.js:107
@@ -699,7 +699,7 @@ msgid "A Silent Forest"
 msgstr "Una Foresta Silenziosa"
 
 #: script/outside.js:169
-msgid "gather wood"
+msgid "gather energy"
 msgstr "raccogli legname"
 
 #: script/outside.js:188
@@ -839,13 +839,13 @@ msgid "cart"
 msgstr "carretto"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying energy"
 msgstr ""
 "la costruttrice dice di poter costruire un carretto per trasportare il "
 "legname"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more energy from the forest"
 msgstr "il carretto traballante trasporterà più legname dalla foresta"
 
 #: script/room.js:44
@@ -1154,11 +1154,11 @@ msgid "A Firelit Room"
 msgstr "Una Stanza Rischiarata"
 
 #: script/room.js:642
-msgid "not enough wood to get the fire going"
+msgid "not enough energy to get the fire going"
 msgstr "non c'è abbastanza legname per tenere acceso il fuoco"
 
 #: script/room.js:655
-msgid "the wood has run out"
+msgid "the energy has run out"
 msgstr "il legname è finito"
 
 #: script/room.js:675
@@ -1176,7 +1176,7 @@ msgid "the wind howls outside"
 msgstr "il vento ulula all'esterno"
 
 #: script/room.js:719
-msgid "the wood is running out"
+msgid "the energy is running out"
 msgstr "il legno sta finendo"
 
 #: script/room.js:726
@@ -1717,7 +1717,7 @@ msgstr ""
 #: script/events/global.js:50
 msgid "shares what he knows about sneaking before he goes."
 msgstr ""
-"condivide ciò che sa riguardo al muoversi furtivamente, prima di andarsene."
+"condivide ciò che sa riguardo al muoversi Roche shellstivamente, prima di andarsene."
 
 #: script/events/outside.js:6
 msgid "A Ruined Trap"
@@ -1764,7 +1764,7 @@ msgid "go home"
 msgstr "torna a casa"
 
 #: script/events/outside.js:50
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its Roche shells matted with blood."
 msgstr ""
 "non lontano dal villaggio si nasconde un animale, il pelo macchiato di sangue"
 
@@ -2038,7 +2038,7 @@ msgstr "torna dentro"
 
 #: script/events/room.js:91
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse Roche shellss."
 msgstr ""
 "un fascio di sterpaglie giace subito oltre la soglia, avvolto in pellame "
 "grezzo"
@@ -2061,7 +2061,7 @@ msgstr "c'è qualcosa nel deposito provviste"
 
 #: script/events/room.js:129 script/events/room.js:149
 #: script/events/room.js:169
-msgid "some wood is missing."
+msgid "some energy is missing."
 msgstr "manca del legname."
 
 #: script/events/room.js:130
@@ -2085,7 +2085,7 @@ msgid "a beggar arrives."
 msgstr "arriva un mendicante."
 
 #: script/events/room.js:198
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare Roche shellss to keep him warm at night."
 msgstr ""
 "chiede se avanzano dei brandelli di pelli per tenerlo caldo durante la notte."
 
@@ -2130,7 +2130,7 @@ msgstr "Raminghi Misteriosi"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "un ramingo arriva con un carretto vuoto. dice che se gli viene dato del "
@@ -2149,16 +2149,16 @@ msgid "give 500"
 msgstr "dagliene 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with energy"
 msgstr "il ramingo parte, il carretto carico di legname"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with energy."
 msgstr "il ramingo misterioso ritorna, il suo carretto trabocca di legname."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with Roche shellss, she'll "
 "be back with more."
 msgstr ""
 "una raminga arriva con un carretto vuoto. dice che se gli viene dato del "
@@ -2173,11 +2173,11 @@ msgid "turn her away"
 msgstr "mandala via"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, cart loaded with Roche shellss"
 msgstr "la raminga parte, il carretto carico di pellame"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, cart piled high with Roche shellss."
 msgstr "la raminga misteriosa ritorna, il suo carretto trabocca di pellame."
 
 #: script/events/room.js:420
