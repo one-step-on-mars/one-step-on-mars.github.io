@@ -785,7 +785,7 @@ msgid "A Large Village"
 msgstr "Desa Besar"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Desa Ramai"
 
 #: script/outside.js:584
@@ -868,15 +868,15 @@ msgid "more traps won't help now"
 msgstr "menambah jebakan tidak berarti lagi"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "gerobak"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "pembangun mengatakan dia dapat membuat gerobak untuk menampung kayu"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "gerobak sederhana dapat mengangkut lebih banyak kayu dari hutan"
 
 #: script/room.js:44
@@ -2272,7 +2272,7 @@ msgstr "Pengembara Misterius"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "seorang pengembara tiba dengan sebuah gerobak kosong. dia mengatakan jika "
@@ -2293,16 +2293,16 @@ msgid "give 500"
 msgstr "beri 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "pengembara itu pergi, dengan gerobak berisi kayu"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "pengembara misterius itu kembali, dengan segerobak penuh kayu."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "seorang pengembara tiba dengan sebuah gerobak kosong. dia mengatakan jika "
@@ -2318,11 +2318,11 @@ msgid "turn her away"
 msgstr "usir"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "pengembara itu pergi, dengan gerobak berisi bulu"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "pengembara misterius itu kembali, dengan segerobak penuh bulu."
 
 #: script/events/room.js:420

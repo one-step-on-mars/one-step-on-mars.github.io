@@ -27,12 +27,12 @@ var Room = {
 				};
 			}
 		},
-		'cart': {
-			name: _('cart'),
+		'focus solar': {
+			name: _('focus solar'),
 			button: null,
 			maximum: 1,
-			availableMsg: _('builder says she can make a cart for carrying energy'),
-			buildMsg: _('the rickety cart will carry more energy from the forest'),
+			availableMsg: _('builder says she can make a focus solar for carrying energy'),
+			buildMsg: _('the rickety focus solar will carry more energy from the forest'),
 			type: 'building',
 			cost: function() {
 				return {

@@ -322,7 +322,7 @@ Events.Room = [
 		scenes: {
 			start: {
 				text: [
-					_('a wanderer arrives with an empty cart. says if he leaves with energy, he\'ll be back with more.'),
+					_('a wanderer arrives with an empty focus solar. says if he leaves with energy, he\'ll be back with more.'),
 					_("builder's not sure he's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
@@ -346,13 +346,13 @@ Events.Room = [
 			},
 			'energy100': {
 				text: [
-					_('the wanderer leaves, cart loaded with energy')
+					_('the wanderer leaves, focus solar loaded with energy')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
 						$SM.add('stores.energy', 300);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with energy.'));
+						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with energy.'));
 					}, 'Room[4].scenes.energy100.action', delay);
 				},
 				onLoad: function() {
@@ -369,13 +369,13 @@ Events.Room = [
 			},
 			'energy500': {
 				text: [
-					_('the wanderer leaves, cart loaded with energy')
+					_('the wanderer leaves, focus solar loaded with energy')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
 						$SM.add('stores.energy', 1500);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with energy.'));
+						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with energy.'));
 					}, 'Room[4].scenes.energy500.action', delay);
 				},
 				onLoad: function() {
@@ -401,7 +401,7 @@ Events.Room = [
 		scenes: {
 			start: {
 				text: [
-					_('a wanderer arrives with an empty cart. says if she leaves with shells, she\'ll be back with more.'),
+					_('a wanderer arrives with an empty focus solar. says if she leaves with shells, she\'ll be back with more.'),
 					_("builder's not sure she's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
@@ -425,13 +425,13 @@ Events.Room = [
 			},
 			'shell100': {
 				text: [
-					_('the wanderer leaves, cart loaded with shells')
+					_('the wanderer leaves, focus solar loaded with shells')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
 						$SM.add('stores.shell', 300);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with shells.'));
+						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with shells.'));
 					}, 'Room[5].scenes.shell100.action', delay);
 				},
 				onLoad: function() {
@@ -448,13 +448,13 @@ Events.Room = [
 			},
 			'shell500': {
 				text: [
-					_('the wanderer leaves, cart loaded with shells')
+					_('the wanderer leaves, focus solar loaded with shells')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
 						$SM.add('stores.shell', 1500);
-						Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with shells.'));
+						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with shells.'));
 					}, 'Room[5].scenes.shell500.action', delay);
 				},
 				onLoad: function() {

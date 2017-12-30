@@ -761,7 +761,7 @@ msgid "A Large Village"
 msgstr "En Stor By"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "En Bullrig By"
 
 #: script/outside.js:584
@@ -841,15 +841,15 @@ msgid "more traps won't help now"
 msgstr "fler fällor är inte till någon nytta"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "kälke"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "byggaren säger att hon kan bygga en vedskälke"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "kälken kan bära mer ved från skogen"
 
 #: script/room.js:44
@@ -2106,7 +2106,7 @@ msgstr "Den Mystiske Vandraren"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "en vandrare anlämder med en tom kälke, säger att om han får ved kommer han "
@@ -2125,16 +2125,16 @@ msgid "give 500"
 msgstr "ge 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "vandraren lämnar, kälken full med ved."
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "den mystiska vandraren kommer tillbaka, kälken full med ved."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "en vandrare anlämder med en tom kälke, säger att om hon får pälsar kommer "
@@ -2149,11 +2149,11 @@ msgid "turn her away"
 msgstr "be henne att gå"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "vandraren lämar, kälken full med pälsar"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "den mystiska vandraren kommer tillbaka, kälken full med pälsar."
 
 #: script/events/room.js:420

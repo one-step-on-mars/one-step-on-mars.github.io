@@ -754,7 +754,7 @@ msgid "A Large Village"
 msgstr "Uma Grande Aldeia"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Uma Aldeia Áspera"
 
 #: script/outside.js:584
@@ -834,15 +834,15 @@ msgid "more traps won't help now"
 msgstr "mais armadilhas não vão ajudar agora"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "carrinho"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "o construtor diz que ela pode fazer um carrinho para transportar madeira"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "o carrinho pequeno vai transportar mais madeira da floresta"
 
 #: script/room.js:44
@@ -2075,7 +2075,7 @@ msgstr "O viajante Misterioso"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be back "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be back "
 "with more."
 msgstr ""
 "um viajante chega com um carrinho vazio. diz que se ele sair com madeira, ele "
@@ -2094,16 +2094,16 @@ msgid "give 500"
 msgstr "dar 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "o viajante sai com o carrinho carregado de madeira"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "o viajante misterioso retorna, com o carrinho cheio de madeira."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll be back "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll be back "
 "with more."
 msgstr ""
 "uma viajante chega com um carrinho vazio. Disse que se ela sair com peles, ela "
@@ -2118,11 +2118,11 @@ msgid "turn her away"
 msgstr "mandá-la embora"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "A viajante deixa um carrinho carregado com peles"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "a viajante misteriosa retorna, com o carrinho repleto de peles."
 
 #: script/events/room.js:420

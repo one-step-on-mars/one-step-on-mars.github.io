@@ -760,7 +760,7 @@ msgid "A Large Village"
 msgstr "大型村落"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "喧嚣小镇"
 
 #: script/outside.js:584
@@ -838,15 +838,15 @@ msgid "more traps won't help now"
 msgstr "再增加陷阱已毫无裨益"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "货车"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "建造者说她能够制造出货车，用来运载木头"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "摇摇晃晃的货车满载从森林运出的木头"
 
 #: script/room.js:44
@@ -2073,7 +2073,7 @@ msgstr "神秘流浪者"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr "一名流浪者推着货车来到村子，声称如果让他带着木头离开，他会带回更多木头"
 
@@ -2090,16 +2090,16 @@ msgid "give 500"
 msgstr "给500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "流浪者带着满载木头的货车离开了"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "神秘的流浪者回来了，货车上木头堆得更高了"
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr "一名流浪者推着货车来到村子，声称如果让她带着毛皮离开，她会带回更多毛皮"
 
@@ -2112,11 +2112,11 @@ msgid "turn her away"
 msgstr "撵走她"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "流浪者带着满载毛皮的货车离开了"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "神秘的流浪者回来了，货车上毛皮堆得更高了"
 
 #: script/events/room.js:420

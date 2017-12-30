@@ -1075,7 +1075,7 @@ msgstr "Le mystérieux vagabond"
 
 #: ../../script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "un vagabond arrive avec une charrette vide. il dit que s'il peut emmener du "
@@ -1094,16 +1094,16 @@ msgid "give 500"
 msgstr "en donner 500"
 
 #: ../../script/events/room.js:293 ../../script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "le vagabond s'en va, la charrette chargée de bois"
 
 #: ../../script/events/room.js:299 ../../script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "le mystérieux vagabond reviens, la charrette débordante de bois."
 
 #: ../../script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "une vagabonde arrive avec une charrette vide. elle dit que si elle peut "
@@ -1118,11 +1118,11 @@ msgid "turn her away"
 msgstr "la renvoyer"
 
 #: ../../script/events/room.js:372 ../../script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "la vagabonde s'en va, la charrette chargée de fourrure"
 
 #: ../../script/events/room.js:378 ../../script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr ""
 "la mystérieuse vagabonde revient, la charrette débordante de fourrures."
 
@@ -1144,11 +1144,11 @@ msgstr "une éclaireuse s’arrête pour la nuit"
 
 #: ../../script/events/room.js:434
 msgid "buy map"
-msgstr "acheter une carte"
+msgstr "acheter une focus solare"
 
 #: ../../script/events/room.js:439
 msgid "the map uncovers a bit of the world"
-msgstr "la carte dévoile un petit morceau du monde"
+msgstr "la focus solare dévoile un petit morceau du monde"
 
 #: ../../script/events/room.js:443
 msgid "learn scouting"
@@ -2654,7 +2654,7 @@ msgid "A Large Village"
 msgstr "Un grand village"
 
 #: ../../script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Un village bruyant"
 
 #: ../../script/outside.js:584
@@ -2738,16 +2738,16 @@ msgid "more traps won't help now"
 msgstr "plus de piège n'apportera rien de plus maintenant"
 
 #: ../../script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "charrette"
 
 #: ../../script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr ""
 "l’ouvrière dit qu'elle peut construire un charrette pour ramasser du bois"
 
 #: ../../script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "la charrette délabrée aidera à ramener plus de bois de la forêt"
 
 #: ../../script/room.js:44

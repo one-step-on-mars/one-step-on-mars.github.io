@@ -754,7 +754,7 @@ msgid "A Large Village"
 msgstr "Granda Vilaĝo"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Raŭka Vilaĝo"
 
 #: script/outside.js:584
@@ -834,15 +834,15 @@ msgid "more traps won't help now"
 msgstr "pli da kaptiloj ne plu helpas"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "ĉaro"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "la konstruisto diras ke ŝi povas krei ĉaron lignoportan"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "la kaduka ĉaro portos pli da ligno el la arbaro"
 
 #: script/room.js:44
@@ -2086,7 +2086,7 @@ msgstr "La Mistera Vaganto"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "alvenas vaganto kun malplena ĉaro. diras, ke se li foriras kun ligno li "
@@ -2105,16 +2105,16 @@ msgid "give 500"
 msgstr "doni 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "la vaganto foriras, ligno en la ĉaro"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "revenas la mistera vaganto. ĉaro portas lignamason."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "alvenas vaganto kun malplena ĉaro. diras, ke se ŝi foriras kun feloj ŝi "
@@ -2129,11 +2129,11 @@ msgid "turn her away"
 msgstr "forsendi ŝin"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "la vaganto foriras, feloj en la ĉaro"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "revenas la mistera vaganto. ĉaro portas multajn felojn."
 
 #: script/events/room.js:420

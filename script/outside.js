@@ -569,7 +569,7 @@ var Outside = {
 		} else if(numHuts <= 14) {
 			title = _("A Large Village");
 		} else {
-			title = _("A Raucous Village");
+			title = _("A Thriving Outpost");
 		}
 		
 		if(Engine.activeModule == this) {
@@ -592,7 +592,7 @@ var Outside = {
 	
 	gatherenergy: function() {
 		Notifications.notify(Outside, _("dry brush and dead branches litter the forest floor"));
-		var gatherAmt = $SM.get('game.buildings["cart"]', true) > 0 ? 50 : 10;
+		var gatherAmt = $SM.get('game.buildings["focus solar"]', true) > 0 ? 50 : 10;
 		$SM.add('stores.energy', gatherAmt);
 	},
 	

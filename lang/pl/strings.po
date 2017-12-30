@@ -765,7 +765,7 @@ msgid "A Large Village"
 msgstr "Duża wieś"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Zaludniona wioska"
 
 #: script/outside.js:584
@@ -845,15 +845,15 @@ msgid "more traps won't help now"
 msgstr "większa ilość pułapek już nie pomoże"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "wózek"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "pracownik twierdzi, że może zbudować wózek do zbierania drewna"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "rozklekotany wózek pozwoli wozić więcej drzew z lasu"
 
 #: script/room.js:44
@@ -2110,7 +2110,7 @@ msgstr "Tajemniczy Wędrowiec"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "wędrowiec przybywa z pustym wózkiem. mówi, że jeśli odejdzie z drewnem, "
@@ -2129,16 +2129,16 @@ msgid "give 500"
 msgstr "daj 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "wędrowiec odchodzi, wózek załadowany drewnem"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "tajemniczy wędrowiec powraca, w wózku piętrzy się drewno"
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "wędrowiec przybywa z pustym wózkiem. mówi, że jeśli odejdzie z futrami, "
@@ -2153,11 +2153,11 @@ msgid "turn her away"
 msgstr "spław ją"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "wędrowiec odchodzi, wózek załadowany futrem"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "tajemniczy wędrowiec powraca, w wózku piętrzy się drewno"
 
 #: script/events/room.js:420

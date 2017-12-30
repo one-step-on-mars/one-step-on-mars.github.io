@@ -1050,7 +1050,7 @@ msgstr "神秘流浪者"
 
 #: ../../script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr "一名流浪者推著貨車來到村子，聲稱如果讓他帶著木頭離開，他會帶回更多木頭"
 
@@ -1067,16 +1067,16 @@ msgid "give 500"
 msgstr "給500"
 
 #: ../../script/events/room.js:293 ../../script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "流浪者帶著滿載木頭的貨車離開了"
 
 #: ../../script/events/room.js:299 ../../script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "神秘的流浪者回來了，貨車上木頭堆得更高了"
 
 #: ../../script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr "一名流浪者推著貨車來到村子，聲稱如果讓她帶著毛皮離開，她會帶回更多毛皮"
 
@@ -1089,11 +1089,11 @@ msgid "turn her away"
 msgstr "攆走她"
 
 #: ../../script/events/room.js:372 ../../script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "流浪者帶著滿載毛皮的貨車離開了"
 
 #: ../../script/events/room.js:378 ../../script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "神秘的流浪者回來了，貨車上毛皮堆得更高了"
 
 #: ../../script/events/room.js:420
@@ -2600,7 +2600,7 @@ msgid "A Large Village"
 msgstr "大型村落"
 
 #: ../../script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "喧囂小鎮"
 
 #: ../../script/outside.js:584
@@ -2678,15 +2678,15 @@ msgid "more traps won't help now"
 msgstr "再增加陷阱已毫無裨益"
 
 #: ../../script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "貨車"
 
 #: ../../script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "建造者說她能夠製造出貨車，用來運載木頭"
 
 #: ../../script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "搖搖晃晃的貨車滿載從森林運出的木頭"
 
 #: ../../script/room.js:44

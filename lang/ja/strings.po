@@ -770,7 +770,7 @@ msgid "A Large Village"
 msgstr "大きな村"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "にぎやかな村"
 
 #: script/outside.js:584
@@ -848,15 +848,15 @@ msgid "more traps won't help now"
 msgstr "これ以上罠を増やしても意味がない"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "荷車"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "建築家は、木材を運ぶ荷車を作れると言っている"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "このガタガタの荷車でも森からもっと木材を運べるだろう"
 
 #: script/room.js:44
@@ -2091,7 +2091,7 @@ msgstr "謎の放浪者"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "放浪者は空の荷車を持ってきた。木材を渡せば、彼はより多くを持って戻って来ると"
@@ -2110,16 +2110,16 @@ msgid "give 500"
 msgstr "500 与える"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "放浪者は荷車に木材を積んで去った"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "謎の放浪者が荷車に木材を高く積み上げて戻ってきた。"
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "放浪者は空の荷車を持ってきた。毛皮を渡せば、彼女はより多くを持って戻って来る"
@@ -2134,11 +2134,11 @@ msgid "turn her away"
 msgstr "追い返す"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "放浪者は荷車に毛皮を積んで去った"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "謎の放浪者が荷車に毛皮を高く積み上げて戻ってきた。"
 
 #: script/events/room.js:420

@@ -756,7 +756,7 @@ msgid "A Large Village"
 msgstr "Một Ngôi Làng Rộng"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Một Ngôi Làng Náo Nhiệt"
 
 #: script/outside.js:584
@@ -835,15 +835,15 @@ msgid "more traps won't help now"
 msgstr "nhiều bẫy hơn không giúp được gì nữa"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "củi gỗ"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "thợ xây nói cô ấy có thể làm một chiếc củi đựng gỗ"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "chiếc củi ọp ẹp từ nay chứa được nhiều gỗ hơn"
 
 #: script/room.js:44
@@ -2098,7 +2098,7 @@ msgstr "Kẻ Lang Thang Bí Ẩn"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "một kẻ lang thang đến, với một chiếc củi gỗ trống hộc, nói rằng cho hắn một "
@@ -2117,16 +2117,16 @@ msgid "give 500"
 msgstr "đưa 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "tên lang thang bỏ đi, củi đầy gỗ"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "tên lang thang quay lại, củi còn đầy gỗ hơn."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "một kẻ lang thang đến, với một chiếc củi gỗ trống hộc, nói rằng cho hắn một "
@@ -2141,11 +2141,11 @@ msgid "turn her away"
 msgstr "đuổi hắn đi"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "tên lang thang bỏ đi, củi đầy da"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "tên lang thang quay lại, củi còn đầy da hơn."
 
 #: script/events/room.js:420

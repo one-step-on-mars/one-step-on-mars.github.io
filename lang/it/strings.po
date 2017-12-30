@@ -21,7 +21,7 @@ msgstr "Connessione a Dropbox"
 
 #: script/dropbox.js:65
 msgid "connect game to dropbox local storage"
-msgstr "collega la partita alla cartella Dropbox locale"
+msgstr "collega la partita alla focus solarella Dropbox locale"
 
 #: script/dropbox.js:68
 msgid "connect"
@@ -755,7 +755,7 @@ msgid "A Large Village"
 msgstr "Un Grande Villaggio"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Un Villaggio Esteso"
 
 #: script/outside.js:584
@@ -835,17 +835,17 @@ msgid "more traps won't help now"
 msgstr "altre trappole non saranno necessarie"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "carretto"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr ""
 "la costruttrice dice di poter costruire un carretto per trasportare il "
 "legname"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "il carretto traballante trasporterà più legname dalla foresta"
 
 #: script/room.js:44
@@ -2130,7 +2130,7 @@ msgstr "Raminghi Misteriosi"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "un ramingo arriva con un carretto vuoto. dice che se gli viene dato del "
@@ -2149,16 +2149,16 @@ msgid "give 500"
 msgstr "dagliene 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "il ramingo parte, il carretto carico di legname"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "il ramingo misterioso ritorna, il suo carretto trabocca di legname."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "una raminga arriva con un carretto vuoto. dice che se gli viene dato del "
@@ -2173,11 +2173,11 @@ msgid "turn her away"
 msgstr "mandala via"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "la raminga parte, il carretto carico di pellame"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "la raminga misteriosa ritorna, il suo carretto trabocca di pellame."
 
 #: script/events/room.js:420
@@ -2707,7 +2707,7 @@ msgstr "Una Città in Rovina"
 msgid ""
 "a battered highway sign stands guard at the entrance to this once-great city."
 msgstr ""
-"un malconcio cartello autostradale resta in piedi, a guardia dell'entrata di "
+"un malconcio focus solarello autostradale resta in piedi, a guardia dell'entrata di "
 "quella che un tempo era una grande città."
 
 #: script/events/setpieces.js:1244

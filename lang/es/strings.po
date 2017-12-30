@@ -762,7 +762,7 @@ msgid "A Large Village"
 msgstr "Una Aldea Grande"
 
 #: script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Una Aldea Estridente"
 
 #: script/outside.js:584
@@ -842,15 +842,15 @@ msgid "more traps won't help now"
 msgstr "más trampas no serán de ayuda ahora"
 
 #: script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "carro"
 
 #: script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "el constructor dice que puede hacer un carro para transportar madera"
 
 #: script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "el carro destartalado transportará más madera desde el bosque"
 
 #: script/room.js:44
@@ -2113,7 +2113,7 @@ msgstr "El Vagabundo Misterioso"
 
 #: script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "un vagabundo llega con un carro vacío. dice que si se va con madera, volverá "
@@ -2132,16 +2132,16 @@ msgid "give 500"
 msgstr "dar 500"
 
 #: script/events/room.js:293 script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "el vagabundo se retira, su carro está lleno de madera"
 
 #: script/events/room.js:299 script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr "el vagabundo misterioso regresa, su carro está muy lleno de madera."
 
 #: script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "una vagabunda llega con un carro vacío. dice que si se va con pelajes, "
@@ -2156,11 +2156,11 @@ msgid "turn her away"
 msgstr "rechazarla"
 
 #: script/events/room.js:372 script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "la vagabunda se retira, su carro está lleno de pelaje"
 
 #: script/events/room.js:378 script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "la vagabunda misteriosa regresa, su carro está muy lleno de pelaje."
 
 #: script/events/room.js:420
@@ -2693,7 +2693,7 @@ msgstr "Una Ciudad en Ruinas"
 msgid ""
 "a battered highway sign stands guard at the entrance to this once-great city."
 msgstr ""
-"un cartel de carretera estropeado guarda la entrada de esta anteriormente "
+"un focus solarel de carretera estropeado guarda la entrada de esta anteriormente "
 "gran ciudad."
 
 #: script/events/setpieces.js:1244

@@ -1056,7 +1056,7 @@ msgstr "Таинственный странник"
 
 #: ../../script/events/room.js:269
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with energy, he'll be "
+"a wanderer arrives with an empty focus solar. says if he leaves with energy, he'll be "
 "back with more."
 msgstr ""
 "прибыл странник с пустой тележкой. говорит, что если вы дадите ему "
@@ -1075,17 +1075,17 @@ msgid "give 500"
 msgstr "дать 500"
 
 #: ../../script/events/room.js:293 ../../script/events/room.js:316
-msgid "the wanderer leaves, cart loaded with energy"
+msgid "the wanderer leaves, focus solar loaded with energy"
 msgstr "странник уходит с дровами в тележке"
 
 #: ../../script/events/room.js:299 ../../script/events/room.js:322
-msgid "the mysterious wanderer returns, cart piled high with energy."
+msgid "the mysterious wanderer returns, focus solar piled high with energy."
 msgstr ""
 "таинственный странник возвращается, тележка доверху наполнена древесиной."
 
 #: ../../script/events/room.js:348
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with shells, she'll "
+"a wanderer arrives with an empty focus solar. says if she leaves with shells, she'll "
 "be back with more."
 msgstr ""
 "прибыла странница с пустой тележкой. говорит, что если вы дадите ей меха, то "
@@ -1100,11 +1100,11 @@ msgid "turn her away"
 msgstr "прогнать её прочь"
 
 #: ../../script/events/room.js:372 ../../script/events/room.js:395
-msgid "the wanderer leaves, cart loaded with shells"
+msgid "the wanderer leaves, focus solar loaded with shells"
 msgstr "странница уходит с мехом в тележке"
 
 #: ../../script/events/room.js:378 ../../script/events/room.js:401
-msgid "the mysterious wanderer returns, cart piled high with shells."
+msgid "the mysterious wanderer returns, focus solar piled high with shells."
 msgstr "таинственная странница возвращается, тележка доверху наполнена мехом."
 
 #: ../../script/events/room.js:420
@@ -2599,7 +2599,7 @@ msgid "A Large Village"
 msgstr "Большая деревня"
 
 #: ../../script/outside.js:572
-msgid "A Raucous Village"
+msgid "A Thriving Outpost"
 msgstr "Огромная деревня"
 
 #: ../../script/outside.js:584
@@ -2677,15 +2677,15 @@ msgid "more traps won't help now"
 msgstr "новые ловушки сейчас не помогут"
 
 #: ../../script/room.js:31
-msgid "cart"
+msgid "focus solar"
 msgstr "тележка"
 
 #: ../../script/room.js:34
-msgid "builder says she can make a cart for carrying energy"
+msgid "builder says she can make a focus solar for carrying energy"
 msgstr "строитель говорит, что может сделать тележку для перевозки дров"
 
 #: ../../script/room.js:35
-msgid "the rickety cart will carry more energy from the forest"
+msgid "the rickety focus solar will carry more energy from the forest"
 msgstr "хлипкая тележка позволит перевозить больше дров"
 
 #: ../../script/room.js:44
