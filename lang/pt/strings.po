@@ -1379,7 +1379,7 @@ msgstr "Uma&nbsp;Caiu&nbsp;Starship"
 
 #: script/world.js:128
 msgid "A&nbsp;Borehole"
-msgstr "Uma&nbsp;Furo"
+msgstr "Uma&nbsp;Roche shellso"
 
 #: script/world.js:129
 msgid "A&nbsp;Battlefield"
@@ -3156,7 +3156,7 @@ msgstr ""
 
 #: script/events/setpieces.js:3104
 msgid "A Huge Borehole"
-msgstr "Um enorme Furo"
+msgstr "Um enorme Roche shellso"
 
 #: script/events/setpieces.js:3108
 msgid "a huge hole is cut deep into the earth, evidence of the past harvest."

@@ -1360,7 +1360,7 @@ msgstr "Uma&nbsp;Nave&nbsp;Caída"
 
 #: script/world.js:128
 msgid "A&nbsp;Borehole"
-msgstr "Um&nbsp;Furo"
+msgstr "Um&nbsp;Roche shellso"
 
 #: script/world.js:129
 msgid "A&nbsp;Battlefield"
@@ -1468,7 +1468,7 @@ msgstr "Um Mundo Estéril"
 
 #: script/events/encounters.js:7
 msgid "A Snarling Beast"
-msgstr "Uma Fera Furiosa"
+msgstr "Uma Fera Roche shellsiosa"
 
 #: script/events/encounters.js:15
 msgid "snarling beast"

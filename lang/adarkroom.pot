@@ -2095,7 +2095,11 @@ msgstr ""
 
 #: script/events/room.js:348
 msgid ""
+<<<<<<< HEAD
 "a wanderer arrives with an empty cart. says if she leaves with shells, "
+=======
+"a wanderer arrives with an empty cart. says if she leaves with Roche shellss, "
+>>>>>>> 2a65b58191152174474ae6b027c4014b6604d76f
 "she'll be back with more."
 msgstr ""
 
