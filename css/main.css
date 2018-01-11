@@ -66,14 +66,14 @@ div#header {
 	padding-bottom: 20px;
 	height: 20px;
 }
-/*
+/*remove bottom menu bar*/
 .menu {
 	position: fixed;
 	right: 10px;
 	bottom: 10px;
 	color: #666;
 	z-index: 10;
-}*/
+}
 
 .menu span {
 	cursor: pointer;

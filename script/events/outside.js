@@ -5,17 +5,17 @@ Events.Outside = [
 	{ /* Ruined traps */
 	title: _('A Ruined Trap'),
 		isAvailable: function() {
-			return Engine.activeModule == Outside && $SM.get('game.buildings["trap"]', true) > 0;
+			return Engine.activeModule == Outside && $SM.get('game.buildings["bug trap"]', true) > 0;
 		},
 		scenes: {
 			'start': {
 				text: [
 					_('some of the traps have been torn apart.'),
-					_('large prints lead away, into the forest.')
+					_('large prints lead away, into the distance.')
 				],
 				onLoad: function() {
-					var numWrecked = Math.floor(Math.random() * $SM.get('game.buildings["trap"]', true)) + 1;
-					$SM.add('game.buildings["trap"]', -numWrecked);
+					var numWrecked = Math.floor(Math.random() * $SM.get('game.buildings["bug trap"]', true)) + 1;
+					$SM.add('game.buildings["bug trap"]', -numWrecked);
 					Outside.updateVillage();
 					Outside.updateTrapButton();
 				},
@@ -35,7 +35,7 @@ Events.Outside = [
 			'nothing': {
 				text: [
 					_('the tracks disappear after just a few minutes.'),
-					_('the forest is silent.')
+					_('the area is silent.')
 				],
 				notification: _('nothing was found'),
 				buttons: {
@@ -47,14 +47,14 @@ Events.Outside = [
 			},
 			'catch': {
 				text: [
-					_('not far from the village lies a large beast, itsshellmatted with blood.'),
+					_('not far from the hub lies a unusually large insect, its shells is damaged and it looks injured.'),
 					_('it puts up little resistance before the knife.')
 				],
-				notification: _('there was a beast. it\'s dead now'),
+				notification: _('there was a giant bug. it\'s dead now'),
 				reward: {
-					shell: 100,
+					shells: 100,
 					meat: 100,
-					teeth: 10
+					spines: 10
 				},
 				buttons: {
 					'end': {
@@ -66,17 +66,17 @@ Events.Outside = [
 		}
 	},
 	{ /* Hut fire */
-		title: _('Fire'),
+		title: _('Cave in'),
 		isAvailable: function() {
-			return Engine.activeModule == Outside && $SM.get('game.buildings["hut"]', true) > 0 && $SM.get('game.population', true) > 50;
+			return Engine.activeModule == Outside && $SM.get('game.buildings["bunker"]', true) > 0 && $SM.get('game.population', true) > 50;
 		},
 		scenes: {
 			'start': {
 				text: [
-					_('a fire rampages through one of the huts, destroying it.'),
-					_('all residents in the hut perished in the fire.')
+					_('cave in ocurs in one of the larva tubs, destroying a bunker.'),
+					_('all residents in the bunker perished or had to go bake into there pods to recover.')
 				],
-				notification: _('a fire has started'),
+				notification: _('a cave in has happened'),
 				blink: true,
 				onLoad: function() {
 					Outside.destroyHuts(1);
@@ -84,7 +84,7 @@ Events.Outside = [
 				buttons: {
 					'mourn': {
 						text: _('mourn'),
-						notification: _('some villagers have died'),
+						notification: _('some of the crew where knoked out so you put them back in the pods to recover'),
 						nextScene: 'end'
 					}
 				}
@@ -99,10 +99,10 @@ Events.Outside = [
 		scenes: {
 			'start': {
 				text: [
-					_('a sickness is spreading through the village.'),
+					_('a sickness is spreading between the astronauts.'),
 					_('medicine is needed immediately.')
 				],
-				notification: _('some villagers are ill'),
+				notification: _('some astonaughts are ill'),
 				blink: true,
 				buttons: {
 					'heal': {
@@ -130,7 +130,7 @@ Events.Outside = [
 			},
 			'death': {
 				text: [
-					_('the sickness spreads through the village.'),
+					_('the sickness is spreading between the astronauts.'),
 					_('the days are spent with burials.'),
 					_('the nights are rent with screams.')
 				],
@@ -157,17 +157,17 @@ Events.Outside = [
 		scenes: {
 			'start': {
 				text: [
-					_('a terrible plague is fast spreading through the village.'),
+					_('a terrible plague is fast spreading between the astronauts.'),
 					_('medicine is needed immediately.')
 				],
-				notification: _('a plague afflicts the village'),
+				notification: _('a plague afflicts the astronauts'),
 				blink: true,
 				buttons: {
 					/* Because there is a serious need for medicine, the price is raised. */
 					'buyMedicine': {
 						text: _('buy medicine'),
 						cost: { 'scales': 70,
-								'teeth': 50 },
+								'spines': 50 },
 						reward: { 'medicine': 1 }
 					},
 					'heal': {
@@ -201,7 +201,7 @@ Events.Outside = [
 			},
 			'death': {
 				text: [
-					_('the plague rips through the village.'),
+					_('the plague rips through the crew.'),
 					_('the nights are rent with screams.'),
 					_('the only hope is a quick death.')
 				],
@@ -220,27 +220,27 @@ Events.Outside = [
 		}
 	},
 
-	{ /* Beast attack */
-		title: _('A Beast Attack'),
+	{ /* insect attack */
+		title: _('The Swarm'),
 		isAvailable: function() {
 			return Engine.activeModule == Outside && $SM.get('game.population', true) > 0;
 		},
 		scenes: {
 			'start': {
 				text: [
-					 _('a pack of snarling beasts pours out of the trees.'),
-					 _('the fight is short and bloody, but the beasts are repelled.'),
-					 _('the villagers retreat to mourn the dead.')
+					 _('a swarm of large insects emerges from the ground.'),
+					 _('the fight is short and bloody, but the bugs are repelled.'),
+					 _('the crew retreat to mourn the dead and put the injured in stasis pods to recover.')
 				],
-				notification: _('wild beasts attack the villagers'),
+				notification: _('a swarm of sand worms attack the tunnels'),
 				onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 10) + 1;
 					Outside.killVillagers(numKilled);
 				},
 				reward: {
-					shell: 100,
+					shells: 100,
 					meat: 100,
-					teeth: 10
+					spines: 10
 				},
 				blink: true,
 				buttons: {
@@ -255,32 +255,32 @@ Events.Outside = [
 	},
 
 	{ /* Soldier attack */
-		title: _('A Military Raid'),
+		title: _('The Insects Raid'),
 		isAvailable: function() {
 			return Engine.activeModule == Outside && $SM.get('game.population', true) > 0 && $SM.get('game.cityCleared');
 		},
 		scenes: {
 			'start': {
 				text: [
-					_('a gunshot rings through the trees.'),
-					_('well armed men charge out of the forest, firing into the crowd.'),
-					_('after a skirmish they are driven away, but not without losses.')
+					_('a tremer draws near.'),
+					_('a large sand worm emerges from the martion soil.'),
+					_('together you manage to drive it away but not without losses.')
 				],
-				notification: _('troops storm the village'),
+				notification: _('a large sand worm emerges'),
 				onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 40) + 1;
 					Outside.killVillagers(numKilled);
 				},
 				reward: {
-					bullets: 10,
-					'cured meat': 50
+					/*bullets: 10,*/
+					'ration packs': 50
 				},
 
 				blink: true,
 				buttons: {
 					'end': {
 						text: _('go home'),
-						notification: _('warfare is bloodthirsty'),
+						notification: _('mars can be a dangorose place'),
 						nextScene: 'end'
 					}
 				}

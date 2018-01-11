@@ -244,7 +244,7 @@ var StateManager = {
 		var version = $SM.get('version');
 		if(typeof version != 'number') version = 1.0;
 		if(version == 1.0) {
-			// v1.1 introduced the Lodge, so get rid of lodgeless hunters
+			// v1.1 introduced the bug tracking, so get rid of bug trackingless hunters
 			$SM.remove('outside.workers.hunter', true);
 			$SM.remove('income.hunter', true);
 			Engine.log('upgraded save to v1.1');
@@ -265,7 +265,7 @@ var StateManager = {
 			$SM.remove('room.buttons');
 			if($SM.get('room')){
 				$SM.set('features.location.room', true);
-				$SM.set('game.builder.level', $SM.get('room.builder'));
+				$SM.set('game.engineer.level', $SM.get('room.engineer'));
 				$SM.remove('room');
 			}
 			if($SM.get('outside')){
@@ -411,7 +411,7 @@ var StateManager = {
 			delay: 10,
 			stores: {
 				'energy': -10,
-				'shell': -5,
+				'shells': -5,
 				'meat': -5
 			}
 		});

@@ -133,13 +133,13 @@
 						.appendTo(optionsList);
 				});
 			}
-
+/* get the app. removed
 			$('<span>')
 				.addClass('appStore menuBtn')
 				.text(_('get the app.'))
 				.click(Engine.getApp)
 				.appendTo(menu);
-
+*/
 			$('<span>')
 				.addClass('lightsOff menuBtn')
 				.text(_('lights off.'))
@@ -157,13 +157,13 @@
 				.text(_('restart.'))
 				.click(Engine.confirmDelete)
 				.appendTo(menu);
-
+/* share. removed
 			$('<span>')
 				.addClass('menuBtn')
 				.text(_('share.'))
 				.click(Engine.share)
 				.appendTo(menu);
-
+*/
 			$('<span>')
 				.addClass('menuBtn')
 				.text(_('save.'))
@@ -179,13 +179,13 @@
 					.click(Engine.Dropbox.startDropbox)
 					.appendTo(menu);
 			}
-
+/*removed github. from bottom bar
 			$('<span>')
 				.addClass('menuBtn')
 				.text(_('github.'))
 				.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
 				.appendTo(menu);
-
+*/
 			// Register keypress handlers
 			$('body').off('keydown').keydown(Engine.keyDown);
 			$('body').off('keyup').keyup(Engine.keyUp);
@@ -208,7 +208,7 @@
 			if(typeof $SM.get('stores.energy') != 'undefined') {
 				Outside.init();
 			}
-			if($SM.get('stores.compass', true) > 0) {
+			if($SM.get('stores.SolarRover', true) > 0) {
 				Path.init();
 			}
 			if($SM.get('features.location.spaceShip')) {

@@ -4,24 +4,24 @@
 var Room = {
 	// times in (minutes * seconds * milliseconds)
 	_FIRE_COOL_DELAY: 5 * 60 * 1000, // time after a stoke before the fire cools
-	_ROOM_WARM_DELAY: 30 * 1000, // time between room temperature updates
-	_BUILDER_STATE_DELAY: 0.5 * 60 * 1000, // time between builder state updates
+	_ROOM_COMFORTABLE_DELAY: 30 * 1000, // time between room temperature updates
+	_engineer_STATE_DELAY: 0.5 * 60 * 1000, // time between engineer state updates
 	_STOKE_COOLDOWN: 10, // cooldown to stoke the fire
 	_NEED_energy_DELAY: 15 * 1000, // from when the stranger shows up, to when you need energy
 	
 	buttons:{},
 	
 	Craftables: {
-		'trap': {
-			name: _('trap'),
+		'bug trap': {
+			name: _('bug trap'),
 			button: null,
 			maximum: 10,
-			availableMsg: _('builder says she can make traps to catch any creatures might still be alive out there'),
+			availableMsg: _('the enginer says she can make traps to catch some of the creatures that are still alive'),
 			buildMsg: _('more traps to catch more creatures'),
 			maxMsg: _("more traps won't help now"),
 			type: 'building',
 			cost: function() {
-				var n = $SM.get('game.buildings["trap"]', true);
+				var n = $SM.get('game.buildings["bug trap"]', true);
 				return {
 					'energy': 10 + (n*10)
 				};
@@ -31,8 +31,8 @@ var Room = {
 			name: _('focus solar'),
 			button: null,
 			maximum: 1,
-			availableMsg: _('builder says she can make a focus solar for carrying energy'),
-			buildMsg: _('the rickety focus solar will carry more energy from the forest'),
+			availableMsg: _('the enginer says she can weld reflective parts of the wreckage around the solar panels so they produce more energy.'),
+			buildMsg: _('the shiny surfaces reflect more light onto the solar panles.'),
 			type: 'building',
 			cost: function() {
 				return {
@@ -40,32 +40,32 @@ var Room = {
 				};
 			}
 		},
-		'hut': {
-			name: _('hut'),
+		'bunker': {
+			name: _('bunker'),
 			button: null,
 			maximum: 20,
-			availableMsg: _("builder says there are more wanderers. says they'll work, too."),
-			buildMsg: _('builder puts up a hut, out in the forest. says word will get around.'),
-			maxMsg: _('no more room for huts.'),
+			availableMsg: _("You find other crew members still in there stasis pods around the crash sight"),
+			buildMsg: _('you and the enginer use the power you saved to seal of part of a near by larva tube to form a bunker'),
+			maxMsg: _('theres no more room left in the lava tubes.'),
 			type: 'building',
 			cost: function() {
-				var n = $SM.get('game.buildings["hut"]', true);
+				var n = $SM.get('game.buildings["bunker"]', true);
 				return {
 					'energy': 100 + (n*50)
 				};
 			}
 		},
-		'lodge': {
-			name: _('lodge'),
+		'bug tracking': {
+			name: _('bug tracking'),
 			button: null,
 			maximum: 1,
-			availableMsg: _('villagers could help hunt, given the means'),
-			buildMsg: _('the hunting lodge stands in the forest, a ways out of town'),
+			availableMsg: _('other crew members could help hunt, given the means'),
+			buildMsg: _('between you work out how to track and hunt down the gient martian bugs'),
 			type: 'building',
 			cost: function() {
 				return {
 					energy: 200,
-					shell: 10,
+					shells: 10,
 					meat: 5
 				};
 			}
@@ -75,35 +75,35 @@ var Room = {
 			button: null,
 			maximum: 1,
 			availableMsg: _("a trading post would make commerce easier"),
-			buildMsg: _("now the nomads have a place to set up shop, they might stick around a while"),
+			buildMsg: _("now we have a place to orginise trade trade with the other landing sights"),
 			type: 'building',
 			cost: function() {
 				return {
 					'energy': 400,
-					'shell': 100
+					'shells': 100
 				};
 			}
 		},
-		'tannery': {
-			name: _('tannery'),
+		'polymerisation equipment': {
+			name: _('polymerisation equipment'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says leather could be useful. says the villagers could make it."),
-			buildMsg: _('tannery goes up quick, on the edge of the village'),
+			availableMsg: _("engineer says bioplastic could be useful. says the villagers could make it."),
+			buildMsg: _('polymerisation equipment goes up quick, on the edge of the village'),
 			type: 'building',
 			cost: function() {
 				return {
 					'energy': 500,
-					'shell': 50
+					'shells': 50
 				};
 			}
 		},
-		'smokehouse': {
-			name: _('smokehouse'),
+		'irradiator': {
+			name: _('irradiator'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("should cure the meat, or it'll spoil. builder says she can fix something up."),
-			buildMsg: _('builder finishes the smokehouse. she looks hungry.'),
+			availableMsg: _("should treat the meat, or it'll spoil. engineer says she can come up with something."),
+			buildMsg: _('engineer finishes the irradiator. she looks hungry.'),
 			type: 'building',
 			cost: function() {
 				return {
@@ -116,29 +116,29 @@ var Room = {
 			name: _('workshop'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says she could make finer things, if she had the tools"),
-			buildMsg: _("workshop's finally ready. builder's excited to get to it"),
+			availableMsg: _("engineer says she could make finer things, if she had the tools"),
+			buildMsg: _("workshop's finally ready. engineer's excited to get to it"),
 			type: 'building',
 			cost: function() {
 				return {
 					'energy': 800,
-					'leather': 100,
+					'bioplastic': 100,
 					'scales': 10
 				};
 			}
 		},
-		'steelworks': {
-			name: _('steelworks'),
+		'alloyworks': {
+			name: _('alloyworks'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says the villagers could make steel, given the tools"),
-			buildMsg: _("a haze falls over the village as the steelworks fires up"),
+			availableMsg: _("engineer says the villagers could make alloy, given the tools"),
+			buildMsg: _("a haze falls over the village as the alloyworks fires up"),
 			type: 'building',
 			cost: function() {
 				return {
 					'energy': 1500,
-					'iron': 100,
-					'coal': 100
+					'scrap metal': 100,
+					'martion_elements': 100
 				};
 			}
 		},
@@ -146,13 +146,13 @@ var Room = {
 			name: _('armoury'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says it'd be useful to have a steady source of bullets"),
+			availableMsg: _("engineer says it'd be useful to have a steady source of bullets"),
 			buildMsg: _("armoury's done, welcoming back the weapons of the past."),
 			type: 'building',
 			cost: function() {
 				return {
 					'energy': 3000,
-					'steel': 100,
+					'alloy': 100,
 					'sulphur': 50
 				};
 			}
@@ -165,19 +165,19 @@ var Room = {
 			cost: function() {
 				return {
 					'energy': 1,
-					'cloth': 1
+					'batterys': 1
 				};
 			}
 		},
-		'waterskin': {
-			name: _('waterskin'),
+		'plasticO2tank': {
+			name: _('plasticO2tank'),
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: _('this waterskin\'ll hold a bit of water, at least'),
+			buildMsg: _('this plasticO2tank\'ll hold a bit of O2, at least'),
 			cost: function() {
 				return {
-					'leather': 50
+					'bioplastic': 50
 				};
 			}
 		},
@@ -186,24 +186,24 @@ var Room = {
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: _('the cask holds enough water for longer expeditions'),
+			buildMsg: _('the cask holds enough O2 for longer expeditions'),
 			cost: function() {
 				return {
-					'leather': 100,
-					'iron': 20
+					'bioplastic': 100,
+					'scrap metal': 20
 				};
 			}
 		},
-		'water tank': {
-			name: _('water tank'),
+		'O2 tank': {
+			name: _('O2 tank'),
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
 			buildMsg: _('never go thirsty again'),
 			cost: function() {
 				return {
-					'iron': 100,
-					'steel': 50
+					'scrap metal': 100,
+					'alloy': 50
 				};
 			}
 		},
@@ -215,7 +215,7 @@ var Room = {
 			cost: function() {
 				return {
 					'energy': 100,
-					'teeth': 5
+					'spines': 5
 				};
 			}
 		},
@@ -227,7 +227,7 @@ var Room = {
 			buildMsg: _('carrying more means longer expeditions to the wilds'),
 			cost: function() {
 				return {
-					'leather': 200
+					'bioplastic': 200
 				};
 			}
 		},
@@ -240,32 +240,32 @@ var Room = {
 			cost: function() {
 				return {
 					'energy': 500,
-					'iron': 100
+					'scrap metal': 100
 				};
 			}
 		},
-		'convoy': {
-			name: _('convoy'),
+		'Land_Ship': {
+			name: _('land_ship'),
 			button: null,
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: _('the convoy can haul mostly everything'),
+			buildMsg: _('the land_ship can haul mostly everything'),
 			cost: function() {
 				return {
 					'energy': 1000,
-					'iron': 200,
-					'steel': 100
+					'scrap metal': 200,
+					'alloy': 100
 				};
 			}
 		},
-		'l armour': {
-			name: _('l armour'),
+		'thick suit': {
+			name: _('thick suit'),
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: _("leather's not strong. better than rags, though."),
+			buildMsg: _("bioplastic's not strong. better than rags, though."),
 			cost: function() {
 				return {
-					'leather': 200,
+					'bioplastic': 200,
 					'scales': 20
 				};
 			}
@@ -274,11 +274,11 @@ var Room = {
 			name: _('i armour'),
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: _("iron's stronger than leather"),
+			buildMsg: _("scrap metal's stronger than bioplastic"),
 			cost: function() {
 				return {
-					'leather': 200,
-					'iron': 100
+					'bioplastic': 200,
+					'scrap metal': 100
 				};
 			}
 		},
@@ -286,37 +286,37 @@ var Room = {
 			name: _('s armour'),
 			type: 'upgrade',
 			maximum: 1,
-			buildMsg: _("steel's stronger than iron"),
+			buildMsg: _("alloy's stronger than scrap metal"),
 			cost: function() {
 				return {
-					'leather': 200,
-					'steel': 100
+					'bioplastic': 200,
+					'alloy': 100
 				};
 			}
 		},
-		'iron sword': {
-			name: _('iron sword'),
+		'scrap metal sword': {
+			name: _('scrap metal sword'),
 			button: null,
 			type: 'weapon',
 			buildMsg: _("sword is sharp. good protection out in the wilds."),
 			cost: function() {
 				return {
 					'energy': 200,
-					'leather': 50,
-					'iron': 20
+					'bioplastic': 50,
+					'scrap metal': 20
 				};
 			}
 		},
-		'steel sword': {
-			name: _('steel sword'),
+		'alloy sword': {
+			name: _('alloy sword'),
 			button: null,
 			type: 'weapon',
-			buildMsg: _("the steel is strong, and the blade true."),
+			buildMsg: _("the alloy is strong, and the blade true."),
 			cost: function() {
 				return {
 					'energy': 500,
-					'leather': 100,
-					'steel': 20
+					'bioplastic': 100,
+					'alloy': 20
 				};
 			}
 		},
@@ -327,7 +327,7 @@ var Room = {
 			cost: function() {
 				return {
 					'energy': 200,
-					'steel': 50,
+					'alloy': 50,
 					'sulphur': 50
 				};
 			}
@@ -338,40 +338,40 @@ var Room = {
 		'scales': {
 			type: 'good',
 			cost: function() {
-				return { shell: 150 };
+				return { shells: 150 };
 			}
 		},
-		'teeth': {
+		'spines': {
 			type: 'good',
 			cost: function() {
-				return { shell: 300 };
+				return { shells: 300 };
 			}
 		},
-		'iron': {
+		'scrap metal': {
 			type: 'good',
 			cost: function() {
 				return {
-					'shell': 150,
+					'shells': 150,
 					'scales': 50
 				};
 			}
 		},
-		'coal': {
+		'martion_elements': {
 			type: 'good',
 			cost: function() {
 				return {
-					'shell': 200,
-					'teeth': 50
+					'shells': 200,
+					'spines': 50
 				};
 			}
 		},
-		'steel': {
+		'alloy': {
 			type: 'good',
 			cost: function() {
 				return {
-					'shell': 300,
+					'shells': 300,
 					'scales': 50,
-					'teeth': 50
+					'spines': 50
 				};
 			}
 		},
@@ -379,7 +379,7 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'scales': 50, 'teeth': 30
+					'scales': 50, 'spines': 30
 				};
 			}
 		},
@@ -396,7 +396,7 @@ var Room = {
 			cost: function() {
 				return {
 					'scales': 10,
-					'teeth': 10
+					'spines': 10
 				};
 			}
 		},
@@ -404,7 +404,7 @@ var Room = {
 			type: 'weapon',
 			cost: function() {
 				return {
-					'teeth': 10
+					'spines': 10
 				};
 			}
 		},
@@ -413,7 +413,7 @@ var Room = {
 			cost: function() {
 				return {
 					'scales': 100,
-					'teeth': 50
+					'spines': 50
 				};
 			}
 		},
@@ -422,28 +422,28 @@ var Room = {
 			cost: function() {
 				return {
 					'scales': 500,
-					'teeth': 250
+					'spines': 250
 				};
 			}
 		},
-		'alien alloy': {
+		'supermaterials': {
 			type: 'good',
 			cost: function() {
 				return {
-					'shell': 1500,
+					'shells': 1500,
 					'scales': 750,
-					'teeth': 300
+					'spines': 300
 				};
 			}
 		},
-		'compass': {
+		'SolarRover': {
 			type: 'special',
 			maximum: 1,
 			cost: function() {
 				return { 
-					shell: 400, 
+					shells: 400, 
 					scales: 20, 
-					teeth: 10 
+					spines: 10 
 				};
 			}
 		}
@@ -462,23 +462,23 @@ var Room = {
 			options
 		);
 		
-		Room.pathDiscovery = Boolean($SM.get('stores["compass"]'));
+		Room.pathDiscovery = Boolean($SM.get('stores["SolarRover"]'));
 
 		if(Engine._debug) {
-			this._ROOM_WARM_DELAY = 5000;
-			this._BUILDER_STATE_DELAY = 5000;
+			this._ROOM_COMFORTABLE_DELAY = 5000;
+			this._engineer_STATE_DELAY = 5000;
 			this._STOKE_COOLDOWN = 0;
 			this._NEED_energy_DELAY = 5000;
 		}
 		
 		if(typeof $SM.get('features.location.room') == 'undefined') {
 			$SM.set('features.location.room', true);
-			$SM.set('game.builder.level', -1);
+			$SM.set('game.engineer.level', -1);
 		}
 		
-		// If this is the first time playing, the fire is dead and it's freezing. 
+		// If this is the first time playing, the air is dead and it's claustrophobic. 
 		// Otherwise grab past save state temp and fire level.
-		$SM.set('game.temperature', $SM.get('game.temperature.value')===undefined?this.TempEnum.Freezing:$SM.get('game.temperature'));
+		$SM.set('game.temperature', $SM.get('game.temperature.value')===undefined?this.TempEnum.Claustrophobic:$SM.get('game.temperature'));
 		$SM.set('game.fire', $SM.get('game.fire.value')===undefined?this.FireEnum.Dead:$SM.get('game.fire'));
 		
 		// Create the room tab
@@ -495,7 +495,7 @@ var Room = {
 		// Create the light button
 		new Button.Button({
 			id: 'lightButton',
-			text: _('light fire'),
+			text: _('start CO2 scrubers'),
 			click: Room.lightFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
@@ -505,7 +505,7 @@ var Room = {
 		// Create the stoke button
 		new Button.Button({
 			id: 'stokeButton',
-			text: _("filter air"),
+			text: _("cleen air filter"),
 			click: Room.stokeFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
@@ -524,26 +524,26 @@ var Room = {
 		Room.updateBuildButtons();
 		
 		Room._fireTimer = Engine.setTimeout(Room.coolFire, Room._FIRE_COOL_DELAY);
-		Room._tempTimer = Engine.setTimeout(Room.adjustTemp, Room._ROOM_WARM_DELAY);
+		Room._tempTimer = Engine.setTimeout(Room.adjustTemp, Room._ROOM_COMFORTABLE_DELAY);
 		
 		/*
-		 * Builder states:
+		 * engineer states:
 		 * 0 - Approaching
 		 * 1 - Collapsed
 		 * 2 - Shivering
 		 * 3 - Sleeping
 		 * 4 - Helping
 		 */
-		if($SM.get('game.builder.level') >= 0 && $SM.get('game.builder.level') < 3) {
-			Room._builderTimer = Engine.setTimeout(Room.updateBuilderState, Room._BUILDER_STATE_DELAY);
+		if($SM.get('game.engineer.level') >= 0 && $SM.get('game.engineer.level') < 3) {
+			Room._engineerTimer = Engine.setTimeout(Room.updateengineerState, Room._engineer_STATE_DELAY);
 		}
-		if($SM.get('game.builder.level') == 1 && $SM.get('stores.energy', true) < 0) {
+		if($SM.get('game.engineer.level') == 1 && $SM.get('stores.energy', true) < 0) {
 			Engine.setTimeout(Room.unlockForest, Room._NEED_energy_DELAY);
 		}
 		Engine.setTimeout($SM.collectIncome, 1000);
 
-		Notifications.notify(Room, _("the room is {0}", Room.TempEnum.fromInt($SM.get('game.temperature.value')).text));
-		Notifications.notify(Room, _("the fire is {0}", Room.FireEnum.fromInt($SM.get('game.fire.value')).text));
+		Notifications.notify(Room, _("the hab is {0}", Room.TempEnum.fromInt($SM.get('game.temperature.value')).text));
+		Notifications.notify(Room, _("the air in the hab is {0}", Room.FireEnum.fromInt($SM.get('game.fire.value')).text));
 	},
 	
 	options: {}, // Nothing for now
@@ -551,18 +551,18 @@ var Room = {
 	onArrival: function(transition_diff) {
 		Room.setTitle();
 		if(Room.changed) {
-			Notifications.notify(Room, _("the fire is {0}", Room.FireEnum.fromInt($SM.get('game.fire.value')).text));
-			Notifications.notify(Room, _("the room is {0}", Room.TempEnum.fromInt($SM.get('game.temperature.value')).text));
+			Notifications.notify(Room, _("the air in the hab is {0}", Room.FireEnum.fromInt($SM.get('game.fire.value')).text));
+			Notifications.notify(Room, _("the hab is {0}", Room.TempEnum.fromInt($SM.get('game.temperature.value')).text));
 			Room.changed = false;
 		}
-		if($SM.get('game.builder.level') == 3) {
-			$SM.add('game.builder.level', 1);
-			$SM.setIncome('builder', {
+		if($SM.get('game.engineer.level') == 3) {
+			$SM.add('game.engineer.level', 1);
+			$SM.setIncome('engineer', {
 				delay: 10,
 				stores: {'energy' : 2 }
 			});
 			Room.updateIncomeView();
-			Notifications.notify(Room, _("the stranger is standing by the fire. she says she can help. says she builds things."));
+			Notifications.notify(Room, _("the enginer wakes up form stasus takeing in the situation"));
 		}
 
 		Engine.moveStoresView(null, transition_diff);
@@ -577,11 +577,11 @@ var Room = {
 			}
 			return null;
 		},
-		Freezing: { value: 0, text: _('freezing') },
-		Cold: { value: 1, text: _('cold') },
-		Mild: { value: 2, text: _('mild') },
-		Warm: { value: 3, text: _('warm') },
-		Hot: { value: 4, text: _('hot') }
+		Claustrophobic: { value: 0, text: _('claustrophobic') },
+		Uncomfortable: { value: 1, text: _('uncomfortable') },
+		Snug: { value: 2, text: _('snug') },
+		Comfortable: { value: 3, text: _('comfortable') },
+		Cushy: { value: 4, text: _('cushy') }
 	},
 	
 	FireEnum: {
@@ -593,15 +593,15 @@ var Room = {
 			}
 			return null;
 		},
-		Dead: { value: 0, text: _('dead') },
-		Smoldering: { value: 1, text: _('smoldering') },
-		Flickering: { value: 2, text: _('flickering') },
-		Burning: { value: 3, text: _('burning') },
-		Roaring: { value: 4, text: _('roaring') }
+		Dead: { value: 0, text: _('hazardous') },
+		Smoldering: { value: 1, text: _('hard to breath') },
+		Flickering: { value: 2, text: _('stuffy') },
+		Burning: { value: 3, text: _('good') },
+		Roaring: { value: 4, text: _('crystal clear') }
 	},
 	
 	setTitle: function() {
-		var title = $SM.get('game.fire.value') < 2 ? _("One small Step On Mars") : _("The Landing Hab");
+		var title = $SM.get('game.fire.value') < 2 ? _("Flight Controls") : _("The Landing Hab");
 		if(Engine.activeModule == this) {
 			document.title = title;
 		}
@@ -669,11 +669,11 @@ var Room = {
 		if(Engine.activeModule != Room) {
 			Room.changed = true;
 		}
-		Notifications.notify(Room, _("the fire is {0}", Room.FireEnum.fromInt($SM.get('game.fire.value')).text), true);
-		if($SM.get('game.fire.value') > 1 && $SM.get('game.builder.level') < 0) {
-			$SM.set('game.builder.level', 0);
-			Notifications.notify(Room, _("the light from the fire spills from the windows, out into the dark"));
-			Engine.setTimeout(Room.updateBuilderState, Room._BUILDER_STATE_DELAY);
+		Notifications.notify(Room, _("the air is {0}", Room.FireEnum.fromInt($SM.get('game.fire.value')).text), true);
+		if($SM.get('game.fire.value') > 1 && $SM.get('game.engineer.level') < 0) {
+			$SM.set('game.engineer.level', 0);
+			Notifications.notify(Room, _("you start to get your bearings looks like you crashed near the base of an extinct volcano"));
+			Engine.setTimeout(Room.updateengineerState, Room._engineer_STATE_DELAY);
 		}	
 		window.clearTimeout(Room._fireTimer);
 		Room._fireTimer = Engine.setTimeout(Room.coolFire, Room._FIRE_COOL_DELAY);
@@ -684,8 +684,8 @@ var Room = {
 	coolFire: function() {
 		var energy = $SM.get('stores.energy');
 		if($SM.get('game.fire.value') <= Room.FireEnum.Flickering.value &&
-			$SM.get('game.builder.level') > 3 && energy > 0) {
-			Notifications.notify(Room, _("builder stokes the fire"), true);
+			$SM.get('game.engineer.level') > 3 && energy > 0) {
+			Notifications.notify(Room, _("engineer runs the CO2 scrubbers"), true);
 			$SM.set('stores.energy', energy - 1);
 			$SM.set('game.fire',Room.FireEnum.fromInt($SM.get('game.fire.value') + 1));
 		}
@@ -700,50 +700,50 @@ var Room = {
 		var old = $SM.get('game.temperature.value');
 		if($SM.get('game.temperature.value') > 0 && $SM.get('game.temperature.value') > $SM.get('game.fire.value')) {
 			$SM.set('game.temperature',Room.TempEnum.fromInt($SM.get('game.temperature.value') - 1));
-			Notifications.notify(Room, _("the room is {0}" , Room.TempEnum.fromInt($SM.get('game.temperature.value')).text), true);
+			Notifications.notify(Room, _("the hab is {0}" , Room.TempEnum.fromInt($SM.get('game.temperature.value')).text), true);
 		}
 		if($SM.get('game.temperature.value') < 4 && $SM.get('game.temperature.value') < $SM.get('game.fire.value')) {
 			$SM.set('game.temperature', Room.TempEnum.fromInt($SM.get('game.temperature.value') + 1));
-			Notifications.notify(Room, _("the room is {0}" , Room.TempEnum.fromInt($SM.get('game.temperature.value')).text), true);
+			Notifications.notify(Room, _("the hab is {0}" , Room.TempEnum.fromInt($SM.get('game.temperature.value')).text), true);
 		}
 		if($SM.get('game.temperature.value') != old) {
 			Room.changed = true;
 		}
-		Room._tempTimer = Engine.setTimeout(Room.adjustTemp, Room._ROOM_WARM_DELAY);
+		Room._tempTimer = Engine.setTimeout(Room.adjustTemp, Room._ROOM_COMFORTABLE_DELAY);
 	},
 	
 	unlockForest: function() {
 		$SM.set('stores.energy', 4);
 		Outside.init();
-		Notifications.notify(Room, _("the wind howls outside"));
-		Notifications.notify(Room, _("the energy is running out"));
+		Notifications.notify(Room, _("dust storms rage outside"));
+		Notifications.notify(Room, _("power is running low"));
 		Engine.event('progress', 'outside');
 	},
 	
-	updateBuilderState: function() {
-		var lBuilder = $SM.get('game.builder.level');
-		if(lBuilder === 0) {
-			Notifications.notify(Room, _("a ragged stranger stumbles through the door and collapses in the corner"));
-			lBuilder = $SM.setget('game.builder.level', 1);
+	updateengineerState: function() {
+		var lengineer = $SM.get('game.engineer.level');
+		if(lengineer === 0) {
+			Notifications.notify(Room, _("you find a stasis pod in the hab and think you recognise one of the ships enginers inside."));
+			lengineer = $SM.setget('game.engineer.level', 1);
 			Engine.setTimeout(Room.unlockForest, Room._NEED_energy_DELAY);
 		} 
-		else if(lBuilder < 3 && $SM.get('game.temperature.value') >= Room.TempEnum.Warm.value) {
+		else if(lengineer < 3 && $SM.get('game.temperature.value') >= Room.TempEnum.Comfortable.value) {
 			var msg = "";
-			switch(lBuilder) {
+			switch(lengineer) {
 			case 1:
-				msg = _("the stranger shivers, and mumbles quietly. her words are unintelligible.");
+				msg = _("you tell the pod to wake the enginer out of her stasis.");
 				break;
 			case 2:
-				msg = _("the stranger in the corner stops shivering. her breathing calms.");
+				msg = _("the pod wakes the enginer out of stasis");
 				break;
 			}
 			Notifications.notify(Room, msg);
-			if(lBuilder < 3) {
-				lBuilder = $SM.setget('game.builder.level', lBuilder + 1);
+			if(lengineer < 3) {
+				lengineer = $SM.setget('game.engineer.level', lengineer + 1);
 			}
 		}
-		if(lBuilder < 3) {
-			Engine.setTimeout(Room.updateBuilderState, Room._BUILDER_STATE_DELAY);
+		if(lengineer < 3) {
+			Engine.setTimeout(Room.updateengineerState, Room._engineer_STATE_DELAY);
 		}
 		Engine.saveGame();
 	},
@@ -880,7 +880,7 @@ var Room = {
 			Outside.updateVillage();
 		}
 
-		if($SM.get('stores.compass') && !Room.pathDiscovery){
+		if($SM.get('stores.SolarRover') && !Room.pathDiscovery){
 			Room.pathDiscovery = true;
 			Path.openPath();
 		}
@@ -951,8 +951,8 @@ var Room = {
 	
 	build: function(buildBtn) {
 		var thing = $(buildBtn).attr('buildThing');
-		if($SM.get('game.temperature.value') <= Room.TempEnum.Cold.value) {
-			Notifications.notify(Room, _("builder just shivers"));
+		if($SM.get('game.temperature.value') <= Room.TempEnum.Uncomfortable.value) {
+			Notifications.notify(Room, _("engineer just shivers"));
 			return false;
 		}
 		var craftable = Room.Craftables[thing];
@@ -1011,7 +1011,7 @@ var Room = {
 		if(Room.buttons[thing]) {
 			return true;
 		}
-		if($SM.get('game.builder.level') < 4) return false;
+		if($SM.get('game.engineer.level') < 4) return false;
 		var craftable = Room.Craftables[thing];
 		if(Room.needsWorkshop(craftable.type) && $SM.get('game.buildings["'+'workshop'+'"]', true) === 0) return false;
 		var cost = craftable.cost();
@@ -1043,7 +1043,7 @@ var Room = {
 		if(Room.buttons[thing]) {
 			return true;
 		} else if($SM.get('game.buildings["trading post"]', true) > 0) {
-			if(thing == 'compass' || typeof $SM.get('stores["'+thing+'"]') != 'undefined') {
+			if(thing == 'SolarRover' || typeof $SM.get('stores["'+thing+'"]') != 'undefined') {
 				// Allow the purchase of stuff once you've seen it
 				return true;
 			}
@@ -1153,11 +1153,11 @@ var Room = {
 		}
 	},
 	
-	compassTooltip: function(direction){
+	SolarRoverTooltip: function(direction){
 		var ttPos = $('div#resources').children().length > 10 ? 'top right' : 'bottom right';
 		var tt = $('<div>').addClass('tooltip ' + ttPos);
-		$('<div>').addClass('row_key').text(_('the compass points '+ direction)).appendTo(tt);
-		tt.appendTo($('#row_compass'));
+		$('<div>').addClass('row_key').text(_('the solarrover points '+ direction)).appendTo(tt);
+		tt.appendTo($('#row_SolarRover'));
 	},
 	
 	handleStateUpdates: function(e){

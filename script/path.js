@@ -5,8 +5,8 @@ var Path = {
 	// Everything not in this list weighs 1
 	Weight: {
 		'bone spear': 2,
-		'iron sword': 3,
-		'steel sword': 5,
+		'scrap metal sword': 3,
+		'alloy sword': 5,
 		'rifle': 5,
 		'bullets': 0.1,
 		'energy cell': 0.2,
@@ -57,7 +57,7 @@ var Path = {
 	openPath: function() {
 		Path.init();
 		Engine.event('progress', 'path');
-		Notifications.notify(Room, _('the compass points ' + World.dir));
+		Notifications.notify(Room, _('the solarrover points ' + World.dir));
 	},
 	
 	getWeight: function(thing) {
@@ -68,7 +68,7 @@ var Path = {
 	},
 	
 	getCapacity: function() {
-		if($SM.get('stores.convoy', true) > 0) {
+		if($SM.get('stores.land_ship', true) > 0) {
 			return Path.DEFAULT_BAG_SPACE + 60;
 		} else if($SM.get('stores.wagon', true) > 0) {
 			return Path.DEFAULT_BAG_SPACE + 30;
@@ -131,11 +131,11 @@ var Path = {
 		// Add the armour row
 		var armour = _("none");
 		if($SM.get('stores["s armour"]', true) > 0)
-			armour = _("steel");
+			armour = _("alloy");
 		else if($SM.get('stores["i armour"]', true) > 0)
-			armour = _("iron");
-		else if($SM.get('stores["l armour"]', true) > 0)
-			armour = _("leather");
+			armour = _("scrap metal");
+		else if($SM.get('stores["thick suit"]', true) > 0)
+			armour = _("bioplastic");
 		var aRow = $('#armourRow');
 		if(aRow.length === 0) {
 			aRow = $('<div>').attr('id', 'armourRow').addClass('outfitRow').prependTo(outfit);
@@ -146,22 +146,22 @@ var Path = {
 			$('.row_val', aRow).text(armour);
 		}
 		
-		// Add the water row
-		var wRow = $('#waterRow');
+		// Add the O2 row
+		var wRow = $('#O2Row');
 		if(wRow.length === 0) {
-			wRow = $('<div>').attr('id', 'waterRow').addClass('outfitRow').insertAfter(aRow);
-			$('<div>').addClass('row_key').text(_('water')).appendTo(wRow);
-			$('<div>').addClass('row_val').text(World.getMaxWater()).appendTo(wRow);
+			wRow = $('<div>').attr('id', 'O2Row').addClass('outfitRow').insertAfter(aRow);
+			$('<div>').addClass('row_key').text(_('O2')).appendTo(wRow);
+			$('<div>').addClass('row_val').text(World.getMaxO2()).appendTo(wRow);
 			$('<div>').addClass('clear').appendTo(wRow);
 		} else {
-			$('.row_val', wRow).text(World.getMaxWater());
+			$('.row_val', wRow).text(World.getMaxO2());
 		}
 		
 		var space = Path.getFreeSpace();
 		var currentBagCapacity = 0;
 		// Add the non-craftables to the craftables
 		var carryable = $.extend({
-			'cured meat': { type: 'tool', desc: 'restores '+ World.MEAT_HEAL + ' hp' },
+			'ration packs': { type: 'tool', desc: 'restores '+ World.MEAT_HEAL + ' hp' },
 			'bullets': { type: 'tool', desc: 'use with rifle' },
 			'grenade': {type: 'weapon' },
 			'bolas': {type: 'weapon' },
@@ -235,7 +235,7 @@ var Path = {
 		// Update bagspace
 		$('#bagspace').text(_('free {0}/{1}', Math.floor(Path.getCapacity() - currentBagCapacity) , Path.getCapacity()));
 
-		if(Path.outfit['cured meat'] > 0) {
+		if(Path.outfit['ration packs'] > 0) {
 			Button.setDisabled($('#embarkButton'), false);
 		} else {
 			Button.setDisabled($('#embarkButton'), true);

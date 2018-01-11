@@ -7,11 +7,11 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					_('a safe place in the wilds.')
+					_('a safe place in this dusty land.')
 				],
-				notification: _('a safe place in the wilds.'),
+				notification: _('a safe place.'),
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -30,15 +30,15 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"swamp": { /* Swamp */
-		title: _('A Murky Swamp'),
+	"strange cave": { /* strange cave */
+		title: _('A strange cave'),
 		scenes: {
 			'start': {
 				text: [
-					_('rotting reeds rise out of the swampy earth.'),
-					_('a lone frog sits in the muck, silently.')
+					_('carved stones rise out of the cave flaw.'),
+					_('a small grey figer fades into view sitting on one of the stones , silently.')
 				],
-				notification: _('a swamp festers in the stagnant air.'),
+				notification: _('carvings in the cave glow faintly in the thin martian air.'),
 				buttons: {
 					'enter': {
 						text: _('enter'),
@@ -52,8 +52,8 @@ Events.Setpieces = {
 			},
 			'cabin': {
 				text: [
-					_('deep in the swamp is a moss-covered cabin.'),
-					_('an old wanderer sits inside, in a seeming trance.')
+					_('deep in the strange cave is a stone cabin.'),
+					_('an old grey man sits inside, in a seeming trance.')
 				],
 				buttons: {
 					'talk': {
@@ -69,10 +69,10 @@ Events.Setpieces = {
 			},
 			'talk': {
 				text: [
-					_('the wanderer takes the charm and nods slowly.'),
-					_('he speaks of once leading the great fleets to fresh worlds.'),
-					_('unfathomable destruction to fuel wanderer hungers.'),
-					_('his time here, now, is his penance.')
+					_('he takes the charm and nods slowly.'),
+					_('he speaks of great fleets being sent off to new worlds.'),
+					_('a great war between his people leaving only an apocalyptic wasteland.'),
+					_('his days now are spent watching over his home world hopeing for his pepole to someday return.')
 				],
 				onLoad: function() {
 					$SM.addPerk('gastronome');
@@ -111,20 +111,20 @@ Events.Setpieces = {
 			
 			'a1': {
 				combat: true,
-				enemy: 'beast',
+				enemy: 'insect',
 				chara: 'R',
 				damage: 1,
 				hit: 0.8,
 				attackDelay: 1,
 				health: 5,
-				notification: _('a startled beast defends its home'),
+				notification: _('a startled insect defends its home'),
 				loot: {
-					'shell': {
+					'shells': {
 						min: 1,
 						max: 10,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -165,7 +165,7 @@ Events.Setpieces = {
 					_('bedrolls, torn and blackened, lay beneath a thin layer of dust.')
 				],
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 1
@@ -175,7 +175,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'leather': {
+					'bioplastic': {
 						min: 1,
 						max: 5,
 						chance: 0.3
@@ -202,12 +202,12 @@ Events.Setpieces = {
 					_("can't tell what left it here.")
 				],
 				loot: {
-					'iron sword': {
+					'scrap metal sword': {
 						min: 1,
 						max: 1,
 						chance: 1
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -256,20 +256,20 @@ Events.Setpieces = {
 			},
 			'b3': {
 				combat: true,
-				enemy: 'beast',
+				enemy: 'insect',
 				chara: 'R',
 				damage: 1,
 				hit: 0.8,
 				attackDelay: 1,
 				health: 5,
-				notification: _('a startled beast defends its home'),
+				notification: _('a startled insect defends its home'),
 				loot: {
-					'shell': {
+					'shells': {
 						min: 1,
 						max: 3,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 2,
 						chance: 0.8
@@ -303,7 +303,7 @@ Events.Setpieces = {
 						max: 3,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 2,
 						chance: 0.8
@@ -324,20 +324,20 @@ Events.Setpieces = {
 			},
 			'c1': {
 				combat: true,
-				enemy: 'beast',
+				enemy: 'insect',
 				chara: 'R',
 				damage: 3,
 				hit: 0.8,
 				attackDelay: 2,
 				health: 10,
-				notification: _('a large beast charges out of the dark'),
+				notification: _('a large insect charges out of the dark'),
 				loot: {
-					'shell': {
+					'shells': {
 						min: 1,
 						max: 3,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 3,
 						chance: 1
@@ -371,7 +371,7 @@ Events.Setpieces = {
 						max: 3,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 3,
 						chance: 1
@@ -403,7 +403,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'shell': {
+					'shells': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -413,12 +413,12 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.5
@@ -437,27 +437,27 @@ Events.Setpieces = {
 					_('a small supply cache is hidden at the back of the cave.')
 				],
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'iron': {
+					'scrap metal': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'steel': {
+					'alloy': {
 						min: 5,
 						max: 10,
 						chance: 0.5
@@ -489,7 +489,7 @@ Events.Setpieces = {
 					_('an old case is wedged behind a rock, covered in a thick layer of dust.')
 				],
 				loot: {
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 1
@@ -566,17 +566,17 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 30,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -618,7 +618,7 @@ Events.Setpieces = {
 					_('a small cache of supplies is tucked inside a rusting locker.')
 				],
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 1
@@ -661,17 +661,17 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 30,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -693,25 +693,25 @@ Events.Setpieces = {
 			},
 			'b3': {
 				combat: true,
-				enemy: 'beast',
+				enemy: 'insect',
 				chara: 'R',
 				damage: 3,
 				hit: 0.8,
 				attackDelay: 1,
 				health: 25,
 				loot: {
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 1
 					},
-					'shell': {
+					'shells': {
 						min: 5,
 						max: 10,
 						chance: 1
 					}
 				},
-				notification: _('a beast stands alone in an overgrown park.'),
+				notification: _('a insect stands alone in an overgrown park.'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -731,7 +731,7 @@ Events.Setpieces = {
 					_("it's been picked over by scavengers, but there's still some things worth taking.")
 				],
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -774,12 +774,12 @@ Events.Setpieces = {
 				attackDelay: 1,
 				health: 10,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 2,
 						max: 4,
 						chance: 0.3
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.9
@@ -813,17 +813,17 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 30,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -845,25 +845,25 @@ Events.Setpieces = {
 			},
 			'c2': {
 				combat: true,
-				enemy: 'beast',
+				enemy: 'insect',
 				chara: 'R',
 				damage: 3,
 				hit: 0.8,
 				attackDelay: 1,
 				health: 25,
 				loot: {
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 1
 					},
-					'shell': {
+					'shells': {
 						min: 5,
 						max: 10,
 						chance: 1
 					}
 				},
-				notification: _('a beast charges out of a ransacked classroom.'),
+				notification: _('a insect charges out of a ransacked classroom.'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -896,25 +896,25 @@ Events.Setpieces = {
 			},
 			'c4': {
 				combat: true,
-				enemy: 'beast',
+				enemy: 'insect',
 				chara: 'R',
 				damage: 4,
 				hit: 0.8,
 				attackDelay: 1,
 				health: 25,
 				loot: {
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 1
 					},
-					'shell': {
+					'shells': {
 						min: 5,
 						max: 10,
 						chance: 1
 					}
 				},
-				notification: _('another beast, draw by the noise, leaps out of a copse of trees.'),
+				notification: _('another insect, draw by the noise, leaps out of a copse of trees.'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -950,7 +950,7 @@ Events.Setpieces = {
 					_("can't read the words.")
 				],
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 1
@@ -978,17 +978,17 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 30,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 1
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 0.5
@@ -1017,17 +1017,17 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 30,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 1
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 0.5
@@ -1056,17 +1056,17 @@ Events.Setpieces = {
 					World.clearDungeon();
 				},
 				loot: {
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 1
 					},
-					'steel': {
+					'alloy': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1099,17 +1099,17 @@ Events.Setpieces = {
 					World.clearDungeon();
 				},
 				loot: {
-					'coal': {
+					'martion_elements': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1125,7 +1125,7 @@ Events.Setpieces = {
 			},
 			'end3': {
 				text: [
-					_("beneath the wanderer's rags, clutched in one of its many hands, a glint of steel."),
+					_("beneath the wanderer's rags, clutched in one of its many hands, a glint of alloy."),
 					_("worth killing for, it seems.")
 				],
 				onLoad: function() {
@@ -1161,12 +1161,12 @@ Events.Setpieces = {
 					World.clearDungeon();
 				},
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'iron': {
+					'scrap metal': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1236,15 +1236,15 @@ Events.Setpieces = {
 		}
 	},
 	"city": { /* City */
-		title: _('A Ruined City'),
+		title: _('A Ruined Undergound City'),
 		scenes: {
 			'start': {
 				text: [
-					_('a battered highway sign stands guard at the entrance to this once-great city.'),
-					_("the towers that haven't crumbled jut from the landscape like the ribcage of some ancient beast."),
+					_('a statu stands guard at the entrance to this once-great undergound city.'),
+					_("the towers that haven't crumbled jut from the landscape like the ribcage of some ancient monster."),
 					_('might be things worth having still inside.')
 				],
-				notification: _("the towers of a decaying city dominate the skyline"),
+				notification: _("the towers of a decaying city dominate the caven"),
 				buttons: {
 					'enter': {
 						text: _('explore'),
@@ -1259,7 +1259,7 @@ Events.Setpieces = {
 			'a1': {
 				text:[
 					_('the streets are empty.'),
-					_('the air is filled with dust, driven relentlessly by the hard winds.')
+					_('depictions of vast long dead monsters can bee seen carved in the rock some nearly 100m high and bugs as large as tanks.')
 				],
 				buttons: {
 					'continue': {
@@ -1274,8 +1274,8 @@ Events.Setpieces = {
 			},
 			'a2': {
 				text:[
-					_('orange traffic cones are set across the street, faded and cracked.'),
-					_('lights flash through the alleys between buildings.')
+					_('strange eggs lay fossilised amongst the rubble.'),
+					_('lights flash through the alleys between buildings. this place may not be as abandoned as you thought.')
 				],
 				buttons: {
 					'continue': {
@@ -1290,8 +1290,8 @@ Events.Setpieces = {
 			},
 			'a3': {
 				text: [
-					_('a large shanty town sprawls across the streets.'),
-					_('faces, darkened by soot and blood, stare out from crooked huts.')
+					_('glowing bugs hang from the towers.'),
+					_('they seem to take no intrest in you.')
 				],
 				buttons: {
 					'continue': {
@@ -1306,7 +1306,7 @@ Events.Setpieces = {
 			},
 			'a4': {
 				text: [
-					_('the shell of an abandoned hospital looms ahead.')
+					_('the remains of an abandoned hospital looms ahead.')
 				],
 				buttons: {
 					'enter': {
@@ -1323,7 +1323,7 @@ Events.Setpieces = {
 			'b1': {
 				text: [
 					_('the old tower seems mostly intact.'),
-					_('the shell of a burned out car blocks the entrance.'),
+					_('the shells of a burned out car blocks the entrance.'),
 					_('most of the windows at ground level are busted anyway.')
 				],
 				buttons: {
@@ -1352,7 +1352,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 5,
 						max: 10,
 						chance: 0.5
@@ -1387,7 +1387,7 @@ Events.Setpieces = {
 				health: 30,
 				ranged: true,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -1417,9 +1417,9 @@ Events.Setpieces = {
 				}
 			},
 			'b4': {
-				notification: _('the soldier steps out from between the buildings, rifle raised.'),
+				notification: _('the swam steps out from between the buildings, rifle raised.'),
 				combat: true,
-				enemy: 'soldier',
+				enemy: 'swam',
 				ranged: true,
 				chara: 'D',
 				damage: 8,
@@ -1427,7 +1427,7 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 50,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -1457,26 +1457,26 @@ Events.Setpieces = {
 				}
 			},
 			'b5': {
-				notification: _('a frail man stands defiantly, blocking the path.'),
+				notification: _('a group of fire bug lava sit defiantly, blocking the path.'),
 				combat: true,
-				enemy: 'frail man',
+				enemy: 'bug lava',
 				chara: 'E',
 				damage: 1,
 				hit: 0.8,
 				attackDelay: 2,
 				health: 10,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.5
 					},
-					'leather': {
+					'bioplastic': {
 						min: 1,
 						max: 1,
 						chance: 0.2
@@ -1502,8 +1502,8 @@ Events.Setpieces = {
 			},
 			'b6': {
 				text: [
-					_('nothing but downcast eyes.'),
-					_('the people here were broken a long time ago.')
+					_('to think this once great place reduced to ruin.'),
+					_('genetically engineered and mutated moss and fungi popping up in paches along the street.')
 				],
 				buttons: {
 					'continue': {
@@ -1533,7 +1533,7 @@ Events.Setpieces = {
 				}
 			},
 			'b8': {
-				notification: _('an old man bursts through a door, wielding a scalpel.'),
+				notification: _('a crazed old man bursts through a door, wielding a scalpel.'),
 				combat: true,
 				enemy: 'old man',
 				chara: 'E',
@@ -1542,12 +1542,12 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 10,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 3,
 						chance: 0.5
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -1572,7 +1572,7 @@ Events.Setpieces = {
 				}
 			},
 			'c1': {
-				notification: _('a thug is waiting on the other side of the wall.'),
+				notification: _('a raider thug is waiting on the other side of the wall.'),
 				combat: true,
 				enemy: 'thug',
 				chara: 'E',
@@ -1581,17 +1581,17 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 30,
 				loot: {
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 0.5
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 3,
 						chance: 0.5
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -1612,9 +1612,9 @@ Events.Setpieces = {
 			},
 			
 			'c2': {
-				notification: _('a snarling beast jumps out from behind a car.'),
+				notification: _('a snarling insect jumps into view.'),
 				combat: true,
-				enemy: 'beast',
+				enemy: 'insect',
 				chara: 'R',
 				damage: 2,
 				hit: 0.8,
@@ -1626,12 +1626,12 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.8
 					},
-					'shell': {
+					'shells': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -1653,7 +1653,7 @@ Events.Setpieces = {
 			
 			'c3': {
 				text: [
-					_('street above the subway platform is blown away.'),
+					_('rocks fall clearing a path.'),
 					_('lets some light down into the dusty haze.'),
 					_('a sound comes from the tunnel, just ahead.')
 				],
@@ -1675,7 +1675,7 @@ Events.Setpieces = {
 					_('looks like a camp of sorts up ahead.'),
                     /// TRANSLATORS : chainlink is a type of metal fence.
 					_('rusted chainlink is pulled across an alleyway.'),
-					_('fires burn in the courtyard beyond.')
+					_('empty ration packs litter the ground.')
 				],
 				buttons: {
 					'enter': {
@@ -1709,7 +1709,7 @@ Events.Setpieces = {
 			'c6': {
 				text: [
 					_('the sound of gunfire carries on the wind.'),
-					_('the street ahead glows with firelight.')
+					_('the street ahead iluminated by the flash.')
 				],
 				buttons: {
 					'enter': {
@@ -1725,9 +1725,9 @@ Events.Setpieces = {
 			
 			'c7': {
 				text: [
-                    /// TRANSLATORS : squatters occupy abandoned dwellings they don't own.
-					_('more squatters are crowding around now.'),
-					_('someone throws a stone.')
+                    /// TRANSLATORS : BigBugs occupy abandoned dwellings they don't own.
+					_('more BigBugs are crowding around now.'),
+					_('one hisses at you.')
 				],
 				buttons: {
 					'enter': {
@@ -1743,11 +1743,11 @@ Events.Setpieces = {
 			
 			'c8': {
 				text: [
-					_('an improvised shop is set up on the sidewalk.'),
-					_('the owner stands by, stoic.')
+					_('a cart is set up on the sidewalk.'),
+					_('the owner says hes found some good supplys from the rubble and offers to trade.')
 				],
 				loot: {
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 0.8
@@ -1762,7 +1762,7 @@ Events.Setpieces = {
 						max: 8,
 						chance: 0.25
 					},
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.01
@@ -1789,11 +1789,11 @@ Events.Setpieces = {
 			
 			'c9': {
 				text: [
-					_('strips of meat hang drying by the side of the street.'),
-					_('the people back away, avoiding eye contact.')
+					_('dead insects hang drying by the side of the street.'),
+					_('a scavangers looks away keeping there distance.')
 				],
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1815,7 +1815,7 @@ Events.Setpieces = {
 			
 			'c10': {
 				text: [
-					_('someone has locked and barricaded the door to this operating theatre.')
+					_('someone has locked and barricaded some large gates blocking the path.')
 				],
 				buttons: {
 					'enter': {
@@ -1830,9 +1830,9 @@ Events.Setpieces = {
 			},
 			
 			'c11': {
-				notification: _('a tribe of elderly squatters is camped out in this ward.'),
+				notification: _('a group of gient but elderly Bugs is camped out in this ward.'),
 				combat: true,
-				enemy: 'squatters',
+				enemy: 'BigBugs',
 				plural: true,
 				chara: 'EEE',
 				damage: 2,
@@ -1840,12 +1840,12 @@ Events.Setpieces = {
 				attackDelay: 0.5,
 				health: 40,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 3,
 						chance: 0.5
 					},
-					'cloth': {
+					'batterys': {
 						min: 3,
 						max: 8,
 						chance: 0.8
@@ -1871,9 +1871,9 @@ Events.Setpieces = {
 			},
 			
 			'c12': {
-				notification: _('a pack of lizards rounds the corner.'),
+				notification: _('a pack of centipedes rounds the corner.'),
 				combat: true,
-				enemy: 'lizards',
+				enemy: 'centipedes',
 				plural: true,
 				chara: 'RRR',
 				damage: 4,
@@ -1886,7 +1886,7 @@ Events.Setpieces = {
 						max: 8,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 2,
 						max: 4,
 						chance: 1
@@ -1913,10 +1913,10 @@ Events.Setpieces = {
 			
 			'c13': {
 				text: [
-					_('strips of meat are hung up to dry in this ward.')
+					_('bugs are hunging this this ward suspended by silk.')
 				],
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 3,
 						max: 10,
 						chance: 1
@@ -1937,9 +1937,9 @@ Events.Setpieces = {
 			},
 						
 			'd1': {
-				notification: _('a large bird nests at the top of the stairs.'),
+				notification: _('a giant mosquito nests at the top of the stairs.'),
 				combat: true,
-				enemy: 'bird',
+				enemy: 'mosquito',
 				chara: 'R',
 				damage: 5,
 				hit: 0.7,
@@ -1977,17 +1977,17 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'steel': {
+					'alloy': {
 						min: 1,
 						max: 10,
 						chance: 0.8
 					},
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.01
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -2008,9 +2008,9 @@ Events.Setpieces = {
 			},
 			
 			'd3': {
-				notification: _('a swarm of rats rushes up the tunnel.'),
+				notification: _('a swarm of cockroaches rushes up the tunnel.'),
 				combat: true,
-				enemy: 'rats',
+				enemy: 'cockroaches',
 				plural: true,
 				chara: 'RRR',
 				damage: 1,
@@ -2018,12 +2018,12 @@ Events.Setpieces = {
 				attackDelay: 0.25,
 				health: 60,
 				loot: {
-					'shell': {
+					'shells': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 5,
 						max: 10,
 						chance: 0.5
@@ -2044,9 +2044,9 @@ Events.Setpieces = {
 			},
 			
 			'd4': {
-				notification: _('a large man attacks, waving a bayonet.'),
+				notification: _('a queen ant attacks, swarmed by warriers.'),
 				combat: true,
-				enemy: 'veteran',
+				enemy: 'queen ant',
 				chara: 'D',
 				damage: 6,
 				hit: 0.8,
@@ -2058,7 +2058,7 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.5
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2079,9 +2079,9 @@ Events.Setpieces = {
 			},
 			
 			'd5': {
-				notification: _('a second soldier opens fire.'),
+				notification: _('a swam decends.'),
 				combat: true,
-				enemy: 'soldier',
+				enemy: 'swam',
 				ranged: true,
 				chara: 'D',
 				damage: 8,
@@ -2089,7 +2089,7 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 50,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2120,7 +2120,7 @@ Events.Setpieces = {
 			},
 			
 			'd6': {
-				notification: _('a masked soldier rounds the corner, gun drawn'),
+				notification: _('a giant stag beetle rounds the corner, pincers drawing'),
 				combat: true,
 				enemy: 'commando',
 				chara: 'D',
@@ -2140,7 +2140,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.8
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2161,9 +2161,9 @@ Events.Setpieces = {
 			},
 			
 			'd7': {
-				notification: _('the crowd surges forward.'),
+				notification: _('they surge forward.'),
 				combat: true,
-				enemy: 'squatters',
+				enemy: 'BigBugs',
 				plural: true,
 				chara: 'EEE',
 				damage: 2,
@@ -2171,12 +2171,12 @@ Events.Setpieces = {
 				attackDelay: 0.5,
 				health: 40,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -2197,21 +2197,21 @@ Events.Setpieces = {
 			},
 			
 			'd8': {
-				notification: _('a youth lashes out with a tree branch.'),
+				notification: _('a giant termite lashes out with sharp pincers.'),
 				combat: true,
-				enemy: 'youth',
+				enemy: 'giant termite',
 				chara: 'E',
 				damage: 2,
 				hit: 0.7,
 				attackDelay: 1,
 				health: 45,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -2232,21 +2232,21 @@ Events.Setpieces = {
 			},
 			
 			'd9': {
-				notification: _('a squatter stands firmly in the doorway of a small hut.'),
+				notification: _('a BigBug stands firmly in the doorway of a small bunker.'),
 				combat: true,
-				enemy: 'squatter',
+				enemy: 'BigBug',
 				chara: 'E',
 				damage: 3,
 				hit: 0.8,
 				attackDelay: 2,
 				health: 20,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -2267,7 +2267,7 @@ Events.Setpieces = {
 			},
 			
 			'd10': {
-				notification: _('behind the door, a deformed figure awakes and attacks.'),
+				notification: _('behind the door, a mutated figure awakes and attacks crased by radiation.'),
 				combat: true,
 				enemy: 'deformed',
 				chara: 'T',
@@ -2276,17 +2276,17 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 40,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 2,
 						max: 2,
 						chance: 1
 					},
-					'steel': {
+					'alloy': {
 						min: 1,
 						max: 3,
 						chance: 0.6
@@ -2334,7 +2334,7 @@ Events.Setpieces = {
 		
 			'end1': {
 				text: [
-					_('bird must have liked shiney things.'),
+					_('mosquito must have liked shiney things.'),
 					_('some good stuff woven into its nest.')
 				],
 				onLoad: function() {
@@ -2352,7 +2352,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.5
@@ -2382,7 +2382,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.8
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -2429,7 +2429,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.3
 					},
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.3
@@ -2446,9 +2446,9 @@ Events.Setpieces = {
 			
 			'end4': {
 				text: [
-					_('the small military outpost is well supplied.'),
-					_('arms and munitions, relics from the war, are neatly arranged on the store-room floor.'),
-					_('just as deadly now as they were then.')
+					_('it is well supplied.'),
+					_('arms and munitions, are neatly arranged on the store-room floor.'),
+					_('just as effective now as ever.')
 				],
 				onLoad: function() {
 					World.clearDungeon();
@@ -2482,8 +2482,8 @@ Events.Setpieces = {
 			
 			'end5': {
 				text: [
-					_('searching the bodies yields a few supplies.'),
-					_('more soldiers will be on their way.'),
+					_('searching yields a few supplies.'),
+					_('more swams will be on their way.'),
 					_('time to move on.')
 				],
 				onLoad: function() {
@@ -2501,7 +2501,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -2523,8 +2523,8 @@ Events.Setpieces = {
 			
 			'end6': {
 				text: [
-					_('the small settlement has clearly been burning a while.'),
-					_('the bodies of the wanderers that lived here are still visible in the flames.'),
+					_('the small settlement has clearly been hear a while.'),
+					_('building half burryed in dust.'),
 					_("still time to rescue a few supplies.")
 				],
 				onLoad: function() {
@@ -2542,7 +2542,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -2559,7 +2559,7 @@ Events.Setpieces = {
 			
 			'end7': {
 				text: [
-					_('the remaining settlers flee from the violence, their belongings forgotten.'),
+					_('it looks like there might be some supplys.'),
 					_("there's not much, but some useful things can still be found.")
 				],
 				onLoad: function() {
@@ -2567,7 +2567,7 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 0.8
@@ -2577,7 +2577,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -2594,7 +2594,7 @@ Events.Setpieces = {
 			
 			'end8': {
 				text: [
-					_('the young settler was carrying a canvas sack.'),
+					_('you spot a canvas sack.'),
 					_("it contains travelling gear, and a few trinkets."),
 					_("there's nothing else here.")
 				],
@@ -2603,7 +2603,7 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 1,
 						chance: 0.8
@@ -2613,7 +2613,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -2630,8 +2630,8 @@ Events.Setpieces = {
 			
 			'end9': {
 				text: [
-					_('inside the hut, a child cries.'),
-					_("a few belongings rest against the walls."),
+					_('inside the bunker theres an optomistic poster of a new green world.'),
+					_("seem in stark contrast to this cramped bunker with just a few abandoned belongings left resting up against the walls."),
 					_("there's nothing else here.")
 				],
 				onLoad: function() {
@@ -2654,7 +2654,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.2
@@ -2690,7 +2690,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.3
 					},
-					'teeth': {
+					'spines': {
 						min: 3,
 						max: 8,
 						chance: 1
@@ -2730,7 +2730,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 2,
 						chance: 0.2
@@ -2779,7 +2779,7 @@ Events.Setpieces = {
 					max: 1,
 					chance: 0.5
 					},
-					'alien alloy': {
+					'supermaterials': {
 					min: 1,
 					max: 2,
 					chance: 0.8
@@ -2804,7 +2804,7 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'steel sword': {
+					'alloy sword': {
 						min: 1,
 						max: 3,
 						chance: 0.5
@@ -2814,17 +2814,17 @@ Events.Setpieces = {
 						max: 2,
 						chance: 0.3
 					},
-					'teeth': {
+					'spines': {
 						min: 2,
 						max: 8,
 						chance: 1
 					},
-					'cloth': {
+					'batterys': {
 					min: 3,
 					max: 6,
 					chance: 0.5
 					},
-					'alien alloy': {
+					'supermaterials': {
 					min: 1,
 					max: 1,
 					chance: 0.1
@@ -2860,17 +2860,17 @@ Events.Setpieces = {
 						max: 12,
 						chance: 1
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 3,
 						chance: 0.5
 					},
-					'steel': {
+					'alloy': {
 						min: 2,
 						max: 3,
 						chance: 0.3
 					},
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.3
@@ -2887,14 +2887,14 @@ Events.Setpieces = {
 			
 			'end15': {
 				text: [
-					_('the old man had a small cache of interesting items.')
+					_('you find a small cache of interesting items.')
 				],
 				onLoad: function() {
 					World.clearDungeon();
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.8
@@ -2904,7 +2904,7 @@ Events.Setpieces = {
 					max: 4,
 					chance: 1
 					},
-					'cured meat': {
+					'ration packs': {
 					min: 3,
 					max: 7,
 					chance: 1
@@ -2914,7 +2914,7 @@ Events.Setpieces = {
 					max: 3,
 					chance: 0.5
 					},
-					'shell': {
+					'shells': {
 					min: 1,
 					max: 5,
 					chance: 0.8
@@ -2931,14 +2931,14 @@ Events.Setpieces = {
 		}
 	},
 	"house": { /* Abandoned House */
-		title: _('An Old House'),
+		title: _('An Old Shelter'),
 		scenes: {
 			'start': {
 				text: [
-					_('an old house remains here, once rgb(218, 93, 55) siding yellowed and peeling.'),
+					_('An Old Shelter remains here, once black to keep warm now siding grayed rusty and peeling paint.'),
 					_('the door hangs open.')
 				],
-				notification: _('the remains of an old house stand as a monument to simpler times'),
+				notification: _('the remains of An Old Shelter stand as a monument to early setalers'),
 				buttons: {
 					'enter': {
 						text: _('go inside'),
@@ -2952,26 +2952,26 @@ Events.Setpieces = {
 			},
 			'supplies': {
 				text: [
-					_('the house is abandoned, but not yet picked over.'),
-					_('still a few drops of water in the old well.')
+					_('the bunker is abandoned, but not yet picked over.'),
+					_('its sealed and theres some breathable air and a pump long sine abandoned in the bunker.')
 				],
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
-					World.setWater(World.getMaxWater());
-					Notifications.notify(null, _('water replenished'));
+					World.setO2(World.getMaxO2());
+					Notifications.notify(null, _('O2 replenished'));
 				},
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 10,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 1,
 						max: 10,
 						chance: 0.2
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 10,
 						chance: 0.5
@@ -2987,8 +2987,8 @@ Events.Setpieces = {
 			},
 			'medicine': {
 				text: [
-					_('the house has been ransacked.'),
-					_('but there is a cache of medicine under the floorboards.')
+					_('the bunker has been ransacked.'),
+					_('but theres still some medicine stashed in a small contaner.')
 				],
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
@@ -3010,28 +3010,28 @@ Events.Setpieces = {
 			},
 			'occupied': {
 				combat: true,
-				enemy: 'squatter',
+				enemy: 'BigBug',
 				chara: 'E',
 				damage: 3,
 				hit: 0.8,
 				attackDelay: 2,
 				health: 10,
-				notification: _('a man charges down the hall, a rusty blade in his hand'),
+				notification: _('a praying mantic like creatur charges at you'),
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 10,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 1,
 						max: 10,
 						chance: 0.2
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 10,
 						chance: 0.5
@@ -3084,7 +3084,7 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.5
 					},
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 1,
 						chance: 0.3
@@ -3100,20 +3100,20 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"borehole": { /* Admiring a huge borehole */
-		title: _('A Huge Borehole'),
+	"InsectDen": { /* Admiring a huge InsectDen */
+		title: _('A Huge InsectDen'),
 		scenes: {
 			'start': {
 				text: [
-					_('a huge hole is cut deep into the earth, evidence of the past harvest.'),
-					_('they took what they came for, and left.'),
-					_('castoff from the mammoth drills can still be found by the edges of the precipice.')
+					_('a huge hole is cut deep into the earth though it looks like the resadence have moved on?'),
+					_('it appears to be quite.'),
+					_('the hole has uncovered some useful and rare matirials below the surface.')
 				],
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				loot: {
-					'alien alloy': {
+					'supermaterials': {
 						min: 1,
 						max: 3,
 						chance: 1
@@ -3139,9 +3139,9 @@ Events.Setpieces = {
 					World.state.ship = true;
 				},
 				text: [
-					_('the familiar curves of a wanderer vessel rise up out of the dust and ash. '),
-					_("lucky that the natives can't work the mechanisms."),
-					_('with a little effort, it might fly again.')
+					_('the familiar curves of a high speak modern earth single stage vestal.'),
+					_("lucky it seems in much better shape than our ship."),
+					_('with a some minor repairs , it might fly again.')
 				],
 				buttons: {
 					'leavel': {
@@ -3152,15 +3152,15 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"sulphurmine": { /* Clearing the Sulphur Mine */
-		title: _('The Sulphur Mine'),
+	"explosiveslab": { /* Clearing the Explosives Lab */
+		title: _('The Explosives Lab'),
 		scenes: {
 			'start': {
 				text: [
-					_("the military is already set up at the mine's entrance."),
-					_('soldiers patrol the perimeter, rifles slung over their shoulders.')
+					_("the lab has been taken over by bugs."),
+					_('swams patrol the perimeter.')
 				],
-				notification: _('a military perimeter is set up around the mine.'),
+				notification: _('the entrance is blocked looks like this will be a fight.'),
 				buttons: {
 					'attack': {
 						text: _('attack'),
@@ -3174,7 +3174,7 @@ Events.Setpieces = {
 			},
 			'a1': {
 				combat: true,
-				enemy: 'soldier',
+				enemy: 'swam',
 				ranged: true,
 				chara: 'D',
 				damage: 8,
@@ -3182,7 +3182,7 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 50,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -3198,7 +3198,7 @@ Events.Setpieces = {
 						chance: 0.2
 					}
 				},
-				notification: _('a soldier, alerted, opens fire.'),
+				notification: _('alerted bugs attack.'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -3214,7 +3214,7 @@ Events.Setpieces = {
 			},
 			'a2': {
 				combat: true,
-				enemy: 'soldier',
+				enemy: 'swam',
 				ranged: true,
 				chara: 'D',
 				damage: 8,
@@ -3222,7 +3222,7 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 50,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
@@ -3238,7 +3238,7 @@ Events.Setpieces = {
 						chance: 0.2
 					}
 				},
-				notification: _('a second soldier joins the fight.'),
+				notification: _('more bugs join the fight.'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -3254,7 +3254,7 @@ Events.Setpieces = {
 			},
 			'a3': {
 				combat: true,
-				enemy: 'veteran',
+				enemy: 'queen ant',
 				chara: 'D',
 				damage: 10,
 				hit: 0.8,
@@ -3266,13 +3266,13 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.5
 					},
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					}
 				},
-				notification: _('a grizzled soldier attacks, waving a bayonet.'),
+				notification: _('a relentless swam attacks.'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -3283,13 +3283,13 @@ Events.Setpieces = {
 			},
 			'cleared': {
 				text: [
-					_('the military presence has been cleared.'),
-					_('the mine is now safe for workers.')
+					_('the bugs have been cleared.'),
+					_('the lab is now safe for the crew.')
 				],
-				notification: _('the sulphur mine is clear of dangers'),
+				notification: _('the Explosives Lab is clear of dangers'),
 				onLoad: function() {
 					World.drawRoad();
-					World.state.sulphurmine = true;
+					World.state.explosiveslab = true;
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				buttons: {
@@ -3301,15 +3301,15 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"coalmine": { /* Clearing the Coal Mine */
-		title: _('The Coal Mine'),
+	"centrifuge_separation_lab": { /* Clearing the centrifuge */
+		title: _('The centrifuge'),
 		scenes: {
 			'start': {
 				text: [
-					_('camp fires burn by the entrance to the mine.'),
-					_('men mill about, weapons at the ready.')
+					_('lights fliker in the lab.'),
+					_('a group of androids stands guard, weapons at the ready.')
 				],
-				notification: _('this old mine is not abandoned'),
+				notification: _('this lab is not abandoned'),
 				buttons: {
 					'attack': {
 						text: _('attack'),
@@ -3330,18 +3330,18 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 10,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					}
 				},
-				notification: _('a man joins the fight'),
+				notification: _('an angry scientist joins the fight'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -3364,18 +3364,18 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 10,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					},
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					}
 				},
-				notification: _('a man joins the fight'),
+				notification: _('an angry scientist joins the fight'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -3398,23 +3398,23 @@ Events.Setpieces = {
 				attackDelay: 2,
 				health: 20,
 				loot: {
-					'cured meat': {
+					'ration packs': {
 						min: 5,
 						max: 10,
 						chance: 1
 					},
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'iron': {
+					'scrap metal': {
 						min: 1,
 						max: 5,
 						chance: 0.8
 					}
 				},
-				notification: _('only the chief remains.'),
+				notification: _('the toughest android remains.'),
 				buttons: {
 					'continue': {
 						text: _('continue'),
@@ -3425,13 +3425,13 @@ Events.Setpieces = {
 			},
 			'cleared': {
 				text: [
-					_('the camp is still, save for the crackling of the fires.'),
-					_('the mine is now safe for workers.')
+					_('the lab is still, save and centrafuge working.'),
+					_('the lab is now safe for your crew.')
 				],
-				notification: _('the coal mine is clear of dangers'),
+				notification: _('the centrifuge lab is clear of dangers'),
 				onLoad: function() {
 					World.drawRoad();
-					World.state.coalmine = true;
+					World.state.centrifuge_separation_lab = true;
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				buttons: {
@@ -3443,16 +3443,16 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"ironmine": { /* Clearing the Iron Mine */
-		title: _('The Iron Mine'),
+	"scrapmetal_mine": { /* Clearing the metal detectors */
+		title: _('The metal detectors'),
 		scenes: {
 			'start': {
 				text: [
-					_('an old iron mine sits here, tools abandoned and left to rust.'),
-					_('bleached bones are strewn about the entrance. many, deeply scored with jagged grooves.'),
-					_('feral howls echo out of the darkness.')
+					_('parts of some old metal detectors sit here, abandoned and left to rust. looks like they where looking for something.'),
+					_('empty suits are strewn about the entrance. many, torn to shreds with jagged grooves.'),
+					_('ominose screeches can be heard in the distrance.')
 				],
-				notification: _('the path leads to an abandoned mine'),
+				notification: _('the path leads to a small cave with some more parts for the metal detectors'),
 				buttons: {
 					'enter': {
 						text: _('go inside'),
@@ -3467,14 +3467,14 @@ Events.Setpieces = {
 			},
 			'enter': {
 				combat: true,
-				enemy: 'beastly matriarch',
+				enemy: 'insectly matriarch',
 				chara: 'T',
 				damage: 4,
 				hit: 0.8,
 				attackDelay: 2,
 				health: 10,
 				loot: {
-					'teeth': {
+					'spines': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -3484,13 +3484,13 @@ Events.Setpieces = {
 						max: 10,
 						chance: 0.8
 					},
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.5
 					}
 				},
-				notification: _('a large creature lunges, muscles rippling in the torchlight'),
+				notification: _('a large sandworm lunges, muscles rippling in the torchlight'),
 				buttons: {
 					'leave': {
 						text: _('leave'),
@@ -3501,13 +3501,13 @@ Events.Setpieces = {
 			},
 			'cleared': {
 				text: [
-					_('the beast is dead.'),
-					_('the mine is now safe for workers.')
+					_('the creature is dead.'),
+					_('the area is now safe for your crew to scower for scrap metal.')
 				],
-				notification: _('the iron mine is clear of dangers'),
+				notification: _('you can now repair and use the metal detectors to look for scrap metal.'),
 				onLoad: function() {
 					World.drawRoad();
-					World.state.ironmine = true;
+					World.state.scrapmetal_mine = true;
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				buttons: {
@@ -3521,12 +3521,12 @@ Events.Setpieces = {
 	},
 	
 	"cache": { /* Cache - contains some of supplies from previous game */
-		title: _('A Destroyed Village'),
+		title: _('A Destroyed settlement'),
 		scenes: {
 			'start': {
 				text: [
-					_('a destroyed village lies in the dust.'),
-					_('charred bodies litter the ground.')
+					_('a destroyed settlement lies in the dust.'),
+					_('bodies litter the ground.')
 				],
                 /// TRANSLATORS : tang = strong metallic smell, wanderer afterburner = ship's engines
 				notification: _('the metallic tang of wanderer afterburner hangs in the air.'),
@@ -3543,7 +3543,7 @@ Events.Setpieces = {
 			},
 			'underground': {
 				text: [
-					_('a shack stands at the center of the village.'),
+					_('a bio dome stands at the center of the settlement.'),
 					_('there are still supplies inside.')
 				],
 				buttons: {

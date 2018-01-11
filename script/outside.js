@@ -11,8 +11,8 @@ var Outside = {
 	_HUT_ROOM: 4,
 	
 	_INCOME: {
-		'gatherer': {
-			name: _('gatherer'),
+		'PowerProduction': {
+			name: _('PowerProduction'),
 			delay: 10,
 			stores: {
 				'energy': 1
@@ -22,7 +22,7 @@ var Outside = {
 			name: _('hunter'),
 			delay: 10,
 			stores: {
-				'shell': 0.5,
+				'shells': 0.5,
 				'meat': 0.5
 			}
 		},
@@ -34,61 +34,61 @@ var Outside = {
 				'bait': 1
 			}
 		},
-		'tanner': {
-			name: _('tanner'),
+		'chemist': {
+			name: _('chemist'),
 			delay: 10,
 			stores: {
-				'shell': -5,
-				'leather': 1
+				'shells': -5,
+				'bioplastic': 1
 			}
 		},
-		'charcutier': {
-			name: _('charcutier'),
+		'food_irradiator': {
+			name: _('food_irradiator'),
 			delay: 10,
 			stores: {
 				'meat': -5,
 				'energy': -5,
-				'cured meat': 1
+				'ration packs': 1
 			}
 		},
-		'iron miner': {
-			name: _('iron miner'),
+		'metal detectorsr': {
+			name: _('metal detectorsr'),
 			delay: 10,
 			stores: {
-				'cured meat': -1,
-				'iron': 1
+				'ration packs': -1,
+				'scrap metal': 1
 			}
 		},
-		'coal miner': {
-			name: _('coal miner'),
+		'centrifuger': {
+			name: _('centrifuger'),
 			delay: 10,
 			stores: {
-				'cured meat': -1,
-				'coal': 1
+				'ration packs': -1,
+				'martion_elements': 1
 			}
 		},
 		'sulphur miner': {
 			name: _('sulphur miner'),
 			delay: 10,
 			stores: {
-				'cured meat': -1,
+				'ration packs': -1,
 				'sulphur': 1
 			}
 		},
-		'steelworker': {
-			name: _('steelworker'),
+		'alloyworker': {
+			name: _('alloyworker'),
 			delay: 10,
 			stores: {
-				'iron': -1,
-				'coal': -1,
-				'steel': 1
+				'scrap metal': -1,
+				'martion_elements': -1,
+				'alloy': 1
 			}
 		},
 		'armourer': {
 			name: _('armourer'),
 			delay: 10,
 			stores: {
-				'steel': -1,
+				'alloy': -1,
 				'sulphur': -1,
 				'bullets': 1
 			}
@@ -98,8 +98,8 @@ var Outside = {
 	TrapDrops: [
 		{
 			rollUnder: 0.5,
-			name: 'shell',
-			message: _('scraps of shell')
+			name: 'shells',
+			message: _('scraps of shells')
 		},
 		{
 			rollUnder: 0.75,
@@ -113,13 +113,13 @@ var Outside = {
 		},
 		{
 			rollUnder: 0.93,
-			name: 'teeth',
-			message: _('scattered teeth')
+			name: 'spines',
+			message: _('scattered spines')
 		},
 		{
 			rollUnder: 0.995,
-			name: 'cloth',
-			message: _('tattered cloth')
+			name: 'batterys',
+			message: _('assorted batterys')
 		},
 		{
 			rollUnder: 1.0,
@@ -166,7 +166,7 @@ var Outside = {
 		// Create the gather button
 		new Button.Button({
 			id: 'gatherButton',
-			text: _("Clean solar panels"),
+			text: _("Clean habs solar panels"),
 			click: Outside.gatherenergy,
 			cooldown: Outside._GATHER_DELAY,
 			width: '80px'
@@ -176,7 +176,7 @@ var Outside = {
 	},
 	
 	getMaxPopulation: function() {
-		return $SM.get('game.buildings["hut"]', true) * Outside._HUT_ROOM;
+		return $SM.get('game.buildings["bunker"]', true) * Outside._HUT_ROOM;
 	},
 	
 	increasePopulation: function() {
@@ -185,15 +185,15 @@ var Outside = {
 			var num = Math.floor(Math.random()*(space/2) + space/2);
 			if(num === 0) num = 1;
 			if(num == 1) {
-				Notifications.notify(null, _('a stranger arrives in the night'));
+				Notifications.notify(null, _('another astronaught wakes from there stasis pod'));
 			} else if(num < 5) {
-				Notifications.notify(null, _('a weathered family takes up in one of the huts.'));
+				Notifications.notify(null, _('a travaler from another landing sight takes refuge in one of the bunkers.'));
 			} else if(num < 10) {
-				Notifications.notify(null, _('a small group arrives, all dust and bones.'));
+				Notifications.notify(null, _('a small group of surviers arive from another crash sight takeing refuge in one of the bunkers.'));
 			} else if(num < 30) {
-				Notifications.notify(null, _('a convoy lurches in, equal parts worry and hope.'));
+				Notifications.notify(null, _('a mission from earth decides to land near the hab to join you after hearing of your success on the red planet.'));
 			} else {
-				Notifications.notify(null, _("the town's booming. word does get around."));
+				Notifications.notify(null, _("your settlement is booming."));
 			}
 			Engine.log('population increased by ' + num);
 			$SM.add('game.population', num);
@@ -206,7 +206,7 @@ var Outside = {
 		if($SM.get('game.population') < 0) {
 			$SM.set('game.population', 0);
 		}
-		var remaining = Outside.getNumGatherers();
+		var remaining = Outside.getNumPowerProductions();
 		if(remaining < 0) {
 			var gap = -remaining;
 			for(var k in $SM.get('game.workers')) {
@@ -230,7 +230,7 @@ var Outside = {
 			var full = Math.floor(rate);
 			// by default this is used to destroy full or half-full huts
 			// pass allowEmpty to include empty huts in the armageddon
-			var huts = (allowEmpty) ? $SM.get('game.buildings["hut"]', true) : Math.ceil(rate);
+			var huts = (allowEmpty) ? $SM.get('game.buildings["bunker"]', true) : Math.ceil(rate);
 			if(!huts) {
 				break;
 			}
@@ -242,7 +242,7 @@ var Outside = {
 			} else if(target == full + 1){
 				inhabitants = population % Outside._HUT_ROOM;
 			}
-			$SM.set('game.buildings["hut"]', ($SM.get('game.buildings["hut"]') - 1));
+			$SM.set('game.buildings["bunker"]', ($SM.get('game.buildings["bunker"]') - 1));
 			if(inhabitants){
 				Outside.killVillagers(inhabitants);
 				dead += inhabitants;
@@ -271,8 +271,8 @@ var Outside = {
 			workers = $('<div>').attr('id', 'workers').css('opacity', 0);
 		}
 		
-		var numGatherers = $SM.get('game.population');
-		var gatherer = $('div#workers_row_gatherer', workers);
+		var numPowerProductions = $SM.get('game.population');
+		var PowerProduction = $('div#workers_row_PowerProduction', workers);
 		
 		for(var k in $SM.get('game.workers')) {
 			var lk = _(k);
@@ -285,16 +285,16 @@ var Outside = {
 				workers.children().each(function(i) {
 					var child = $(this);
 					var cName = child.children('.row_key').text();
-					if(cName != 'gatherer') {
+					if(cName != 'PowerProduction') {
 						if(cName < lk) {
 							curPrev = child.attr('id');
 						}
 					}
 				});
-				if(curPrev == null && gatherer.length === 0) {
+				if(curPrev == null && PowerProduction.length === 0) {
 					row.prependTo(workers);
 				} else if(curPrev == null) {
-					row.insertAfter(gatherer);
+					row.insertAfter(PowerProduction);
 				} else {
 					row.insertAfter(workers.find('#'+ curPrev));
 				}
@@ -302,7 +302,7 @@ var Outside = {
 			} else {
 				$('div#' + row.attr('id') + ' > div.row_val > span', workers).text(workerCount);
 			}
-			numGatherers -= workerCount;
+			numPowerProductions -= workerCount;
 			if(workerCount === 0) {
 				$('.dnBtn', row).addClass('disabled');
 				$('.dnManyBtn', row).addClass('disabled');
@@ -312,14 +312,14 @@ var Outside = {
 			}
 		}
 		
-		if(gatherer.length === 0) {
-			gatherer = Outside.makeWorkerRow('gatherer', numGatherers);
-			gatherer.prependTo(workers);
+		if(PowerProduction.length === 0) {
+			PowerProduction = Outside.makeWorkerRow('PowerProduction', numPowerProductions);
+			PowerProduction.prependTo(workers);
 		} else {
-			$('div#workers_row_gatherer > div.row_val > span', workers).text(numGatherers);
+			$('div#workers_row_PowerProduction > div.row_val > span', workers).text(numPowerProductions);
 		}
 		
-		if(numGatherers === 0) {
+		if(numPowerProductions === 0) {
 			$('.upBtn', '#workers').addClass('disabled');
 			$('.upManyBtn', '#workers').addClass('disabled');
 		} else {
@@ -333,7 +333,7 @@ var Outside = {
 		}
 	},
 	
-	getNumGatherers: function() {
+	getNumPowerProductions: function() {
 		var num = $SM.get('game.population'); 
 		for(var k in $SM.get('game.workers')) {
 			num -= $SM.get('game.workers["'+k+'"]');
@@ -353,7 +353,7 @@ var Outside = {
 		
 		$('<span>').text(num).appendTo(val);
 		
-		if(key != 'gatherer') {
+		if(key != 'PowerProduction') {
 			$('<div>').addClass('upBtn').appendTo(val).click([1], Outside.increaseWorker);
 			$('<div>').addClass('dnBtn').appendTo(val).click([1], Outside.decreaseWorker);
 			$('<div>').addClass('upManyBtn').appendTo(val).click([10], Outside.increaseWorker);
@@ -376,8 +376,8 @@ var Outside = {
 	
 	increaseWorker: function(btn) {
 		var worker = $(this).closest('.workerRow').attr('key');
-		if(Outside.getNumGatherers() > 0) {
-			var increaseAmt = Math.min(Outside.getNumGatherers(), btn.data);
+		if(Outside.getNumPowerProductions() > 0) {
+			var increaseAmt = Math.min(Outside.getNumPowerProductions(), btn.data);
 			Engine.log('increasing ' + worker + ' by ' + increaseAmt);
 			$SM.add('game.workers["'+worker+'"]', increaseAmt);
 		}
@@ -434,13 +434,13 @@ var Outside = {
 		}
 		
 		for(var k in $SM.get('game.buildings')) {
-			if(k == 'trap') {
+			if(k == 'bug trap') {
 				var numTraps = $SM.get('game.buildings["'+k+'"]');
 				var numBait = $SM.get('stores.bait', true);
 				var traps = numTraps - numBait;
 				traps = traps < 0 ? 0 : traps;
 				Outside.updateVillageRow(k, traps, village);
-				Outside.updateVillageRow('baited trap', numBait > numTraps ? numTraps : numBait, village);
+				//Outside.updateVillageRow('baited bug trap', numBait > numTraps ? numTraps : numBait, village);
 			} else {
 				if(Outside.checkWorker(k)) {
 					Outside.updateWorkersView();
@@ -452,9 +452,9 @@ var Outside = {
 		population.text(_('pop ') + $SM.get('game.population') + '/' + this.getMaxPopulation());
 		
 		var hasPeeps;
-		if($SM.get('game.buildings["hut"]', true) === 0) {
+		if($SM.get('game.buildings["bunker"]', true) === 0) {
 			hasPeeps = false;
-			village.attr('data-legend', _('forest'));
+			village.attr('data-legend', _('your settlement'));
 		} else {
 			hasPeeps = true;
 			village.attr('data-legend', _('village'));
@@ -478,13 +478,13 @@ var Outside = {
 	
 	checkWorker: function(name) {
 		var jobMap = {
-			'lodge': ['hunter', 'trapper'],
-			'tannery': ['tanner'],
-			'smokehouse': ['charcutier'],
-			'iron mine': ['iron miner'],
-			'coal mine': ['coal miner'],
+			'bug tracking': ['hunter', 'trapper'],
+			'polymerisation equipment': ['chemist'],
+			'irradiator': ['food_irradiator'],
+			'metal detectors': ['metal detectorsr'],
+			'centrifuge': ['centrifuger'],
 			'sulphur mine': ['sulphur miner'],
-			'steelworks': ['steelworker'],
+			'alloyworks': ['alloyworker'],
 			'armoury' : ['armourer']
 		};
 		
@@ -507,7 +507,7 @@ var Outside = {
 	updateVillageIncome: function() {		
 		for(var worker in Outside._INCOME) {
 			var income = Outside._INCOME[worker];
-			var num = worker == 'gatherer' ? Outside.getNumGatherers() : $SM.get('game.workers["'+worker+'"]');
+			var num = worker == 'PowerProduction' ? Outside.getNumPowerProductions() : $SM.get('game.workers["'+worker+'"]');
 			if(typeof num == 'number') {
 				var stores = {};
 				if(num < 0) num = 0;
@@ -536,7 +536,7 @@ var Outside = {
 	
 	updateTrapButton: function() {
 		var btn = $('div#trapsButton');
-		if($SM.get('game.buildings["trap"]', true) > 0) {
+		if($SM.get('game.buildings["bug trap"]', true) > 0) {
 			if(btn.length === 0) {
 				new Button.Button({
 					id: 'trapsButton',
@@ -556,18 +556,18 @@ var Outside = {
 	},
 	
 	setTitle: function() {
-		var numHuts = $SM.get('game.buildings["hut"]', true);
+		var numHuts = $SM.get('game.buildings["bunker"]', true);
 		var title;
 		if(numHuts === 0) {
 			title = _("Martian volcano");
 		} else if(numHuts == 1) {
 			title = _("A Small Bunker");
 		} else if(numHuts <= 4) {
-			title = _("A Tiny Village");
+			title = _("Large Bunker");
 		} else if(numHuts <= 8) {
-			title = _("A Large Bunker");
+			title = _("Small Bunker Complex");
 		} else if(numHuts <= 14) {
-			title = _("A Large Village");
+			title = _("Large Bunker Complex");
 		} else {
 			title = _("A Thriving Outpost");
 		}
@@ -581,7 +581,7 @@ var Outside = {
 	onArrival: function(transition_diff) {
 		Outside.setTitle();
 		if(!$SM.get('game.outside.seenForest')) {
-			Notifications.notify(Outside, _("the sky is grey and the wind blows relentlessly"));
+			Notifications.notify(Outside, _("its a dry and dusty place even after all the years of teraforming with only the very toughest organisums around"));
 			$SM.set('game.outside.seenForest', true);
 		}
 		Outside.updateTrapButton();
@@ -591,7 +591,7 @@ var Outside = {
 	},
 	
 	gatherenergy: function() {
-		Notifications.notify(Outside, _("dry brush and dead branches litter the forest floor"));
+		Notifications.notify(Outside, _("you clear away some of the fine dust covering the panels"));
 		var gatherAmt = $SM.get('game.buildings["focus solar"]', true) > 0 ? 50 : 10;
 		$SM.add('stores.energy', gatherAmt);
 	},
@@ -599,7 +599,7 @@ var Outside = {
 	checkTraps: function() {
 		var drops = {};
 		var msg = [];
-		var numTraps = $SM.get('game.buildings["trap"]', true);
+		var numTraps = $SM.get('game.buildings["bug trap"]', true);
 		var numBait = $SM.get('stores.bait', true);
 		var numDrops = numTraps + (numBait < numTraps ? numBait : numTraps);
 		for(var i = 0; i < numDrops; i++) {

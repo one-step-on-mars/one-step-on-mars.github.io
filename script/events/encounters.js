@@ -3,24 +3,24 @@
  **/
 Events.Encounters = [
 	/* Tier 1 */
-	{ /* Snarling Beast */
-		title: _('A Snarling Beast'),
+	{ /* Snarling insect */
+		title: _('A Snarling insect'),
 		isAvailable: function() {
 			return World.getDistance() <= 10 && World.getTerrain() == World.TILE.FOREST;
 		},
 		scenes: {
 			'start': {
 				combat: true,
-				enemy: 'snarling beast',
-				enemyName: _('snarling beast'),
-				deathMessage: _('the snarling beast is dead'),
+				enemy: 'snarling insect',
+				enemyName: _('snarling insect'),
+				deathMessage: _('the snarling insect is dead'),
 				chara: 'R',
 				damage: 1,
 				hit: 0.8,
 				attackDelay: 1,
 				health: 5,
 				loot: {
-					'shell': {
+					'shells': {
 						min: 1,
 						max: 3,
 						chance: 1
@@ -30,64 +30,64 @@ Events.Encounters = [
 						max: 3,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 3,
 						chance: 0.8
 					}
 				},
-				notification: _('a snarling beast leaps out of the underbrush')
+				notification: _('a snarling insect leaps out of the underbrush')
 			}
 		}
 	},
-	{ /* Gaunt Man */
-	title: _('A Gaunt Man'),
+	{ /* Giant Cockroach */
+	title: _('A Giant Cockroach'),
 		isAvailable: function() {
 			return World.getDistance() <= 10 && World.getTerrain() == World.TILE.BARRENS;
 		},
 		scenes: {
 			'start': {
 				combat: true,
-				enemy: 'gaunt man',
-				enemyName: _('gaunt man'),
-				deathMessage: _('the gaunt man is dead'),
+				enemy: 'giant cockroach',
+				enemyName: _('giant cockroach'),
+				deathMessage: _('the giant cockroach is dead'),
 				chara: 'E',
 				damage: 2,
 				hit: 0.8,
 				attackDelay: 2,
 				health: 6,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 3,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 2,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 1,
 						max: 2,
 						chance: 0.5
 					}
 				},
-				notification: _('a gaunt man approaches, a crazed look in his eye')
+				notification: _('a giant cockroach approaches, a crazed look in its eye')
 			}
 		}
 	},
-	{ /* Strange Bird */
-	title: _('A Strange Bird'),
+	{ /* Strange mosquito */
+	title: _('A Strange mosquito'),
 		isAvailable: function() {
 			return World.getDistance() <= 10 && World.getTerrain() == World.TILE.FIELD;
 		},
 		scenes: {
 			'start': {
 				combat: true,
-				enemy: 'strange bird',
-				enemyName: _('strange bird'),
-				deathMessage: _('the strange bird is dead'),
+				enemy: 'strange mosquito',
+				enemyName: _('strange mosquito'),
+				deathMessage: _('the strange mosquito is dead'),
 				chara: 'R',
 				damage: 3,
 				hit: 0.8,
@@ -99,7 +99,7 @@ Events.Encounters = [
 						max: 3,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 2,
 						chance: 0.5
@@ -110,7 +110,7 @@ Events.Encounters = [
 						chance: 0.8
 					}
 				},
-				notification: _('a strange looking bird speeds across the plains')
+				notification: _('a strange looking mosquito speeds across the plains')
 			}
 		}
 	},
@@ -132,17 +132,17 @@ Events.Encounters = [
 				attackDelay: 1,
 				health: 20,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 1,
 						max: 1,
 						chance: 0.2
 					},
-					'teeth': {
+					'spines': {
 						min: 1,
 						max: 2,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 1,
 						max: 1,
 						chance: 0.2
@@ -174,7 +174,7 @@ Events.Encounters = [
 				attackDelay: 1,
 				health: 25,
 				loot: {
-					'shell': {
+					'shells': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -184,7 +184,7 @@ Events.Encounters = [
 						max: 10,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 5,
 						max: 10,
 						chance: 0.8
@@ -211,17 +211,17 @@ Events.Encounters = [
 				attackDelay: 2,
 				health: 30,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'leather': {
+					'bioplastic': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					},
-					'iron': {
+					'scrap metal': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -258,7 +258,7 @@ Events.Encounters = [
 						max: 10,
 						chance: 0.8
 					},
-					'teeth': {
+					'spines': {
 						min: 5,
 						max: 10,
 						chance: 0.5
@@ -291,7 +291,7 @@ Events.Encounters = [
 				attackDelay: 1,
 				health: 45,
 				loot: {
-					'shell': {
+					'shells': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -301,13 +301,13 @@ Events.Encounters = [
 						max: 10,
 						chance: 1
 					},
-					'teeth': {
+					'spines': {
 						min: 5,
 						max: 10,
 						chance: 0.8
 					}
 				},
-				notification: _('a beast, wilder than imagining, erupts out of the foliage')
+				notification: _('a insect, wilder than imagining, erupts out of the foliage')
 			}
 		}
 	},
@@ -319,9 +319,9 @@ Events.Encounters = [
 		scenes: {
 			'start': {
 				combat: true,
-				enemy: 'soldier',
-				enemyName: _('soldier'),
-				deathMessage: _('the soldier is dead'),
+				enemy: 'swam',
+				enemyName: _('swam'),
+				deathMessage: _('the swam is dead'),
 				ranged: true,
 				chara: 'D',
 				damage: 8,
@@ -329,7 +329,7 @@ Events.Encounters = [
 				attackDelay: 2,
 				health: 50,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.8
@@ -350,7 +350,7 @@ Events.Encounters = [
 						chance: 0.1
 					}
 				},
-				notification: _('a soldier opens fire from across the desert')
+				notification: _('a swam opens fire from across the desert')
 			}
 		}
 	},
@@ -372,7 +372,7 @@ Events.Encounters = [
 				health: 30,
 				ranged: true,
 				loot: {
-					'cloth': {
+					'batterys': {
 						min: 5,
 						max: 10,
 						chance: 0.8

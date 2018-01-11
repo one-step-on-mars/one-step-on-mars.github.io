@@ -51,7 +51,7 @@ var Ship = {
 			text: _('reinforce hull'),
 			click: Ship.reinforceHull,
 			width: '100px',
-			cost: {'alien alloy': Ship.ALLOY_PER_HULL}
+			cost: {'supermaterials': Ship.ALLOY_PER_HULL}
 		}).appendTo('div#shipPanel');
 		
 		// Draw the engine button
@@ -60,7 +60,7 @@ var Ship = {
 			text: _('upgrade engine'),
 			click: Ship.upgradeEngine,
 			width: '100px',
-			cost: {'alien alloy': Ship.ALLOY_PER_THRUSTER}
+			cost: {'supermaterials': Ship.ALLOY_PER_THRUSTER}
 		}).appendTo('div#shipPanel');
 		
 		// Draw the lift off button
@@ -102,11 +102,11 @@ var Ship = {
 	},
 	
 	reinforceHull: function() {
-		if($SM.get('stores["alien alloy"]', true) < Ship.ALLOY_PER_HULL) {
-			Notifications.notify(Ship, _("not enough alien alloy"));
+		if($SM.get('stores["supermaterials"]', true) < Ship.ALLOY_PER_HULL) {
+			Notifications.notify(Ship, _("not enough supermaterials"));
 			return false;
 		}
-		$SM.add('stores["alien alloy"]', -Ship.ALLOY_PER_HULL);
+		$SM.add('stores["supermaterials"]', -Ship.ALLOY_PER_HULL);
 		$SM.add('game.spaceShip.hull', 1);
 		if($SM.get('game.spaceShip.hull') > 0) {
 			Button.setDisabled($('#liftoffButton', Ship.panel), false);
@@ -115,11 +115,11 @@ var Ship = {
 	},
 	
 	upgradeEngine: function() {
-		if($SM.get('stores["alien alloy"]', true) < Ship.ALLOY_PER_THRUSTER) {
-			Notifications.notify(Ship, _("not enough alien alloy"));
+		if($SM.get('stores["supermaterials"]', true) < Ship.ALLOY_PER_THRUSTER) {
+			Notifications.notify(Ship, _("not enough supermaterials"));
 			return false;
 		}
-		$SM.add('stores["alien alloy"]', -Ship.ALLOY_PER_THRUSTER);
+		$SM.add('stores["supermaterials"]', -Ship.ALLOY_PER_THRUSTER);
 		$SM.add('game.spaceShip.thrusters', 1);
 		$('#engineRow .row_val', Ship.panel).text($SM.get('game.spaceShip.thrusters'));
 	},

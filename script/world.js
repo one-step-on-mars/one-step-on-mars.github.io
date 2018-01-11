@@ -4,7 +4,7 @@ var World = {
 	VILLAGE_POS: [30, 30],
 	TILE: {
 		VILLAGE: 'A',
-		IRON_MINE: 'I',
+		scrapmetal_MINE: 'I',
 		COAL_MINE: 'C',
 		SULPHUR_MINE: 'S',
 		FOREST: ';',
@@ -17,7 +17,7 @@ var World = {
 		CITY: 'Y',
 		OUTPOST: 'P',
 		SHIP: 'W',
-		BOREHOLE: 'B',
+		InsectDen: 'B',
 		BATTLEFIELD: 'F',
 		SWAMP: 'M',
 		CACHE: 'U'
@@ -26,9 +26,9 @@ var World = {
 	LANDMARKS: {},
 	STICKINESS: 0.5, // 0 <= x <= 1
 	LIGHT_RADIUS: 2,
-	BASE_WATER: 10,
+	BASE_O2: 10,
 	MOVES_PER_FOOD: 2,
-	MOVES_PER_WATER: 1,
+	MOVES_PER_O2: 1,
 	DEATH_COOLDOWN: 120,
 	FIGHT_CHANCE: 0.20,
 	BASE_HEALTH: 10,
@@ -54,13 +54,13 @@ var World = {
 			damage: 2,
 			cooldown: 2
 		},
-		'iron sword': {
+		'scrap metal sword': {
 			verb: _('swing'),
 			type: 'melee',
 			damage: 4,
 			cooldown: 2
 		},
-		'steel sword': {
+		'alloy sword': {
 			verb: _('slash'),
 			type: 'melee',
 			damage: 6,
@@ -117,15 +117,15 @@ var World = {
 
 		// Setpiece definitions
 		World.LANDMARKS[World.TILE.OUTPOST] = { num: 0, minRadius: 0, maxRadius: 0, scene: 'outpost', label: _('An&nbsp;Outpost') };
-		World.LANDMARKS[World.TILE.IRON_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: 'ironmine', label:  _('Iron&nbsp;Mine') };
-		World.LANDMARKS[World.TILE.COAL_MINE] = { num: 1, minRadius: 10, maxRadius: 10, scene: 'coalmine', label:  _('Coal&nbsp;Mine') };
+		World.LANDMARKS[World.TILE.scrapmetal_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: 'scrapmetal_mine', label:  _('scrap metal&nbsp;Mine') };
+		World.LANDMARKS[World.TILE.COAL_MINE] = { num: 1, minRadius: 10, maxRadius: 10, scene: 'centrifuge_separation_lab', label:  _('Coal&nbsp;Mine') };
 		World.LANDMARKS[World.TILE.SULPHUR_MINE] = { num: 1, minRadius: 20, maxRadius: 20, scene: 'sulphurmine', label:  _('Sulphur&nbsp;Mine') };
 		World.LANDMARKS[World.TILE.HOUSE] = { num: 10, minRadius: 0, maxRadius: World.RADIUS * 1.5, scene: 'house', label:  _('An&nbsp;Old&nbsp;House') };
 		World.LANDMARKS[World.TILE.CAVE] = { num: 5, minRadius: 3, maxRadius: 10, scene: 'cave', label:  _('A&nbsp;Damp&nbsp;Cave') };
 		World.LANDMARKS[World.TILE.TOWN] = { num: 10, minRadius: 10, maxRadius: 20, scene: 'town', label:  _('An&nbsp;Abandoned&nbsp;Town') };
 		World.LANDMARKS[World.TILE.CITY] = { num: 20, minRadius: 20, maxRadius: World.RADIUS * 1.5, scene: 'city', label:  _('A&nbsp;Ruined&nbsp;City') };
 		World.LANDMARKS[World.TILE.SHIP] = { num: 1, minRadius: 28, maxRadius: 28, scene: 'ship', label:  _('A&nbsp;Crashed&nbsp;Starship')};
-		World.LANDMARKS[World.TILE.BOREHOLE] = { num: 10, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: 'borehole', label:  _('A&nbsp;Borehole')};
+		World.LANDMARKS[World.TILE.InsectDen] = { num: 10, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: 'InsectDen', label:  _('A&nbsp;InsectDen')};
 		World.LANDMARKS[World.TILE.BATTLEFIELD] = { num: 5, minRadius: 18, maxRadius: World.RADIUS * 1.5, scene: 'battlefield', label:  _('A&nbsp;Battlefield')};
 		World.LANDMARKS[World.TILE.SWAMP] = { num: 1, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: 'swamp', label:  _('A&nbsp;Murky&nbsp;Swamp')};
 
@@ -156,11 +156,11 @@ var World = {
 
 		Engine.updateOuterSlider();
 
-		// Map the ship and show compass tooltip
+		// Map the ship and show solarrover tooltip
 		World.ship = World.mapSearch(World.TILE.SHIP,$SM.get('game.world.map'),1);
-		World.dir = World.compassDir(World.ship[0]);
-		// compass tooltip text
-		Room.compassTooltip(World.dir);
+		World.dir = World.SolarRoverDir(World.ship[0]);
+		// solarrover tooltip text
+		Room.SolarRoverTooltip(World.dir);
 
 		// Check if everything has been seen
 		World.testMap();
@@ -250,15 +250,15 @@ var World = {
 			Path.outfit = {};
 		}
 
-		// Add water
-		var water = $('div#supply_water');
-		if(World.water > 0 && water.length === 0) {
-			water = World.createItemDiv('water', World.water);
-			water.prependTo(supplies);
-		} else if(World.water > 0) {
-			$('div#supply_water', supplies).text(_('water:{0}' , World.water));
+		// Add O2
+		var O2 = $('div#supply_O2');
+		if(World.O2 > 0 && O2.length === 0) {
+			O2 = World.createItemDiv('O2', World.O2);
+			O2.prependTo(supplies);
+		} else if(World.O2 > 0) {
+			$('div#supply_O2', supplies).text(_('O2:{0}' , World.O2));
 		} else {
-			water.remove();
+			O2.remove();
 		}
 
 		var total = 0;
@@ -268,9 +268,9 @@ var World = {
 			total += num * Path.getWeight(k);
 			if(num > 0 && item.length === 0) {
 				item = World.createItemDiv(k, num);
-				if(k == 'cured meat' && World.water > 0) {
-					item.insertAfter(water);
-				} else if(k == 'cured meat') {
+				if(k == 'ration packs' && World.O2 > 0) {
+					item.insertAfter(O2);
+				} else if(k == 'ration packs') {
 					item.prependTo(supplies);
 				} else {
 					item.appendTo(supplies);
@@ -293,10 +293,10 @@ var World = {
 		$('#backpackSpace').text(_('free {0}/{1}', Math.floor(Path.getCapacity() - total) , Path.getCapacity()));
 	},
 
-	setWater: function(w) {
-		World.water = w;
-		if(World.water > World.getMaxWater()) {
-			World.water = World.getMaxWater();
+	setO2: function(w) {
+		World.O2 = w;
+		if(World.O2 > World.getMaxO2()) {
+			World.O2 = World.getMaxO2();
 		}
 		World.updateSupplies();
 	},
@@ -442,13 +442,13 @@ var World = {
 
 	useSupplies: function() {
 		World.foodMove++;
-		World.waterMove++;
+		World.O2Move++;
 		// Food
 		var movesPerFood = World.MOVES_PER_FOOD;
 		movesPerFood *= $SM.hasPerk('slow metabolism') ? 2 : 1;
 		if(World.foodMove >= movesPerFood) {
 			World.foodMove = 0;
-			var num = Path.outfit['cured meat'];
+			var num = Path.outfit['ration packs'];
 			num--;
 			if(num === 0) {
 				Notifications.notify(World, _('the meat has run out'));
@@ -471,19 +471,19 @@ var World = {
 				World.starvation = false;
 				World.setHp(World.health + World.meatHeal());
 			}
-			Path.outfit['cured meat'] = num;
+			Path.outfit['ration packs'] = num;
 		}
-		// Water
-		var movesPerWater = World.MOVES_PER_WATER;
-		movesPerWater *= $SM.hasPerk('desert rat') ? 2 : 1;
-		if(World.waterMove >= movesPerWater) {
-			World.waterMove = 0;
-			var water = World.water;
-			water--;
-			if(water === 0) {
-				Notifications.notify(World, _('there is no more water'));
-			} else if(water < 0) {
-				water = 0;
+		// O2
+		var movesPerO2 = World.MOVES_PER_O2;
+		movesPerO2 *= $SM.hasPerk('desert rat') ? 2 : 1;
+		if(World.O2Move >= movesPerO2) {
+			World.O2Move = 0;
+			var O2 = World.O2;
+			O2--;
+			if(O2 === 0) {
+				Notifications.notify(World, _('there is no more O2'));
+			} else if(O2 < 0) {
+				O2 = 0;
 				if(!World.thirst) {
 					Notifications.notify(World, _('the thirst becomes unbearable'));
 					World.thirst = true;
@@ -499,7 +499,7 @@ var World = {
 			} else {
 				World.thirst = false;
 			}
-			World.setWater(water);
+			World.setO2(O2);
 			World.updateSupplies();
 		}
 		return true;
@@ -709,7 +709,7 @@ var World = {
 				if(map[i][j].charAt(0) === target){
 					// search result is stored as an object;
 					// items are listed as they appear in the map, tl-br
-					// each item has relative coordinates and a compass-type direction
+					// each item has relative coordinates and a SolarRover-type direction
 					targets[index] = {
 						x : i - World.RADIUS,
 						y : j - World.RADIUS,
@@ -725,7 +725,7 @@ var World = {
 		return targets;
 	},
 
-	compassDir: function(pos){
+	SolarRoverDir: function(pos){
 		var dir = '';
 		var horz = pos.x < 0 ? 'west' : 'east';
 		var vert = pos.y < 0 ? 'north' : 'south';
@@ -909,13 +909,13 @@ var World = {
 			$SM.add('game.buildings["sulphur mine"]', 1);
 			Engine.event('progress', 'sulphur mine');
 		}
-		if(World.state.ironmine && $SM.get('game.buildings["iron mine"]', true) === 0) {
-			$SM.add('game.buildings["iron mine"]', 1);
-			Engine.event('progress', 'iron mine');
+		if(World.state.scrapmetal_mine && $SM.get('game.buildings["metal detectors"]', true) === 0) {
+			$SM.add('game.buildings["metal detectors"]', 1);
+			Engine.event('progress', 'metal detectors');
 		}
-		if(World.state.coalmine && $SM.get('game.buildings["coal mine"]', true) === 0) {
-			$SM.add('game.buildings["coal mine"]', 1);
-			Engine.event('progress', 'coal mine');
+		if(World.state.martion_elementsmine && $SM.get('game.buildings["centrifuge"]', true) === 0) {
+			$SM.add('game.buildings["centrifuge"]', 1);
+			Engine.event('progress', 'centrifuge');
 		}
 		if(World.state.ship && !$SM.get('features.location.spaceShip')) {
 			Ship.init();
@@ -923,7 +923,7 @@ var World = {
 		}
 		World.state = null;
 
-		if(Path.outfit['cured meat'] > 0) {
+		if(Path.outfit['ration packs'] > 0) {
 			Button.setDisabled($('#embarkButton'), false);
 		}
 
@@ -941,7 +941,7 @@ var World = {
 	},
 
 	leaveItAtHome: function(thing) {
-		 return thing != 'cured meat' && thing != 'bullets' && thing != 'energy cell'  && thing != 'charm' && thing != 'medicine' &&
+		 return thing != 'ration packs' && thing != 'bullets' && thing != 'energy cell'  && thing != 'charm' && thing != 'medicine' &&
 		 typeof World.Weapons[thing] == 'undefined' && typeof Room.Craftables[thing] == 'undefined';
 	},
 
@@ -950,7 +950,7 @@ var World = {
 			return World.BASE_HEALTH + 35;
 		} else if($SM.get('stores["i armour"]', true) > 0) {
 			return World.BASE_HEALTH + 15;
-		} else if($SM.get('stores["l armour"]', true) > 0) {
+		} else if($SM.get('stores["thick suit"]', true) > 0) {
 			return World.BASE_HEALTH + 5;
 		}
 		return World.BASE_HEALTH;
@@ -963,15 +963,15 @@ var World = {
 		return World.BASE_HIT_CHANCE;
 	},
 
-	getMaxWater: function() {
-		if($SM.get('stores["water tank"]', true) > 0) {
-			return World.BASE_WATER + 50;
+	getMaxO2: function() {
+		if($SM.get('stores["O2 tank"]', true) > 0) {
+			return World.BASE_O2 + 50;
 		} else if($SM.get('stores.cask', true) > 0) {
-			return World.BASE_WATER + 20;
-		} else if($SM.get('stores.waterskin', true) > 0) {
-			return World.BASE_WATER + 10;
+			return World.BASE_O2 + 20;
+		} else if($SM.get('stores.plasticO2tank', true) > 0) {
+			return World.BASE_O2 + 10;
 		}
-		return World.BASE_WATER;
+		return World.BASE_O2;
 	},
 
 	outpostUsed: function(x, y) {
@@ -982,8 +982,8 @@ var World = {
 	},
 
 	useOutpost: function() {
-		Notifications.notify(null, _('water replenished'));
-		World.setWater(World.getMaxWater());
+		Notifications.notify(null, _('O2 replenished'));
+		World.setO2(World.getMaxO2());
 		// Mark this outpost as used
 		World.usedOutposts[World.curPos[0] + ',' + World.curPos[1]] = true;
 	},
@@ -995,10 +995,10 @@ var World = {
 		Engine.keyLock = false;
 		// Explore in a temporary world-state. We'll commit the changes if you return home safe.
 		World.state = $.extend(true, {}, $SM.get('game.world'));
-		World.setWater(World.getMaxWater());
+		World.setO2(World.getMaxO2());
 		World.setHp(World.getMaxHealth());
 		World.foodMove = 0;
-		World.waterMove = 0;
+		World.O2Move = 0;
 		World.starvation = false;
 		World.thirst = false;
 		World.usedOutposts = {};

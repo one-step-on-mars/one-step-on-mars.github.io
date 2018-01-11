@@ -231,10 +231,10 @@ var Events = {
 			text: _('eat meat'),
 			cooldown: cooldown,
 			click: Events.eatMeat,
-			cost: { 'cured meat': 1 }
+			cost: { 'ration packs': 1 }
 		});
 
-		if(Path.outfit['cured meat'] === 0) {
+		if(Path.outfit['ration packs'] === 0) {
 			Button.setDisabled(btn, true);
 		}
 
@@ -339,7 +339,7 @@ var Events = {
 	},
 
 	eatMeat: function(btn) {
-		Events.doHeal('cured meat', World.meatHeal(), btn);
+		Events.doHeal('ration packs', World.meatHeal(), btn);
 	},
 
 	useMeds: function(btn) {
