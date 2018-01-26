@@ -251,9 +251,9 @@ var StateManager = {
 			version = 1.1;
 		}
 		if(version == 1.1) {
-			//v1.2 added the Swamp to the map, so add it to already generated maps
+			//v1.2 added the Mystic_Cave to the map, so add it to already generated maps
 			if($SM.get('world')) {
-				World.placeLandmark(15, World.RADIUS * 1.5, World.TILE.SWAMP, $SM.get('world.map'));
+				World.placeLandmark(15, World.RADIUS * 1.5, World.TILE.MYSTIC_CAVE, $SM.get('world.map'));
 			}
 			Engine.log('upgraded save to v1.2');
 			version = 1.2;
@@ -275,6 +275,8 @@ var StateManager = {
 				$SM.set('game.workers', $SM.get('outside.workers'));
 				$SM.set('game.outside.seenForest', $SM.get('outside.seenForest'));
 				$SM.remove('outside');
+				//document.body.style.backgroundImage = "url('imageofmarsaprox300by300.png')";
+
 			}
 			if($SM.get('world')){
 				$SM.set('features.location.world', true);

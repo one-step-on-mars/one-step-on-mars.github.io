@@ -12,7 +12,7 @@ parser = optparse.OptionParser(usage="usage: %prog [options] pofile...")
 parser.add_option("--callback", default="_.setTranslation", dest="callback",
                   help="callback function to call with data")
 parser.add_option("--quiet", action="store_false", default=True,
-                  dest="verbose", help="don't print status messages to stdout")
+                  dest="verbose", help="don't print stasis messages to stdout")
 
 (options, args) = parser.parse_args()
 

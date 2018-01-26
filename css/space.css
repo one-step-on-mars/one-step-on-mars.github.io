@@ -84,7 +84,7 @@
 	position: relative;
 	height: 3000px;
 	width: 3000px;
-	color: rgb(218, 93, 55);
+	color: /*/*rgb(218, 93, 55)*/transparent;
 }
 
 #starsBack {
@@ -111,7 +111,7 @@
 	font-size: 24px;
 	font-weight: bold;
 	opacity: 0;
-	color: rgb(218, 93, 55);
+	color: /*/*rgb(218, 93, 55)*/transparent;
 }
 
 .asteroid {
@@ -139,7 +139,7 @@
 
 .endGame {
 	font-size:48px;
-	color:#FFFFFF;
+	color:rgb(173, 173, 168);
 	opacity:0;
 	position:relative;
 }

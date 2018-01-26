@@ -10,7 +10,7 @@ div#outfitting:before ,div#perks:before {
 	content: attr(data-legend);
 	position: absolute;
 	top: -13px;
-	background-color: rgb(218, 93, 55);
+	background-color: /*/*rgb(218, 93, 55)*/transparent;
 }
 
 div.outfitRow {
@@ -34,7 +34,7 @@ div.outfitRow .tooltip {
 }
 
 div#bagspace {
-	background-color: rgb(218, 93, 55);
+	background-color: /*/*rgb(218, 93, 55)*/transparent;
 	position: absolute;
 	top:-13px;
 	right: 10px;

@@ -1,8 +1,10 @@
 /**
  * Module that registers the outdoors functionality
  */
+
 var Outside = {
 	name: _("Outside"),
+	
 	
 	_STORES_OFFSET: 0,
 	_GATHER_DELAY: 60,
@@ -51,28 +53,28 @@ var Outside = {
 				'ration packs': 1
 			}
 		},
-		'metal detectorsr': {
-			name: _('metal detectorsr'),
+		'salvage hunter': {
+			name: _('salvage hunter'),
 			delay: 10,
 			stores: {
 				'ration packs': -1,
 				'scrap metal': 1
 			}
 		},
-		'centrifuger': {
-			name: _('centrifuger'),
+		'centrifugescientist': {
+			name: _('centrifugescientist'),
 			delay: 10,
 			stores: {
 				'ration packs': -1,
-				'martion_elements': 1
+				'martion elements': 1
 			}
 		},
-		'sulphur miner': {
-			name: _('sulphur miner'),
+		'MunitionsExpert': {
+			name: _('MunitionsExpert'),
 			delay: 10,
 			stores: {
 				'ration packs': -1,
-				'sulphur': 1
+				'Explosives': 1
 			}
 		},
 		'alloyworker': {
@@ -80,7 +82,7 @@ var Outside = {
 			delay: 10,
 			stores: {
 				'scrap metal': -1,
-				'martion_elements': -1,
+				'martion elements': -1,
 				'alloy': 1
 			}
 		},
@@ -89,7 +91,7 @@ var Outside = {
 			delay: 10,
 			stores: {
 				'alloy': -1,
-				'sulphur': -1,
+				'Explosives': -1,
 				'bullets': 1
 			}
 		}
@@ -140,7 +142,7 @@ var Outside = {
 		}
 		
 		// Create the outside tab
-		this.tab = Header.addLocation(_("Martian volcano"), "outside", Outside);
+		this.tab = Header.addLocation(_("Martian Volcano"), "outside", Outside);
 		
 		// Create the Outside panel
 		this.panel = $('<div>').attr('id', "outsidePanel")
@@ -157,9 +159,9 @@ var Outside = {
 			if(!$SM.get('game.workers')) $SM.set('game.workers', {});
 		}
 		
-		this.updateVillage();
+		this.updateSettlement();
 		Outside.updateWorkersView();
-		Outside.updateVillageIncome();
+		Outside.updateSettlementIncome();
 		
 		Engine.updateSlider();
 		
@@ -201,7 +203,7 @@ var Outside = {
 		Outside.schedulePopIncrease();
 	},
 	
-	killVillagers: function(num) {
+	killCrew: function(num) {
 		$SM.add('game.population', num * -1);
 		if($SM.get('game.population') < 0) {
 			$SM.set('game.population', 0);
@@ -244,7 +246,7 @@ var Outside = {
 			}
 			$SM.set('game.buildings["bunker"]', ($SM.get('game.buildings["bunker"]') - 1));
 			if(inhabitants){
-				Outside.killVillagers(inhabitants);
+				Outside.killCrew(inhabitants);
 				dead += inhabitants;
 			}
 		}
@@ -392,17 +394,17 @@ var Outside = {
 		}
 	},
 	
-	updateVillageRow: function(name, num, village) {
+	updateSettlementRow: function(name, num, settlement) {
 		var id = 'building_row_' + name.replace(' ', '-');
 		var lname = _(name);
-		var row = $('div#' + id, village);
+		var row = $('div#' + id, settlement);
 		if(row.length === 0 && num > 0) {
 			row = $('<div>').attr('id', id).addClass('storeRow');
 			$('<div>').addClass('row_key').text(lname).appendTo(row);
 			$('<div>').addClass('row_val').text(num).appendTo(row);
 			$('<div>').addClass('clear').appendTo(row);
 			var curPrev = null;
-			village.children().each(function(i) {
+			settlement.children().each(function(i) {
 				var child = $(this);
 				if(child.attr('id') != 'population') {
 					var cName = child.children('.row_key').text();
@@ -412,25 +414,25 @@ var Outside = {
 				}
 			});
 			if(curPrev == null) {
-				row.prependTo(village);
+				row.prependTo(settlement);
 			} else {
 				row.insertAfter('#' + curPrev);
 			}
 		} else if(num > 0) {
-			$('div#' + row.attr('id') + ' > div.row_val', village).text(num);
+			$('div#' + row.attr('id') + ' > div.row_val', settlement).text(num);
 		} else if(num === 0) {
 			row.remove();
 		}
 	},
 	
-	updateVillage: function(ignoreStores) {
-		var village = $('div#village');
+	updateSettlement: function(ignoreStores) {
+		var settlement = $('div#settlement');
 		var population = $('div#population');
 		var needsAppend = false;
-		if(village.length === 0) {
+		if(settlement.length === 0) {
 			needsAppend = true;
-			village = $('<div>').attr('id', 'village').css('opacity', 0);
-			population = $('<div>').attr('id', 'population').appendTo(village);
+			settlement = $('<div>').attr('id', 'settlement').css('opacity', 0);
+			population = $('<div>').attr('id', 'population').appendTo(settlement);
 		}
 		
 		for(var k in $SM.get('game.buildings')) {
@@ -439,30 +441,31 @@ var Outside = {
 				var numBait = $SM.get('stores.bait', true);
 				var traps = numTraps - numBait;
 				traps = traps < 0 ? 0 : traps;
-				Outside.updateVillageRow(k, traps, village);
-				//Outside.updateVillageRow('baited bug trap', numBait > numTraps ? numTraps : numBait, village);
+				Outside.updateSettlementRow(k, traps, settlement);
+				//Outside.updateSettlementRow('baited bug trap', numBait > numTraps ? numTraps : numBait, settlement);
 			} else {
 				if(Outside.checkWorker(k)) {
 					Outside.updateWorkersView();
 				}
-				Outside.updateVillageRow(k, $SM.get('game.buildings["'+k+'"]'), village);
+				Outside.updateSettlementRow(k, $SM.get('game.buildings["'+k+'"]'), settlement);
 			}
 		}
+		
 		/// TRANSLATORS : pop is short for population.
 		population.text(_('pop ') + $SM.get('game.population') + '/' + this.getMaxPopulation());
 		
 		var hasPeeps;
 		if($SM.get('game.buildings["bunker"]', true) === 0) {
 			hasPeeps = false;
-			village.attr('data-legend', _('your settlement'));
+			settlement.attr('data-legend', _('your settlement'));
 		} else {
 			hasPeeps = true;
-			village.attr('data-legend', _('village'));
+			settlement.attr('data-legend', _('settlement'));
 		}
 		
-		if(needsAppend && village.children().length > 1) {
-			village.prependTo('#outsidePanel');
-			village.animate({opacity:1}, 300, 'linear');
+		if(needsAppend && settlement.children().length > 1) {
+			settlement.prependTo('#outsidePanel');
+			settlement.animate({opacity:1}, 300, 'linear');
 		}
 		
 		if(hasPeeps && typeof Outside._popTimeout == 'undefined') {
@@ -471,8 +474,9 @@ var Outside = {
 		
 		this.setTitle();
 
-		if(!ignoreStores && Engine.activeModule === Outside && village.children().length > 1) {
-			$('#storesContainer').css({top: village.height() + 26 + Outside._STORES_OFFSET + 'px'});
+		if(!ignoreStores && Engine.activeModule === Outside && settlement.children().length > 1) {
+			$('#storesContainer').css({top: settlement.height() + 26 + Outside._STORES_OFFSET + 'px'});
+			
 		}
 	},
 	
@@ -481,9 +485,9 @@ var Outside = {
 			'bug tracking': ['hunter', 'trapper'],
 			'polymerisation equipment': ['chemist'],
 			'irradiator': ['food_irradiator'],
-			'metal detectors': ['metal detectorsr'],
-			'centrifuge': ['centrifuger'],
-			'sulphur mine': ['sulphur miner'],
+			'metal detectors': ['salvage hunter'],
+			'centrifuge': ['centrifugescientist'],
+			'ExplosivesLab': ['MunitionsExpert'],
 			'alloyworks': ['alloyworker'],
 			'armoury' : ['armourer']
 		};
@@ -502,9 +506,12 @@ var Outside = {
 			}
 		}
 		return added;
+		
 	},
 	
-	updateVillageIncome: function() {		
+	
+	updateSettlementIncome: function() {
+		
 		for(var worker in Outside._INCOME) {
 			var income = Outside._INCOME[worker];
 			var num = worker == 'PowerProduction' ? Outside.getNumPowerProductions() : $SM.get('game.workers["'+worker+'"]');
@@ -559,7 +566,7 @@ var Outside = {
 		var numHuts = $SM.get('game.buildings["bunker"]', true);
 		var title;
 		if(numHuts === 0) {
-			title = _("Martian volcano");
+			title = _("Martian Volcano");
 		} else if(numHuts == 1) {
 			title = _("A Small Bunker");
 		} else if(numHuts <= 4) {
@@ -585,9 +592,9 @@ var Outside = {
 			$SM.set('game.outside.seenForest', true);
 		}
 		Outside.updateTrapButton();
-		Outside.updateVillage(true);
+		Outside.updateSettlement(true);
 
-		Engine.moveStoresView($('#village'), transition_diff);
+		Engine.moveStoresView($('#settlement'), transition_diff);
 	},
 	
 	gatherenergy: function() {
@@ -617,13 +624,13 @@ var Outside = {
 				}
 			}
 		}
-		/// TRANSLATORS : Mind the rgb(218, 93, 55)space at the end.
+		/// TRANSLATORS : Mind the /*/*rgb(218, 93, 55)*/transparentspace at the end.
 		var s = _('the traps contain ');
 		for(var l = 0, len = msg.length; l < len; l++) {
 			if(len > 1 && l > 0 && l < len - 1) {
 				s += ", ";
 			} else if(len > 1 && l == len - 1) {
-				/// TRANSLATORS : Mind the rgb(218, 93, 55)spaces at the beginning and end.
+				/// TRANSLATORS : Mind the /*/*rgb(218, 93, 55)*/transparentspaces at the beginning and end.
 				s += _(" and ");
 			}
 			s += msg[l];
@@ -638,18 +645,18 @@ var Outside = {
 	
 	handleStateUpdates: function(e){
 		if(e.category == 'stores'){
-			Outside.updateVillage();
+			Outside.updateSettlement();
 		} else if(e.stateName.indexOf('game.workers') === 0 || e.stateName.indexOf('game.population') === 0){
-			Outside.updateVillage();
+			Outside.updateSettlement();
 			Outside.updateWorkersView();
-			Outside.updateVillageIncome();
+			Outside.updateSettlementIncome();
 		}
 	},
 
 	scrollSidebar: function(direction, reset) {
 
 		if( typeof reset != "undefined" ){
-			$('#village').css('top', '0px');
+			$('#settlement').css('top', '0px');
 			$('#storesContainer').css('top', '224px');
 			Outside._STORES_OFFSET = 0;
 			return false;
@@ -662,7 +669,7 @@ var Outside = {
 			momentum = momentum * -1;
 
 		/* Let's stop scrolling if the top or bottom bound is in the viewport, based on direction */
-		if( direction == 'down' && inView( direction, $('#village') ) ){
+		if( direction == 'down' && inView( direction, $('#settlement') ) ){
 
 			return false;
 
@@ -672,7 +679,7 @@ var Outside = {
 
 		}
 		
-		scrollByX( $('#village'), momentum );
+		scrollByX( $('#settlement'), momentum );
 		scrollByX( $('#storesContainer'), momentum );
 		Outside._STORES_OFFSET += momentum;
 

@@ -14,8 +14,8 @@ html {
 body {
 	height: 100%;
 	margin: 0;	
-	background-image: url("img/adr.png");
-	background-color: rgb(221, 89, 36);
+	
+	/*background-color: /*rgb(221, 89, 36)*/transparent;*/
 	
 }
 
@@ -214,13 +214,7 @@ div#notifyGradient {
 	left: 0px;
 	height: 100%;
 	width: 100%;
-	background-color: rgb(221, 89, 36);
-	background: -webkit-linear-gradient(
-		rgba(255, 255, 255, 0) 0%, rgb(221, 89, 36) 100%
-	);
-	background: linear-gradient(
-		rgba(255, 255, 255, 0) 0%, rgb(221, 89, 36) 100%
-	);
+	
 	filter: alpha(
 		Opacity=0, FinishOpacity=100, Style=1, StartX=0, StartY=0, FinishX=0, FinishY=500
 	);
@@ -303,7 +297,7 @@ div.button div.cooldown {
 }
 
 .upBtn:after, .upManyBtn:after {
-	border-color: transparent transparent rgb(221, 89, 36);
+	border-color: transparent transparent /*/*rgb(221, 89, 36)*/;
 }
 
 .upBtn:before, .upManyBtn:before {
@@ -357,7 +351,7 @@ div.button div.cooldown {
 }
 
 .dnBtn:after, .dnManyBtn:after {
-	border-color: rgb(221, 89, 36) transparent transparent;
+	border-color: /*rgb(221, 89, 36)*/transparent transparent transparent;
 }
 
 .dnBtn:before, .dnManyBtn:before {
@@ -380,7 +374,7 @@ div.tooltip {
 	border: 1px solid black;
 	position: absolute;
 	box-shadow: -1px 3px 2px #666;
-	background: rgb(221, 89, 36);
+	background: /*rgb(221, 89, 36)*/transparent;
 	z-index: 999;
 }
 
@@ -419,7 +413,7 @@ div.tooltip:hover {
 /* Events */
 
 .eventPanel {
-	background: none repeat scroll 0 0 rgb(221, 89, 36);
+	background: none repeat scroll 0 0 /*rgb(221, 89, 36)*/transparent;
 	border: 2px solid transparent;
 	left: 250px;
 	padding: 20px;
@@ -434,7 +428,7 @@ body.noMask .eventPanel {
 }
 
 .eventPanel:before {
-	background-color:rgb(221, 89, 36);
+	background-color:/*rgb(221, 89, 36)*/transparent;
 	opacity: 0.6;
 	content: " ";
 	height: 700px;
@@ -462,7 +456,7 @@ body.noMask .eventPanel:before {
 }
 
 body.noMask .eventPanel:after {
-	border-color: rgb(221, 89, 36);
+	border-color: /*rgb(221, 89, 36)*/transparent;
 }
 
 .eventPanel .button {
@@ -471,8 +465,8 @@ body.noMask .eventPanel:after {
 }
 
 body.noMask .eventPanel .button {
-	border-color: rgb(221, 89, 36);
-	color: rgb(221, 89, 36)hite;
+	border-color: /*rgb(221, 89, 36)*/transparent;
+	color: /*rgb(221, 89, 36)*/transparenthite;
 }
 
 .eventTitle {
@@ -483,11 +477,11 @@ body.noMask .eventPanel .button {
 }
 
 body.noMask .eventTitle {
-	color: rgb(221, 89, 36);
+	color: /*rgb(221, 89, 36)*/transparent;
 }
 
 .eventTitle:after {
-	background-color: rgb(221, 89, 36);
+	background-color: /*/*rgb(221, 89, 36)*/transparent;
 	bottom: 32%;
 	content: " ";
 	height: 5px;
@@ -512,7 +506,7 @@ body.noMask .eventTitle:after {
 }
 
 body.noMask #description {
-	color: rgb(221, 89, 36);
+	color: /*rgb(221, 89, 36)*/transparent;
 }
 
 #description > div {
@@ -578,7 +572,7 @@ body.noMask #description {
 }
 
 #dropMenu {
-	background: none repeat scroll 0 0 rgb(221, 89, 36);
+	background: none repeat scroll 0 0 /*rgb(221, 89, 36)*/transparent;
 	border: 1px solid black;
 	position: absolute;
 	z-index: 100;

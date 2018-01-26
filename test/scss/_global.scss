@@ -52,10 +52,10 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-  border-color: rgb(218, 93, 55);
+  border-color: /*rgb(218, 93, 55)*/transparent;
 }
 hr.star-light:after {
-  color: rgb(218, 93, 55);
+  color: /*rgb(218, 93, 55)*/transparent;
   background-color: $theme-success;
 }
 
@@ -64,7 +64,7 @@ hr.star-primary {
 }
 hr.star-primary:after {
   color: $theme-primary;
-  background-color: rgb(218, 93, 55);
+  background-color: /*rgb(218, 93, 55)*/transparent;
 }
 
 .img-centered {
@@ -80,7 +80,7 @@ section {
 }
 
 section.success {
-  color: rgb(218, 93, 55);
+  color: /*rgb(218, 93, 55)*/transparent;
   background: $theme-success;
 }
 @media(max-width:767px) {

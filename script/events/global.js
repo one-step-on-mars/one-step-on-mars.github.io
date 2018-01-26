@@ -10,7 +10,7 @@ Events.Global = [
 		scenes: {
 			'start': {
 				text: [
-					_('the villagers haul a filthy man out of the store room.'),
+					_('the crew haul a filthy man out of the store room.'),
 					_("say his folk have been skimming the supplies."),
 					_('say he should be strung up as an example.')
 				],
@@ -29,7 +29,7 @@ Events.Global = [
 			},
 			'hang': {
 				text: [
-					_('the villagers hang the thief high in front of the store room.'),
+					_('the crew hang the thief high in front of the store room.'),
 					_('the point is made. in the next few days, the missing supplies are returned.')
 				],
 				onLoad: function() {

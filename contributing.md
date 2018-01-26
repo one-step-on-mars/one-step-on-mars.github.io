@@ -7,11 +7,11 @@ Like most projects on GitHub, One small Step On Mars is open source, and thrives
 <br><hr>
 Before contributing to the project, there are a few things you should look over to ensure your contribution is done correctly. 
 
-Most of the projects code is written in JavaScript. We would prefer all submitted JavaScript be [JSHint](http://jshint.com/) compliant.
+Most of the projects code is written in JavaScript. We would prefer all submitted JavaScript be [JSHint](#) compliant.
 > "JSHint is a community-driven tool to detect errors and potential problems in JavaScript code and to enforce your team's coding conventions."
 <br><br><br>
 
-Before opening a new issue, try to check the projects [issues](https://github.com/doublespeakgames/adarkroom/issues) or [wiki](https://github.com/doublespeakgames/adarkroom/wiki).
+Before opening a new issue, try to check the projects [issues](#) or [wiki](#).
 Doing so will help prevent needless double issues.
 <br>Most of the time you will be able to find what you are looking for in one of those places. If not, please open an issue and describe your problem with as much detail as possible.
 

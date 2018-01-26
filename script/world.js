@@ -1,17 +1,17 @@
 var World = {
 
 	RADIUS: 30,
-	VILLAGE_POS: [30, 30],
+	settlement_POS: [30, 30],
 	TILE: {
-		VILLAGE: 'A',
+		settlement: 'A',
 		scrapmetal_MINE: 'I',
-		COAL_MINE: 'C',
-		SULPHUR_MINE: 'S',
+		Lab_C: 'C',
+		ExplosivesLab: 'E',
 		FOREST: ';',
 		FIELD: ',',
 		BARRENS: '.',
 		ROAD: '#',
-		HOUSE: 'H',
+		Shelter: 'H',
 		CAVE: 'V',
 		TOWN: 'O',
 		CITY: 'Y',
@@ -19,7 +19,7 @@ var World = {
 		SHIP: 'W',
 		InsectDen: 'B',
 		BATTLEFIELD: 'F',
-		SWAMP: 'M',
+		MYSTIC_CAVE: 'M',
 		CACHE: 'U'
 	},
 	TILE_PROBS: {},
@@ -27,8 +27,8 @@ var World = {
 	STICKINESS: 0.5, // 0 <= x <= 1
 	LIGHT_RADIUS: 2,
 	BASE_O2: 10,
-	MOVES_PER_FOOD: 2,
-	MOVES_PER_O2: 1,
+	MOVES_PER_FOOD: 20,
+	MOVES_PER_O2: 10,
 	DEATH_COOLDOWN: 120,
 	FIGHT_CHANCE: 0.20,
 	BASE_HEALTH: 10,
@@ -54,7 +54,7 @@ var World = {
 			damage: 2,
 			cooldown: 2
 		},
-		'scrap metal sword': {
+		'scrap sword': {
 			verb: _('swing'),
 			type: 'melee',
 			damage: 4,
@@ -79,12 +79,12 @@ var World = {
 			cooldown: 1,
 			cost: { 'bullets': 1 }
 		},
-		'laser rifle': {
+		'positronic ray': {
 			verb: _('blast'),
 			type: 'ranged',
 			damage: 8,
 			cooldown: 1,
-			cost: { 'energy cell': 1 }
+			cost: { 'antimatter cell': 1 }
 		},
 		'grenade': {
 			verb: _('lob'),
@@ -117,21 +117,21 @@ var World = {
 
 		// Setpiece definitions
 		World.LANDMARKS[World.TILE.OUTPOST] = { num: 0, minRadius: 0, maxRadius: 0, scene: 'outpost', label: _('An&nbsp;Outpost') };
-		World.LANDMARKS[World.TILE.scrapmetal_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: 'scrapmetal_mine', label:  _('scrap metal&nbsp;Mine') };
-		World.LANDMARKS[World.TILE.COAL_MINE] = { num: 1, minRadius: 10, maxRadius: 10, scene: 'centrifuge_separation_lab', label:  _('Coal&nbsp;Mine') };
-		World.LANDMARKS[World.TILE.SULPHUR_MINE] = { num: 1, minRadius: 20, maxRadius: 20, scene: 'sulphurmine', label:  _('Sulphur&nbsp;Mine') };
-		World.LANDMARKS[World.TILE.HOUSE] = { num: 10, minRadius: 0, maxRadius: World.RADIUS * 1.5, scene: 'house', label:  _('An&nbsp;Old&nbsp;House') };
-		World.LANDMARKS[World.TILE.CAVE] = { num: 5, minRadius: 3, maxRadius: 10, scene: 'cave', label:  _('A&nbsp;Damp&nbsp;Cave') };
-		World.LANDMARKS[World.TILE.TOWN] = { num: 10, minRadius: 10, maxRadius: 20, scene: 'town', label:  _('An&nbsp;Abandoned&nbsp;Town') };
-		World.LANDMARKS[World.TILE.CITY] = { num: 20, minRadius: 20, maxRadius: World.RADIUS * 1.5, scene: 'city', label:  _('A&nbsp;Ruined&nbsp;City') };
-		World.LANDMARKS[World.TILE.SHIP] = { num: 1, minRadius: 28, maxRadius: 28, scene: 'ship', label:  _('A&nbsp;Crashed&nbsp;Starship')};
+		World.LANDMARKS[World.TILE.scrapmetal_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: 'scrapmetal_mine', label:  _('Old&nbsp;Scrap&nbsp;Scavenger&nbsp;Base') };
+		World.LANDMARKS[World.TILE.Lab_C] = { num: 1, minRadius: 10, maxRadius: 10, scene: 'centrifuge', label:  _('Centrifuge&nbsp;Lab') };
+		World.LANDMARKS[World.TILE.ExplosivesLab] = { num: 1, minRadius: 20, maxRadius: 20, scene: 'ExplosivesLab', label:  _('Explosives&nbsp;Lab') };
+		World.LANDMARKS[World.TILE.Shelter] = { num: 10, minRadius: 0, maxRadius: World.RADIUS * 1.5, scene: 'shelter', label:  _('An&nbsp;Old&nbsp;Shelter') };
+		World.LANDMARKS[World.TILE.CAVE] = { num: 5, minRadius: 3, maxRadius: 10, scene: 'cave', label:  _('A&nbsp;Deep&nbsp;Cave') };
+		World.LANDMARKS[World.TILE.TOWN] = { num: 10, minRadius: 10, maxRadius: 20, scene: 'town', label:  _('Ancient&nbsp;Ruined&nbsp;Town') };
+		World.LANDMARKS[World.TILE.CITY] = { num: 20, minRadius: 20, maxRadius: World.RADIUS * 1.5, scene: 'city', label:  _('Ancient&nbsp;Ruined&nbsp;City') };
+		World.LANDMARKS[World.TILE.SHIP] = { num: 1, minRadius: 28, maxRadius: 28, scene: 'ship', label:  _('A&nbsp;Crashed&nbsp;Spaceship')};
 		World.LANDMARKS[World.TILE.InsectDen] = { num: 10, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: 'InsectDen', label:  _('A&nbsp;InsectDen')};
 		World.LANDMARKS[World.TILE.BATTLEFIELD] = { num: 5, minRadius: 18, maxRadius: World.RADIUS * 1.5, scene: 'battlefield', label:  _('A&nbsp;Battlefield')};
-		World.LANDMARKS[World.TILE.SWAMP] = { num: 1, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: 'swamp', label:  _('A&nbsp;Murky&nbsp;Swamp')};
+		World.LANDMARKS[World.TILE.MYSTIC_CAVE] = { num: 1, minRadius: 15, maxRadius: World.RADIUS * 1.5, scene: 'mystic_cave', label:  _('A&nbsp;Strange&nbsp;Mystic_Cave')};
 
 		// Only add the cache if there is prestige data
 		if($SM.get('previous.stores')) {
-			World.LANDMARKS[World.TILE.CACHE] = { num: 1, minRadius: 10, maxRadius: World.RADIUS * 1.5, scene: 'cache', label:  _('A&nbsp;Destroyed&nbsp;Village')};
+			World.LANDMARKS[World.TILE.CACHE] = { num: 1, minRadius: 10, maxRadius: World.RADIUS * 1.5, scene: 'cache', label:  _('A&nbsp;Destroyed&nbsp;Settlement')};
 		}
 
 		if(typeof $SM.get('features.location.world') == 'undefined') {
@@ -187,7 +187,7 @@ var World = {
 				y = 0,
 				dx = 1,
 				dy = -1;
-			for (var i = 0; i < Math.pow(World.getDistance(startPos, World.VILLAGE_POS) + 2, 2); i++) {
+			for (var i = 0; i < Math.pow(World.getDistance(startPos, World.settlement_POS) + 2, 2); i++) {
 				searchX = startPos[0] + x;
 				searchY = startPos[1] + y;
 				if (0 < searchX && searchX < World.RADIUS * 2 && 0 < searchY && searchY < World.RADIUS * 2) {
@@ -196,7 +196,7 @@ var World = {
 					if (
 					 	tile === World.TILE.ROAD ||
 						(tile === World.TILE.OUTPOST && !(x === 0 && y === 0))  || // outposts are connected to roads
-						tile === World.TILE.VILLAGE // all roads lead home
+						tile === World.TILE.settlement // all roads lead home
 					 ) {
 						return [searchX, searchY];
 					}
@@ -214,7 +214,7 @@ var World = {
 					y += dy;
 				}
 			}
-			return World.VILLAGE_POS;
+			return World.settlement_POS;
 		};
 		var closestRoad = findClosestRoad(World.curPos);
 		var xDist = World.curPos[0] - closestRoad[0];
@@ -349,7 +349,7 @@ var World = {
 		World.doSpace();
 		if(World.checkDanger()) {
 			if(World.danger) {
-				Notifications.notify(World, _('dangerous to be this far from the village without proper protection'));
+				Notifications.notify(World, _('dangerous to be this far from the settlement without proper protection'));
 			} else {
 				Notifications.notify(World, _('safer here'));
 			}
@@ -423,7 +423,7 @@ var World = {
 				World.danger = true;
 				return true;
 			}
-			if($SM.get('stores["s armour"]', true) === 0 && World.getDistance() >= 18) {
+			if($SM.get('stores["alloy armour"]', true) === 0 && World.getDistance() >= 18) {
 				World.danger = true;
 				return true;
 			}
@@ -529,7 +529,7 @@ var World = {
 	doSpace: function() {
 		var curTile = World.state.map[World.curPos[0]][World.curPos[1]];
 
-		if(curTile == World.TILE.VILLAGE) {
+		if(curTile == World.TILE.settlement) {
 			World.goHome();
 		} else if(typeof World.LANDMARKS[curTile] != 'undefined') {
 			if(curTile != World.TILE.OUTPOST || !World.outpostUsed()) {
@@ -544,7 +544,7 @@ var World = {
 
 	getDistance: function(from, to) {
 		from = from || World.curPos;
-		to = to || World.VILLAGE_POS;
+		to = to || World.settlement_POS;
 		return Math.abs(from[0] - to[0]) + Math.abs(from[1] - to[1]);
 	},
 
@@ -658,9 +658,9 @@ var World = {
 		for(var i = 0; i <= World.RADIUS * 2; i++) {
 			map[i] = new Array(World.RADIUS * 2 + 1);
 		}
-		// The Village is always at the exact center
+		// The Settlement is always at the exact center
 		// Spiral out from there
-		map[World.RADIUS][World.RADIUS] = World.TILE.VILLAGE;
+		map[World.RADIUS][World.RADIUS] = World.TILE.settlement;
 		for(var r = 1; r <= World.RADIUS; r++) {
 			for(var t = 0; t < r * 8; t++) {
 				var x, y;
@@ -775,8 +775,8 @@ var World = {
 		var chances = {};
 		var nonSticky = 1;
 		for(var i in adjacent) {
-			if(adjacent[i] == World.TILE.VILLAGE) {
-				// Village must be in a forest to maintain thematic consistency, yo.
+			if(adjacent[i] == World.TILE.settlement) {
+				// Settlement must be in a forest to maintain thematic consistency, yo.
 				return World.TILE.FOREST;
 			} else if(typeof adjacent[i] == 'string') {
 				var cur = chances[adjacent[i]];
@@ -848,8 +848,8 @@ var World = {
 				} else if(World.state.mask[i][j]) {
 					var c = World.state.map[i][j];
 					switch(c) {
-						case World.TILE.VILLAGE:
-							mapString += '<span class="landmark">' + c + '<div class="tooltip' + ttClass + '">'+_('The&nbsp;Village')+'</div></span>';
+						case World.TILE.settlement:
+							mapString += '<span class="landmark">' + c + '<div class="tooltip' + ttClass + '">'+_('The&nbsp;Settlement')+'</div></span>';
 							break;
 						default:
 							if(typeof World.LANDMARKS[c] != 'undefined' && (c != World.TILE.OUTPOST || !World.outpostUsed(i, j))) {
@@ -905,15 +905,15 @@ var World = {
 		$SM.setM('game.world', World.state);
 		World.testMap();
 
-		if(World.state.sulphurmine && $SM.get('game.buildings["sulphur mine"]', true) === 0) {
-			$SM.add('game.buildings["sulphur mine"]', 1);
-			Engine.event('progress', 'sulphur mine');
+		if(World.state.ExplosivesLab && $SM.get('game.buildings["ExplosivesLab"]', true) === 0) {
+			$SM.add('game.buildings["ExplosivesLab"]', 1);
+			Engine.event('progress', 'ExplosivesLab');
 		}
 		if(World.state.scrapmetal_mine && $SM.get('game.buildings["metal detectors"]', true) === 0) {
 			$SM.add('game.buildings["metal detectors"]', 1);
 			Engine.event('progress', 'metal detectors');
 		}
-		if(World.state.martion_elementsmine && $SM.get('game.buildings["centrifuge"]', true) === 0) {
+		if(World.state.centrifuge && $SM.get('game.buildings["centrifuge"]', true) === 0) {
 			$SM.add('game.buildings["centrifuge"]', 1);
 			Engine.event('progress', 'centrifuge');
 		}
@@ -941,12 +941,12 @@ var World = {
 	},
 
 	leaveItAtHome: function(thing) {
-		 return thing != 'ration packs' && thing != 'bullets' && thing != 'energy cell'  && thing != 'charm' && thing != 'medicine' &&
+		 return thing != 'ration packs' && thing != 'bullets' && thing != 'antimatter cell'  && thing != 'charm' && thing != 'medicine' &&
 		 typeof World.Weapons[thing] == 'undefined' && typeof Room.Craftables[thing] == 'undefined';
 	},
 
 	getMaxHealth: function() {
-		if($SM.get('stores["s armour"]', true) > 0) {
+		if($SM.get('stores["alloy armour"]', true) > 0) {
 			return World.BASE_HEALTH + 35;
 		} else if($SM.get('stores["i armour"]', true) > 0) {
 			return World.BASE_HEALTH + 15;
@@ -1002,7 +1002,7 @@ var World = {
 		World.starvation = false;
 		World.thirst = false;
 		World.usedOutposts = {};
-		World.curPos = World.copyPos(World.VILLAGE_POS);
+		World.curPos = World.copyPos(World.settlement_POS);
 		World.drawMap();
 		World.setTitle();
 		World.dead = false;

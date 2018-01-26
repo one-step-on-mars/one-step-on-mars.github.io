@@ -16,8 +16,8 @@ var Room = {
 			name: _('bug trap'),
 			button: null,
 			maximum: 10,
-			availableMsg: _('the enginer says she can make traps to catch some of the creatures that are still alive'),
-			buildMsg: _('more traps to catch more creatures'),
+			availableMsg: _('the enginer says the martian wildlife has developed a lot since it was introduced and she can make traps to catch some of it'),
+			buildMsg: _('more traps to catch more creaturees'),
 			maxMsg: _("more traps won't help now"),
 			type: 'building',
 			cost: function() {
@@ -88,8 +88,8 @@ var Room = {
 			name: _('polymerisation equipment'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("engineer says bioplastic could be useful. says the villagers could make it."),
-			buildMsg: _('polymerisation equipment goes up quick, on the edge of the village'),
+			availableMsg: _("engineer says bioplastic could be useful. says the crew could make it."),
+			buildMsg: _('polymerisation equipment goes up quick, on the edge of the settlement'),
 			type: 'building',
 			cost: function() {
 				return {
@@ -131,14 +131,14 @@ var Room = {
 			name: _('alloyworks'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("engineer says the villagers could make alloy, given the tools"),
-			buildMsg: _("a haze falls over the village as the alloyworks fires up"),
+			availableMsg: _("engineer says the crew could make alloy, given the tools"),
+			buildMsg: _("a haze falls over the settlement as the alloyworks fires up"),
 			type: 'building',
 			cost: function() {
 				return {
 					'energy': 1500,
 					'scrap metal': 100,
-					'martion_elements': 100
+					'martion elements': 100
 				};
 			}
 		},
@@ -153,7 +153,7 @@ var Room = {
 				return {
 					'energy': 3000,
 					'alloy': 100,
-					'sulphur': 50
+					'Explosives': 50
 				};
 			}
 		},
@@ -282,8 +282,8 @@ var Room = {
 				};
 			}
 		},
-		's armour': {
-			name: _('s armour'),
+		'alloy armour': {
+			name: _('alloy armour'),
 			type: 'upgrade',
 			maximum: 1,
 			buildMsg: _("alloy's stronger than scrap metal"),
@@ -294,8 +294,8 @@ var Room = {
 				};
 			}
 		},
-		'scrap metal sword': {
-			name: _('scrap metal sword'),
+		'scrap sword': {
+			name: _('scrap sword'),
 			button: null,
 			type: 'weapon',
 			buildMsg: _("sword is sharp. good protection out in the wilds."),
@@ -328,7 +328,7 @@ var Room = {
 				return {
 					'energy': 200,
 					'alloy': 50,
-					'sulphur': 50
+					'Explosives': 50
 				};
 			}
 		}
@@ -356,7 +356,7 @@ var Room = {
 				};
 			}
 		},
-		'martion_elements': {
+		'martion elements': {
 			type: 'good',
 			cost: function() {
 				return {
@@ -391,7 +391,7 @@ var Room = {
 				};
 			}
 		},
-		'energy cell': {
+		'antimatter cell': {
 			type: 'good',
 			cost: function() {
 				return {
@@ -450,7 +450,7 @@ var Room = {
 	},
 	
 	MiscItems: {
-		'laser rifle': {
+		'positronic ray': {
 			type: 'weapon'
 		}
 	},
@@ -489,7 +489,7 @@ var Room = {
 			.attr('id', "roomPanel")
 			.addClass('location')
 			.appendTo('div#locationSlider');
-		
+			 
 		Engine.updateSlider();
 		
 		// Create the light button
@@ -877,7 +877,7 @@ var Room = {
 		}
 
 		if($("div#outsidePanel").length) {
-			Outside.updateVillage();
+			Outside.updateSettlement();
 		}
 
 		if($SM.get('stores.SolarRover') && !Room.pathDiscovery){

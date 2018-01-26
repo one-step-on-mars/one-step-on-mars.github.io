@@ -1,7 +1,7 @@
 (function() {
 	var Engine = window.Engine = {
 
-		SITE_URL: encodeURIComponent("http://adarkroom.doublespeakgames.com"),
+		SITE_URL: encodeURIComponent("#"),
 		VERSION: 1.3,
 		MAX_STORE: 99999999999999,
 		SAVE_DISPLAY: 30 * 1000,
@@ -139,13 +139,13 @@
 				.text(_('get the app.'))
 				.click(Engine.getApp)
 				.appendTo(menu);
-*/
+*//*
 			$('<span>')
 				.addClass('lightsOff menuBtn')
-				.text(_('lights off.'))
+				.text(_('rustic look.'))
 				.click(Engine.turnLightsOff)
 				.appendTo(menu);
-
+*/
 			$('<span>')
 				.addClass('hyper menuBtn')
 				.text(_('hyper.'))
@@ -164,6 +164,7 @@
 				.click(Engine.share)
 				.appendTo(menu);
 */
+
 			$('<span>')
 				.addClass('menuBtn')
 				.text(_('save.'))
@@ -183,7 +184,7 @@
 			$('<span>')
 				.addClass('menuBtn')
 				.text(_('github.'))
-				.click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
+				.click(function() { window.open('https://github.com/doublespeakgames/#'); })
 				.appendTo(menu);
 */
 			// Register keypress handlers
@@ -210,6 +211,7 @@
 			}
 			if($SM.get('stores.SolarRover', true) > 0) {
 				Path.init();
+				document.body.style.backgroundImage = "url('deadgameproject.png')";
 			}
 			if($SM.get('features.location.spaceShip')) {
 				Ship.init();
@@ -422,7 +424,7 @@
 								text: _('android'),
 								nextScene: 'end',
 								onChoose: function() {
-									window.open('https://play.google.com/store/apps/details?id=com.yourcompany.adarkroom');
+									window.open('https://play.google.com/store/apps/details?id=com.yourcompany.#');
 								}
 							},
 							'close': {
@@ -446,28 +448,28 @@
 								text: _('facebook'),
 								nextScene: 'end',
 								onChoose: function() {
-									window.open('https://www.facebook.com/sharer/sharer.php?u=' + Engine.SITE_URL, 'sharer', 'width=626,height=436,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no');
+									window.open('https://www.facebook.com/sharer/sharer.php?u=' + Engine.SITE_URL, 'sharer', 'width=626,height=436,location=no,menubar=no,resizable=no,scrollbars=no,stasis=no,toolbar=no');
 								}
 							},
 							'google': {
 								text:_('google+'),
 								nextScene: 'end',
 								onChoose: function() {
-									window.open('https://plus.google.com/share?url=' + Engine.SITE_URL, 'sharer', 'width=480,height=436,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no');
+									window.open('https://plus.google.com/share?url=' + Engine.SITE_URL, 'sharer', 'width=480,height=436,location=no,menubar=no,resizable=no,scrollbars=no,stasis=no,toolbar=no');
 								}
 							},
 							'twitter': {
 								text: _('twitter'),
 								nextScene: 'end',
 								onChoose: function() {
-									window.open('https://twitter.com/intent/tweet?text=A%20Dark%20Room&url=' + Engine.SITE_URL, 'sharer', 'width=660,height=260,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');
+									window.open('https://twitter.com/intent/tweet?text=A%20Dark%20Room&url=' + Engine.SITE_URL, 'sharer', 'width=660,height=260,location=no,menubar=no,resizable=no,scrollbars=yes,stasis=no,toolbar=no');
 								}
 							},
 							'reddit': {
 								text: _('reddit'),
 								nextScene: 'end',
 								onChoose: function() {
-									window.open('http://www.reddit.com/submit?url=' + Engine.SITE_URL, 'sharer', 'width=960,height=700,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');
+									window.open('http://www.reddit.com/submit?url=' + Engine.SITE_URL, 'sharer', 'width=960,height=700,location=no,menubar=no,resizable=no,scrollbars=yes,stasis=no,toolbar=no');
 								}
 							},
 							'close': {
@@ -505,16 +507,16 @@
 			var darkCss = Engine.findStylesheet('darkenLights');
 			if (darkCss == null) {
 				$('head').append('<link rel="stylesheet" href="css/dark.css" type="text/css" title="darkenLights" />');
-				$('.lightsOff').text(_('lights on.'));
+				$('.lightsOff').text(_('bright look.'));
 				$SM.set('config.lightsOff', true, true);
 			} else if (darkCss.disabled) {
 				darkCss.disabled = false;
-				$('.lightsOff').text(_('lights on.'));
+				$('.lightsOff').text(_('bright look.'));
 				$SM.set('config.lightsOff', true,true);
 			} else {
 				$("#darkenLights").attr("disabled", "disabled");
 				darkCss.disabled = true;
-				$('.lightsOff').text(_('lights off.'));
+				$('.lightsOff').text(_('rustic look.'));
 				$SM.set('config.lightsOff', false, true);
 			}
 		},

@@ -200,12 +200,12 @@ Events.Room = [
 				notification: _('a scientist arrives'),
 				blink: true,
 				buttons: {
-					'50shellss': {
+					'50shells': {
 						text: _('give 50'),
 						cost: {shells: 50},
 						nextScene: { 0.5: 'scales', 0.8: 'spines', 1: 'batterys' }
 					},
-					'100shellss': {
+					'100shells': {
 						text: _('give 100'),
 						cost: {shells: 100},
 						nextScene: { 0.5: 'spines', 0.8: 'scales', 1: 'batterys' }
@@ -401,7 +401,7 @@ Events.Room = [
 		scenes: {
 			start: {
 				text: [
-					_('a wanderer arrives. says if she leaves with shellss, she\'ll be back with more.'),
+					_('a wanderer arrives. says if she leaves with shells, she\'ll be back with more.'),
 					_("engineer's not sure she's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
@@ -425,13 +425,13 @@ Events.Room = [
 			},
 			'shells100': {
 				text: [
-					_('the wanderer leaves, focus solar loaded with shellss')
+					_('the wanderer leaves, with bags loaded with shells')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
 						$SM.add('stores.shells', 300);
-						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with shellss.'));
+						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with shells.'));
 					}, 'Room[5].scenes.shells100.action', delay);
 				},
 				onLoad: function() {
@@ -448,13 +448,13 @@ Events.Room = [
 			},
 			'shells500': {
 				text: [
-					_('the wanderer leaves, focus solar loaded with shellss')
+					_('the wanderer leaves, with bags loaded with shells')
 				],
 				action: function(inputDelay) {
 					var delay = inputDelay || false;
 					Events.saveDelay(function() {
 						$SM.add('stores.shells', 1500);
-						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with shellss.'));
+						Notifications.notify(Room, _('the mysterious wanderer returns, focus solar piled high with shells.'));
 					}, 'Room[5].scenes.shells500.action', delay);
 				},
 				onLoad: function() {
@@ -481,7 +481,7 @@ Events.Room = [
 			'start': {
 				text: [
 					_("the scout says she's been all over."),
-					_("willing to talk about it, for a price.")
+					_("and is willing to talk about it, for a price.")
 				],
 				notification: _('a scout stops for the night'),
 				blink: true,
@@ -636,7 +636,7 @@ Events.Room = [
 					_('some weird glowing boxes he picked up on his travels.')
 				],
 				onLoad: function() {
-					$SM.add('stores["energy cell"]', 3);
+					$SM.add('stores["antimatter cell"]', 3);
 				},
 				buttons: {
 					'bye': {

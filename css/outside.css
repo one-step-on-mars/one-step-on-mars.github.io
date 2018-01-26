@@ -1,4 +1,4 @@
-div#village {
+div#settlement {
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -12,16 +12,16 @@ div#population {
 	position: absolute;
 	top: -13px;
 	right: 10px;
-	background-color: rgb(218, 93, 55);
+	
 }
 
 .noHuts #population {
 	display: none;
 }
 
-div#village:before {
+div#settlement:before {
 	position: absolute;
-	background: rgb(218, 93, 55);
+	
 	content: attr(data-legend);
 	left: 8px;
 	top: -13px;

@@ -22,6 +22,8 @@ var Header = {
 			.text(text).click(function() {
 				if(Header.canTravel()) {
 					Engine.travelTo(module);
+					
+ 
 				}
 			}).appendTo($('div#header'));
 	}

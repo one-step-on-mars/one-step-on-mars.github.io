@@ -265,7 +265,7 @@ var Space = {
 			if (Engine.isLightsOff())
 				$('#spacePanel, .menu, select.menuBtn').animate({color: '#272823'}, 500, 'linear');
 			else
-				$('#spacePanel, .menu, select.menuBtn').animate({color: 'rgb(218, 93, 55)'}, 500, 'linear');
+				$('#spacePanel, .menu, select.menuBtn').animate({color: '/*rgb(218, 93, 55)*/transparent'}, 500, 'linear');
 		}, Space.FTB_SPEED / 2, true);
 		
 		Space.createAsteroid();
@@ -467,7 +467,7 @@ var Space = {
 								$('<span>')
 										.addClass('endGame endGameOption')
 										.text(_('android.'))
-										.click(function() { window.open('https://play.google.com/store/apps/details?id=com.yourcompany.adarkroom'); })
+										.click(function() { window.open('https://play.google.com/store/apps/details?id=com.yourcompany.#'); })
 										.appendTo('.centerCont')
 										.animate({opacity:1},1500);
 								Engine.options = {};

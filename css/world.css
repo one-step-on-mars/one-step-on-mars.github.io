@@ -44,7 +44,7 @@
 	position: absolute;
 	top: 0px;
 	left: 10px;
-	background-color: rgb(218, 93, 55);
+	background-color: /*/*rgb(218, 93, 55)*/transparent;
 	z-index: 1;
 }
 
@@ -52,7 +52,7 @@
 	position: absolute;
 	top: 0px;
 	right: 10px;
-	background-color: rgb(218, 93, 55);
+	background-color: /*/*rgb(218, 93, 55)*/transparent;
 	z-index: 1;
 }
 
@@ -60,7 +60,7 @@
 	position: absolute;
 	top: 0px;
 	left: 80px;
-	background-color: rgb(218, 93, 55);
+	background-color: /*/*rgb(218, 93, 55)*/transparent;
 	z-index: 1;
 }
 

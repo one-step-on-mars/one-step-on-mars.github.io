@@ -5,12 +5,12 @@ var Path = {
 	// Everything not in this list weighs 1
 	Weight: {
 		'bone spear': 2,
-		'scrap metal sword': 3,
+		'scrap sword': 3,
 		'alloy sword': 5,
 		'rifle': 5,
 		'bullets': 0.1,
-		'energy cell': 0.2,
-		'laser rifle': 5,
+		'antimatter cell': 0.2,
+		'positronic ray': 5,
 		'bolas': 0.5
 	},
 		
@@ -26,7 +26,7 @@ var Path = {
 		World.init();
 		
 		// Create the path tab
-		this.tab = Header.addLocation(_("A Dusty Path"), "path", Path);
+		this.tab = Header.addLocation(_("Martian Outback"), "path", Path);
 		
 		// Create the Path panel
 		this.panel = $('<div>').attr('id', "pathPanel")
@@ -130,7 +130,7 @@ var Path = {
 		
 		// Add the armour row
 		var armour = _("none");
-		if($SM.get('stores["s armour"]', true) > 0)
+		if($SM.get('stores["alloy armour"]', true) > 0)
 			armour = _("alloy");
 		else if($SM.get('stores["i armour"]', true) > 0)
 			armour = _("scrap metal");
@@ -165,8 +165,8 @@ var Path = {
 			'bullets': { type: 'tool', desc: 'use with rifle' },
 			'grenade': {type: 'weapon' },
 			'bolas': {type: 'weapon' },
-			'laser rifle': {type: 'weapon' },
-			'energy cell': {type: 'tool', desc: 'use with laser rifle' },
+			'positronic ray': {type: 'weapon' },
+			'antimatter cell': {type: 'tool', desc: 'use with positronic ray' },
 			'bayonet': {type: 'weapon' },
 			'charm': {type: 'tool'},
 			'medicine': {type: 'tool', desc: 'restores ' + World.MEDS_HEAL + ' hp' }
@@ -309,7 +309,7 @@ var Path = {
 	},
 	
 	setTitle: function() {
-		document.title = _('A Dusty Path');
+		document.title = _('Martian Outback');
 	},
 	
 	embark: function() {
@@ -319,6 +319,7 @@ var Path = {
 		World.onArrival();
 		$('#outerSlider').animate({left: '-700px'}, 300);
 		Engine.activeModule = World;
+		
 	},
 	
 	handleStateUpdates: function(e){

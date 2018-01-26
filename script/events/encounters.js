@@ -115,17 +115,17 @@ Events.Encounters = [
 		}
 	},
 	/* Tier 2*/
-	{ /* Shivering Man */
-	title: _('A Shivering Man'),
+	{ /* angry worm */
+	title: _('A angry worm'),
 		isAvailable: function() {
 			return World.getDistance() > 10 && World.getDistance() <= 20 && World.getTerrain() == World.TILE.BARRENS;
 		},
 		scenes: {
 			'start': {
 				combat: true,
-				enemy: 'shivering man',
-				enemyName: _('shivering man'),
-				deathMessage: _('the shivering man is dead'),
+				enemy: 'angry worm',
+				enemyName: _('angry worm'),
+				deathMessage: _('the angry worm is dead'),
 				chara: 'E',
 				damage: 5,
 				hit: 0.5,
@@ -153,7 +153,7 @@ Events.Encounters = [
 						chance: 0.7
 					}
 				},
-				notification: _('a shivering man approaches and attacks with surprising strength')
+				notification: _('a angry worm approaches and attacks with surprising strength')
 			}
 		}
 	},
@@ -190,7 +190,7 @@ Events.Encounters = [
 						chance: 0.8
 					}
 				},
-				notification: _('a large creature attacks, claws freshly bloodied')
+				notification: _('a large creaturee attacks, claws freshly bloodied')
 			}
 		}
 	},
@@ -307,7 +307,7 @@ Events.Encounters = [
 						chance: 0.8
 					}
 				},
-				notification: _('a insect, wilder than imagining, erupts out of the foliage')
+				notification: _('a insect, wilder than imagining, erupts out of the sand')
 			}
 		}
 	},
@@ -350,7 +350,7 @@ Events.Encounters = [
 						chance: 0.1
 					}
 				},
-				notification: _('a swam opens fire from across the desert')
+				notification: _('a swam charges at you in a frezy from across the desert')
 			}
 		}
 	},

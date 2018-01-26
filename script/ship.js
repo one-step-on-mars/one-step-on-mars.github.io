@@ -135,7 +135,7 @@ var Ship = {
 				scenes: {
 					'start': {
 						text: [
-							_("time to get out of this place. won't be coming back.")
+							_("time to fly to a new world.")
 						],
 						buttons: {
 							'fly': {

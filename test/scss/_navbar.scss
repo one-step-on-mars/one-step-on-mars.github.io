@@ -10,26 +10,26 @@
   }
   .navbar-brand {
     font-size: 1.1rem;
-    color: rgb(218, 93, 55);
+    color: /*rgb(218, 93, 55)*/transparent;
     &.active,
     &:active,
     &:focus,
     &:hover {
-      color: rgb(218, 93, 55);
+      color: /*rgb(218, 93, 55)*/transparent;
     }
   }
   .navbar-nav {
     letter-spacing: 1px;
     li.nav-item {
       a.nav-link {
-        color: rgb(218, 93, 55);
+        color: /*rgb(218, 93, 55)*/transparent;
         &:hover {
           color: $theme-success;
           outline: none;
         }
         &:active,
         &:focus {
-          color: rgb(218, 93, 55);
+          color: /*rgb(218, 93, 55)*/transparent;
         }
       }
     }
@@ -38,11 +38,11 @@
     font-size: 14px;
     padding: 11px;
     text-transform: uppercase;
-    color: rgb(218, 93, 55);
-    border-color: rgb(218, 93, 55);
+    color: /*rgb(218, 93, 55)*/transparent;
+    border-color: /*rgb(218, 93, 55)*/transparent;
     &:focus,
     &:hover {
-      color: rgb(218, 93, 55);
+      color: /*rgb(218, 93, 55)*/transparent;
       border-color: $theme-success;
       background-color: $theme-success;
     }
@@ -62,13 +62,13 @@
       transition: all 0.3s;
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: rgb(218, 93, 55);
+      color: /*rgb(218, 93, 55)*/transparent;
       border-radius: 3px;
       background: $theme-success;
       &:active,
       &:focus,
       &:hover {
-        color: rgb(218, 93, 55);
+        color: /*rgb(218, 93, 55)*/transparent;
         background: $theme-success;
       }
     }

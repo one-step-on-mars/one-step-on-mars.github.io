@@ -1,10 +1,10 @@
 (function (Engine, Events, Dropbox, $) {
 
   /**
-   * Module that enables a save of the gamestate to the dropbox datastore
+   * Module that enables a save of the game state to the dropbox datastore
    * @see https://www.dropbox.com/developers/datastore
    *
-   * The dropbox datastore (dbds) connector lets you save your data to your own dropbox datastore
+   * The dropbox data store (dbds) connector lets you save your data to your own dropbox datastore
    * without jamming files to it.
    *
    * This connector uses the game engines own base64 encoder.
@@ -19,8 +19,8 @@
 
     options: {
       log: false,
-      key: 'q7vyvfsakyfmp3o',
-      table: 'adarkroom'
+      key: '4u4ps4hsl216sp7',//q7vyvfsakyfmp3o
+      table: '#'
     },
 
     client: false,
@@ -294,7 +294,7 @@
         timestamp: new Date().getTime()
       };
 
-      if (DropboxConnector.savegames[slotnumber]) { // slot aleady used -> overwrite
+      if (DropboxConnector.savegames[slotnumber]) { // slot already used -> overwrite
         record = DropboxConnector.savegames[slotnumber];
         try {
           record.update(saveGame);
@@ -342,7 +342,7 @@
      */
 
     prepareSavegameID: function (slotnumber) {
-      return 'adarkroom_savegame_' + slotnumber;
+      return '#_savegame_' + slotnumber;
     },
 
     prepareSaveDate: function (timestamp) {

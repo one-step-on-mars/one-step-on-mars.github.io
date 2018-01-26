@@ -88,7 +88,7 @@ Events.Setpieces = {
 		}
 	},
 	"cave": { /* Cave */
-		title: _('A Damp Cave'),
+		title: _('a dark cave'),
 		scenes: {
 			'start': {
 				text: [
@@ -202,7 +202,7 @@ Events.Setpieces = {
 					_("can't tell what left it here.")
 				],
 				loot: {
-					'scrap metal sword': {
+					'scrap sword': {
 						min: 1,
 						max: 1,
 						chance: 1
@@ -523,7 +523,7 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					_('a small suburb lays ahead, empty houses scorched and peeling.'),
+					_('a small suburb lays ahead, empty shelters scorched and peeling.'),
 					_("broken streetlights stand, rusting. light hasn't graced this place in a long time.")
 				],
 				notification: _("the town lies abandoned, its citizens long dead"),
@@ -541,7 +541,7 @@ Events.Setpieces = {
 			
 			'a1': {
 				text: [
-					_("where the windows of the schoolhouse aren't shattered, they're blackened with soot."),
+					_("where the windows of the schoolshelter aren't shattered, they're blackened with soot."),
 					_('the double doors creak endlessly in the wind.')
 				],
 				buttons: {
@@ -1099,7 +1099,7 @@ Events.Setpieces = {
 					World.clearDungeon();
 				},
 				loot: {
-					'martion_elements': {
+					'martion elements': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -1744,7 +1744,7 @@ Events.Setpieces = {
 			'c8': {
 				text: [
 					_('a cart is set up on the sidewalk.'),
-					_('the owner says hes found some good supplys from the rubble and offers to trade.')
+					_('the owner says hes found some good supplys from the rubble more than he can carry so he offers some to you.')
 				],
 				loot: {
 					'alloy sword': {
@@ -2419,12 +2419,12 @@ Events.Setpieces = {
 						max: 5,
 						chance: 0.8
 					},
-					'laser rifle': {
+					'positronic ray': {
 						min: 1,
 						max: 1,
 						chance: 0.3
 					},
-					'energy cell': {
+					'antimatter cell': {
 						min: 1,
 						max: 5,
 						chance: 0.3
@@ -2532,12 +2532,12 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'laser rifle': {
+					'positronic ray': {
 						min: 1,
 						max: 1,
 						chance: 0.5
 					},
-					'energy cell': {
+					'antimatter cell': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -2572,7 +2572,7 @@ Events.Setpieces = {
 						max: 1,
 						chance: 0.8
 					},
-					'energy cell': {
+					'antimatter cell': {
 						min: 1,
 						max: 5,
 						chance: 0.5
@@ -2680,7 +2680,7 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'energy cell': {
+					'antimatter cell': {
 						min: 1,
 						max: 1,
 						chance: 0.3
@@ -2720,7 +2720,7 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'energy cell': {
+					'antimatter cell': {
 						min: 1,
 						max: 1,
 						chance: 0.2
@@ -2754,7 +2754,7 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'energy cell': {
+					'antimatter cell': {
 						min: 1,
 						max: 3,
 						chance: 0.2
@@ -2850,7 +2850,7 @@ Events.Setpieces = {
 					$SM.set('game.cityCleared', true);
 				},
 				loot: {
-					'energy cell': {
+					'antimatter cell': {
 						min: 2,
 						max: 5,
 						chance: 0.8
@@ -2930,12 +2930,12 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"house": { /* Abandoned House */
+	"shelter": { /* Abandoned Shelter */
 		title: _('An Old Shelter'),
 		scenes: {
 			'start': {
 				text: [
-					_('An Old Shelter remains here, once black to keep warm now siding grayed rusty and peeling paint.'),
+					_('An Old Shelter remains here, once black to keep warm now grayed rusty and peeling paint.'),
 					_('the door hangs open.')
 				],
 				notification: _('the remains of An Old Shelter stand as a monument to early setalers'),
@@ -3016,7 +3016,7 @@ Events.Setpieces = {
 				hit: 0.8,
 				attackDelay: 2,
 				health: 10,
-				notification: _('a praying mantic like creatur charges at you'),
+				notification: _('a praying mantic like creature charges at you'),
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
@@ -3052,8 +3052,8 @@ Events.Setpieces = {
 		scenes: {
 			'start': {
 				text: [
-					_('a battle was fought here, long ago.'),
-					_('battered technology from both sides lays dormant on the blasted landscape.')
+					_('a battle was fought here, long ago aginst the Bugs.'),
+					_('battered technology from the human side lays dormant on the blasted landscape.')
 				],
 				onLoad: function() {
 					World.markVisited(World.curPos[0], World.curPos[1]);
@@ -3069,12 +3069,12 @@ Events.Setpieces = {
 						max: 20,
 						chance: 0.8
 					},
-					'laser rifle': {
+					'positronic ray': {
 						min: 1,
 						max: 3,
 						chance: 0.3
 					},
-					'energy cell': {
+					'antimatter cell': {
 						min: 5,
 						max: 10,
 						chance: 0.5
@@ -3152,7 +3152,7 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"explosiveslab": { /* Clearing the Explosives Lab */
+	"ExplosivesLab": { /* Clearing the Explosives Lab */
 		title: _('The Explosives Lab'),
 		scenes: {
 			'start': {
@@ -3289,7 +3289,7 @@ Events.Setpieces = {
 				notification: _('the Explosives Lab is clear of dangers'),
 				onLoad: function() {
 					World.drawRoad();
-					World.state.explosiveslab = true;
+					World.state.ExplosivesLab = true;
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				buttons: {
@@ -3301,13 +3301,13 @@ Events.Setpieces = {
 			}
 		}
 	},
-	"centrifuge_separation_lab": { /* Clearing the centrifuge */
+	"centrifuge": { /* Clearing the centrifuge */
 		title: _('The centrifuge'),
 		scenes: {
 			'start': {
 				text: [
 					_('lights fliker in the lab.'),
-					_('a group of androids stands guard, weapons at the ready.')
+					_('an android stands guard, weapon at the ready.')
 				],
 				notification: _('this lab is not abandoned'),
 				buttons: {
@@ -3431,7 +3431,7 @@ Events.Setpieces = {
 				notification: _('the centrifuge lab is clear of dangers'),
 				onLoad: function() {
 					World.drawRoad();
-					World.state.centrifuge_separation_lab = true;
+					World.state.centrifuge = true;
 					World.markVisited(World.curPos[0], World.curPos[1]);
 				},
 				buttons: {
@@ -3501,7 +3501,7 @@ Events.Setpieces = {
 			},
 			'cleared': {
 				text: [
-					_('the creature is dead.'),
+					_('the creaturee is dead.'),
 					_('the area is now safe for your crew to scower for scrap metal.')
 				],
 				notification: _('you can now repair and use the metal detectors to look for scrap metal.'),

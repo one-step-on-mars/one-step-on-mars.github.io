@@ -16,7 +16,7 @@ Events.Outside = [
 				onLoad: function() {
 					var numWrecked = Math.floor(Math.random() * $SM.get('game.buildings["bug trap"]', true)) + 1;
 					$SM.add('game.buildings["bug trap"]', -numWrecked);
-					Outside.updateVillage();
+					Outside.updateSettlement();
 					Outside.updateTrapButton();
 				},
 				notification: _('some traps have been destroyed'),
@@ -74,7 +74,7 @@ Events.Outside = [
 			'start': {
 				text: [
 					_('cave in ocurs in one of the larva tubs, destroying a bunker.'),
-					_('all residents in the bunker perished or had to go bake into there pods to recover.')
+					_('all residents in the bunker perished or had to go back into there pods to recover.')
 				],
 				notification: _('a cave in has happened'),
 				blink: true,
@@ -84,7 +84,7 @@ Events.Outside = [
 				buttons: {
 					'mourn': {
 						text: _('mourn'),
-						notification: _('some of the crew where knoked out so you put them back in the pods to recover'),
+						notification: _('some of the crew where knocked out so you put them back in the pods to recover'),
 						nextScene: 'end'
 					}
 				}
@@ -137,7 +137,7 @@ Events.Outside = [
 				notification: _('sufferers are left to die'),
 				onLoad: function() {
 					var numKilled = Math.floor(Math.random() * Math.floor($SM.get('game.population', true)/2)) + 1;
-					Outside.killVillagers(numKilled);
+					Outside.killCrew(numKilled);
 				},
 				buttons: {
 					'end': {
@@ -190,7 +190,7 @@ Events.Outside = [
 				notification: _('epidemic is eradicated eventually'),
 				onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 5) + 2;
-					Outside.killVillagers(numKilled);
+					Outside.killCrew(numKilled);
 				},
 				buttons: {
 					'end': {
@@ -208,7 +208,7 @@ Events.Outside = [
 				notification: _('population is almost exterminated'),
 				onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 80) + 10;
-					Outside.killVillagers(numKilled);
+					Outside.killCrew(numKilled);
 				},
 				buttons: {
 					'end': {
@@ -235,7 +235,7 @@ Events.Outside = [
 				notification: _('a swarm of sand worms attack the tunnels'),
 				onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 10) + 1;
-					Outside.killVillagers(numKilled);
+					Outside.killCrew(numKilled);
 				},
 				reward: {
 					shells: 100,
@@ -269,7 +269,7 @@ Events.Outside = [
 				notification: _('a large sand worm emerges'),
 				onLoad: function() {
 					var numKilled = Math.floor(Math.random() * 40) + 1;
-					Outside.killVillagers(numKilled);
+					Outside.killCrew(numKilled);
 				},
 				reward: {
 					/*bullets: 10,*/

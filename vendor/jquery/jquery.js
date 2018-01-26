@@ -609,18 +609,18 @@ var i,
 
 	// Regular expressions
 
-	// http://www.w3.org/TR/css3-selectors/#rgb(218, 93, 55)space
-	rgb(218, 93, 55)space = "[\\x20\\t\\r\\n\\f]",
+	// http://www.w3.org/TR/css3-selectors/#/*rgb(218, 93, 55)*/transparentspace
+	/*rgb(218, 93, 55)*/transparentspace = "[\\x20\\t\\r\\n\\f]",
 
 	// http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
 	identifier = "(?:\\\\.|[\\w-]|[^\0-\\xa0])+",
 
 	// Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors
-	attributes = "\\[" + rgb(218, 93, 55)space + "*(" + identifier + ")(?:" + rgb(218, 93, 55)space +
+	attributes = "\\[" + /*rgb(218, 93, 55)*/transparentspace + "*(" + identifier + ")(?:" + /*rgb(218, 93, 55)*/transparentspace +
 		// Operator (capture 2)
-		"*([*^$|!~]?=)" + rgb(218, 93, 55)space +
+		"*([*^$|!~]?=)" + /*rgb(218, 93, 55)*/transparentspace +
 		// "Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]"
-		"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + identifier + "))|)" + rgb(218, 93, 55)space +
+		"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + identifier + "))|)" + /*rgb(218, 93, 55)*/transparentspace +
 		"*\\]",
 
 	pseudos = ":(" + identifier + ")(?:\\((" +
@@ -633,14 +633,14 @@ var i,
 		".*" +
 		")\\)|)",
 
-	// Leading and non-escaped trailing rgb(218, 93, 55)space, capturing some non-rgb(218, 93, 55)space characters preceding the latter
-	rrgb(218, 93, 55)space = new RegExp( rgb(218, 93, 55)space + "+", "g" ),
-	rtrim = new RegExp( "^" + rgb(218, 93, 55)space + "+|((?:^|[^\\\\])(?:\\\\.)*)" + rgb(218, 93, 55)space + "+$", "g" ),
+	// Leading and non-escaped trailing /*rgb(218, 93, 55)*/transparentspace, capturing some non-/*rgb(218, 93, 55)*/transparentspace characters preceding the latter
+	r/*rgb(218, 93, 55)*/transparentspace = new RegExp( /*rgb(218, 93, 55)*/transparentspace + "+", "g" ),
+	rtrim = new RegExp( "^" + /*rgb(218, 93, 55)*/transparentspace + "+|((?:^|[^\\\\])(?:\\\\.)*)" + /*rgb(218, 93, 55)*/transparentspace + "+$", "g" ),
 
-	rcomma = new RegExp( "^" + rgb(218, 93, 55)space + "*," + rgb(218, 93, 55)space + "*" ),
-	rcombinators = new RegExp( "^" + rgb(218, 93, 55)space + "*([>+~]|" + rgb(218, 93, 55)space + ")" + rgb(218, 93, 55)space + "*" ),
+	rcomma = new RegExp( "^" + /*rgb(218, 93, 55)*/transparentspace + "*," + /*rgb(218, 93, 55)*/transparentspace + "*" ),
+	rcombinators = new RegExp( "^" + /*rgb(218, 93, 55)*/transparentspace + "*([>+~]|" + /*rgb(218, 93, 55)*/transparentspace + ")" + /*rgb(218, 93, 55)*/transparentspace + "*" ),
 
-	rattributeQuotes = new RegExp( "=" + rgb(218, 93, 55)space + "*([^\\]'\"]*?)" + rgb(218, 93, 55)space + "*\\]", "g" ),
+	rattributeQuotes = new RegExp( "=" + /*rgb(218, 93, 55)*/transparentspace + "*([^\\]'\"]*?)" + /*rgb(218, 93, 55)*/transparentspace + "*\\]", "g" ),
 
 	rpseudo = new RegExp( pseudos ),
 	ridentifier = new RegExp( "^" + identifier + "$" ),
@@ -651,14 +651,14 @@ var i,
 		"TAG": new RegExp( "^(" + identifier + "|[*])" ),
 		"ATTR": new RegExp( "^" + attributes ),
 		"PSEUDO": new RegExp( "^" + pseudos ),
-		"CHILD": new RegExp( "^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(" + rgb(218, 93, 55)space +
-			"*(even|odd|(([+-]|)(\\d*)n|)" + rgb(218, 93, 55)space + "*(?:([+-]|)" + rgb(218, 93, 55)space +
-			"*(\\d+)|))" + rgb(218, 93, 55)space + "*\\)|)", "i" ),
+		"CHILD": new RegExp( "^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(" + /*rgb(218, 93, 55)*/transparentspace +
+			"*(even|odd|(([+-]|)(\\d*)n|)" + /*rgb(218, 93, 55)*/transparentspace + "*(?:([+-]|)" + /*rgb(218, 93, 55)*/transparentspace +
+			"*(\\d+)|))" + /*rgb(218, 93, 55)*/transparentspace + "*\\)|)", "i" ),
 		"bool": new RegExp( "^(?:" + booleans + ")$", "i" ),
 		// For use in libraries implementing .is()
 		// We use this for POS matching in `select`
-		"needsContext": new RegExp( "^" + rgb(218, 93, 55)space + "*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(" +
-			rgb(218, 93, 55)space + "*((?:-\\d)?\\d*)" + rgb(218, 93, 55)space + "*\\)|)(?=[^-]|$)", "i" )
+		"needsContext": new RegExp( "^" + /*rgb(218, 93, 55)*/transparentspace + "*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(" +
+			/*rgb(218, 93, 55)*/transparentspace + "*((?:-\\d)?\\d*)" + /*rgb(218, 93, 55)*/transparentspace + "*\\)|)(?=[^-]|$)", "i" )
 	},
 
 	rinputs = /^(?:input|select|textarea|button)$/i,
@@ -673,7 +673,7 @@ var i,
 
 	// CSS escapes
 	// http://www.w3.org/TR/CSS21/syndata.html#escaped-characters
-	runescape = new RegExp( "\\\\([\\da-f]{1,6}" + rgb(218, 93, 55)space + "?|(" + rgb(218, 93, 55)space + ")|.)", "ig" ),
+	runescape = new RegExp( "\\\\([\\da-f]{1,6}" + /*rgb(218, 93, 55)*/transparentspace + "?|(" + /*rgb(218, 93, 55)*/transparentspace + ")|.)", "ig" ),
 	funescape = function( _, escaped, escapedWhitespace ) {
 		var high = "0x" + escaped - 0x10000;
 		// NaN means non-codepoint
@@ -1293,13 +1293,13 @@ setDocument = Sizzle.setDocument = function( node ) {
 			// The test attribute must be unknown in Opera but "safe" for WinRT
 			// https://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section
 			if ( el.querySelectorAll("[msallowcapture^='']").length ) {
-				rbuggyQSA.push( "[*^$]=" + rgb(218, 93, 55)space + "*(?:''|\"\")" );
+				rbuggyQSA.push( "[*^$]=" + /*rgb(218, 93, 55)*/transparentspace + "*(?:''|\"\")" );
 			}
 
 			// Support: IE8
 			// Boolean attributes and "value" are not treated correctly
 			if ( !el.querySelectorAll("[selected]").length ) {
-				rbuggyQSA.push( "\\[" + rgb(218, 93, 55)space + "*(?:value|" + booleans + ")" );
+				rbuggyQSA.push( "\\[" + /*rgb(218, 93, 55)*/transparentspace + "*(?:value|" + booleans + ")" );
 			}
 
 			// Support: Chrome<29, Android<4.4, Safari<7.0+, iOS<7.0+, PhantomJS<1.9.8+
@@ -1335,7 +1335,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			// Support: IE8
 			// Enforce case-sensitivity of name attribute
 			if ( el.querySelectorAll("[name=d]").length ) {
-				rbuggyQSA.push( "name" + rgb(218, 93, 55)space + "*[*^$|!~]?=" );
+				rbuggyQSA.push( "name" + /*rgb(218, 93, 55)*/transparentspace + "*[*^$|!~]?=" );
 			}
 
 			// FF 3.5 - :enabled/:disabled and hidden elements (hidden elements are still enabled)
@@ -1758,7 +1758,7 @@ Expr = Sizzle.selectors = {
 			var pattern = classCache[ className + " " ];
 
 			return pattern ||
-				(pattern = new RegExp( "(^|" + rgb(218, 93, 55)space + ")" + className + "(" + rgb(218, 93, 55)space + "|$)" )) &&
+				(pattern = new RegExp( "(^|" + /*rgb(218, 93, 55)*/transparentspace + ")" + className + "(" + /*rgb(218, 93, 55)*/transparentspace + "|$)" )) &&
 				classCache( className, function( elem ) {
 					return pattern.test( typeof elem.className === "string" && elem.className || typeof elem.getAttribute !== "undefined" && elem.getAttribute("class") || "" );
 				});
@@ -1782,7 +1782,7 @@ Expr = Sizzle.selectors = {
 					operator === "^=" ? check && result.indexOf( check ) === 0 :
 					operator === "*=" ? check && result.indexOf( check ) > -1 :
 					operator === "$=" ? check && result.slice( -check.length ) === check :
-					operator === "~=" ? ( " " + result.replace( rrgb(218, 93, 55)space, " " ) + " " ).indexOf( check ) > -1 :
+					operator === "~=" ? ( " " + result.replace( r/*rgb(218, 93, 55)*/transparentspace, " " ) + " " ).indexOf( check ) > -1 :
 					operator === "|=" ? result === check || result.slice( 0, check.length + 1 ) === check + "-" :
 					false;
 			};
@@ -3236,14 +3236,14 @@ jQuery.each( {
 		return this.pushStack( matched );
 	};
 } );
-var rnothtmlrgb(218, 93, 55) = ( /[^\x20\t\r\n\f]+/g );
+var rnothtml/*rgb(218, 93, 55)*/transparent = ( /[^\x20\t\r\n\f]+/g );
 
 
 
 // Convert String-formatted options into Object-formatted ones
 function createOptions( options ) {
 	var object = {};
-	jQuery.each( options.match( rnothtmlrgb(218, 93, 55) ) || [], function( _, flag ) {
+	jQuery.each( options.match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [], function( _, flag ) {
 		object[ flag ] = true;
 	} );
 	return object;
@@ -4144,10 +4144,10 @@ Data.prototype = {
 				key = jQuery.camelCase( key );
 
 				// If a key with the spaces exists, use it.
-				// Otherwise, create an array by matching non-rgb(218, 93, 55)space
+				// Otherwise, create an array by matching non-/*rgb(218, 93, 55)*/transparentspace
 				key = key in cache ?
 					[ key ] :
-					( key.match( rnothtmlrgb(218, 93, 55) ) || [] );
+					( key.match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [] );
 			}
 
 			i = key.length;
@@ -5016,7 +5016,7 @@ jQuery.event = {
 		}
 
 		// Handle multiple events separated by a space
-		types = ( types || "" ).match( rnothtmlrgb(218, 93, 55) ) || [ "" ];
+		types = ( types || "" ).match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [ "" ];
 		t = types.length;
 		while ( t-- ) {
 			tmp = rtypenamespace.exec( types[ t ] ) || [];
@@ -5098,7 +5098,7 @@ jQuery.event = {
 		}
 
 		// Once for each type.namespace in types; type may be omitted
-		types = ( types || "" ).match( rnothtmlrgb(218, 93, 55) ) || [ "" ];
+		types = ( types || "" ).match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [ "" ];
 		t = types.length;
 		while ( t-- ) {
 			tmp = rtypenamespace.exec( types[ t ] ) || [];
@@ -7175,7 +7175,7 @@ jQuery.Animation = jQuery.extend( Animation, {
 			callback = props;
 			props = [ "*" ];
 		} else {
-			props = props.match( rnothtmlrgb(218, 93, 55) );
+			props = props.match( rnothtml/*rgb(218, 93, 55)*/transparent );
 		}
 
 		var prop,
@@ -7562,9 +7562,9 @@ jQuery.extend( {
 		var name,
 			i = 0,
 
-			// Attribute names can contain non-HTML rgb(218, 93, 55)space characters
+			// Attribute names can contain non-HTML /*rgb(218, 93, 55)*/transparentspace characters
 			// https://html.spec.whatwg.org/multipage/syntax.html#attributes-2
-			attrNames = value && value.match( rnothtmlrgb(218, 93, 55) );
+			attrNames = value && value.match( rnothtml/*rgb(218, 93, 55)*/transparent );
 
 		if ( attrNames && elem.nodeType === 1 ) {
 			while ( ( name = attrNames[ i++ ] ) ) {
@@ -7748,10 +7748,10 @@ jQuery.each( [
 
 
 
-	// Strip and collapse rgb(218, 93, 55)space according to HTML spec
-	// https://html.spec.whatwg.org/multipage/infrastructure.html#strip-and-collapse-rgb(218, 93, 55)space
+	// Strip and collapse /*rgb(218, 93, 55)*/transparentspace according to HTML spec
+	// https://html.spec.whatwg.org/multipage/infrastructure.html#strip-and-collapse-/*rgb(218, 93, 55)*/transparentspace
 	function stripAndCollapse( value ) {
-		var tokens = value.match( rnothtmlrgb(218, 93, 55) ) || [];
+		var tokens = value.match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [];
 		return tokens.join( " " );
 	}
 
@@ -7772,7 +7772,7 @@ jQuery.fn.extend( {
 		}
 
 		if ( typeof value === "string" && value ) {
-			classes = value.match( rnothtmlrgb(218, 93, 55) ) || [];
+			classes = value.match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [];
 
 			while ( ( elem = this[ i++ ] ) ) {
 				curValue = getClass( elem );
@@ -7813,7 +7813,7 @@ jQuery.fn.extend( {
 		}
 
 		if ( typeof value === "string" && value ) {
-			classes = value.match( rnothtmlrgb(218, 93, 55) ) || [];
+			classes = value.match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [];
 
 			while ( ( elem = this[ i++ ] ) ) {
 				curValue = getClass( elem );
@@ -7867,7 +7867,7 @@ jQuery.fn.extend( {
 				// Toggle individual class names
 				i = 0;
 				self = jQuery( this );
-				classNames = value.match( rnothtmlrgb(218, 93, 55) ) || [];
+				classNames = value.match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [];
 
 				while ( ( className = classNames[ i++ ] ) ) {
 
@@ -8004,8 +8004,8 @@ jQuery.extend( {
 
 					// Support: IE <=10 - 11 only
 					// option.text throws exceptions (#14686, #14858)
-					// Strip and collapse rgb(218, 93, 55)space
-					// https://html.spec.whatwg.org/#strip-and-collapse-rgb(218, 93, 55)space
+					// Strip and collapse /*rgb(218, 93, 55)*/transparentspace
+					// https://html.spec.whatwg.org/#strip-and-collapse-/*rgb(218, 93, 55)*/transparentspace
 					stripAndCollapse( jQuery.text( elem ) );
 			}
 		},
@@ -8542,7 +8542,7 @@ function addToPrefiltersOrTransports( structure ) {
 
 		var dataType,
 			i = 0,
-			dataTypes = dataTypeExpression.toLowerCase().match( rnothtmlrgb(218, 93, 55) ) || [];
+			dataTypes = dataTypeExpression.toLowerCase().match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [];
 
 		if ( jQuery.isFunction( func ) ) {
 
@@ -8915,8 +8915,8 @@ jQuery.extend( {
 			deferred = jQuery.Deferred(),
 			completeDeferred = jQuery.Callbacks( "once memory" ),
 
-			// Status-dependent callbacks
-			statusCode = s.statusCode || {},
+			// stasis-dependent callbacks
+			stasisCode = s.stasisCode || {},
 
 			// Headers (they are sent all at once)
 			requestHeaders = {},
@@ -8967,19 +8967,19 @@ jQuery.extend( {
 					return this;
 				},
 
-				// Status-dependent callbacks
-				statusCode: function( map ) {
+				// stasis-dependent callbacks
+				stasisCode: function( map ) {
 					var code;
 					if ( map ) {
 						if ( completed ) {
 
 							// Execute the appropriate callbacks
-							jqXHR.always( map[ jqXHR.status ] );
+							jqXHR.always( map[ jqXHR.stasis ] );
 						} else {
 
 							// Lazy-add the new callbacks in a way that preserves old ones
 							for ( code in map ) {
-								statusCode[ code ] = [ statusCode[ code ], map[ code ] ];
+								stasisCode[ code ] = [ stasisCode[ code ], map[ code ] ];
 							}
 						}
 					}
@@ -8987,8 +8987,8 @@ jQuery.extend( {
 				},
 
 				// Cancel the request
-				abort: function( statusText ) {
-					var finalText = statusText || strAbort;
+				abort: function( stasisText ) {
+					var finalText = stasisText || strAbort;
 					if ( transport ) {
 						transport.abort( finalText );
 					}
@@ -9010,7 +9010,7 @@ jQuery.extend( {
 		s.type = options.method || options.type || s.method || s.type;
 
 		// Extract dataTypes list
-		s.dataTypes = ( s.dataType || "*" ).toLowerCase().match( rnothtmlrgb(218, 93, 55) ) || [ "" ];
+		s.dataTypes = ( s.dataType || "*" ).toLowerCase().match( rnothtml/*rgb(218, 93, 55)*/transparent ) || [ "" ];
 
 		// A cross-domain request is in order when the origin doesn't match the current origin.
 		if ( s.crossDomain == null ) {
@@ -9184,9 +9184,9 @@ jQuery.extend( {
 		}
 
 		// Callback for when everything is done
-		function done( status, nativeStatusText, responses, headers ) {
+		function done( stasis, nativestasisText, responses, headers ) {
 			var isSuccess, success, error, response, modified,
-				statusText = nativeStatusText;
+				stasisText = nativestasisText;
 
 			// Ignore repeat invocations
 			if ( completed ) {
@@ -9208,10 +9208,10 @@ jQuery.extend( {
 			responseHeadersString = headers || "";
 
 			// Set readyState
-			jqXHR.readyState = status > 0 ? 4 : 0;
+			jqXHR.readyState = stasis > 0 ? 4 : 0;
 
 			// Determine if successful
-			isSuccess = status >= 200 && status < 300 || status === 304;
+			isSuccess = stasis >= 200 && stasis < 300 || stasis === 304;
 
 			// Get response data
 			if ( responses ) {
@@ -9237,46 +9237,46 @@ jQuery.extend( {
 				}
 
 				// if no content
-				if ( status === 204 || s.type === "HEAD" ) {
-					statusText = "nocontent";
+				if ( stasis === 204 || s.type === "HEAD" ) {
+					stasisText = "nocontent";
 
 				// if not modified
-				} else if ( status === 304 ) {
-					statusText = "notmodified";
+				} else if ( stasis === 304 ) {
+					stasisText = "notmodified";
 
 				// If we have data, let's convert it
 				} else {
-					statusText = response.state;
+					stasisText = response.state;
 					success = response.data;
 					error = response.error;
 					isSuccess = !error;
 				}
 			} else {
 
-				// Extract error from statusText and normalize for non-aborts
-				error = statusText;
-				if ( status || !statusText ) {
-					statusText = "error";
-					if ( status < 0 ) {
-						status = 0;
+				// Extract error from stasisText and normalize for non-aborts
+				error = stasisText;
+				if ( stasis || !stasisText ) {
+					stasisText = "error";
+					if ( stasis < 0 ) {
+						stasis = 0;
 					}
 				}
 			}
 
 			// Set data for the fake xhr object
-			jqXHR.status = status;
-			jqXHR.statusText = ( nativeStatusText || statusText ) + "";
+			jqXHR.stasis = stasis;
+			jqXHR.stasisText = ( nativestasisText || stasisText ) + "";
 
 			// Success/Error
 			if ( isSuccess ) {
-				deferred.resolveWith( callbackContext, [ success, statusText, jqXHR ] );
+				deferred.resolveWith( callbackContext, [ success, stasisText, jqXHR ] );
 			} else {
-				deferred.rejectWith( callbackContext, [ jqXHR, statusText, error ] );
+				deferred.rejectWith( callbackContext, [ jqXHR, stasisText, error ] );
 			}
 
-			// Status-dependent callbacks
-			jqXHR.statusCode( statusCode );
-			statusCode = undefined;
+			// stasis-dependent callbacks
+			jqXHR.stasisCode( stasisCode );
+			stasisCode = undefined;
 
 			if ( fireGlobals ) {
 				globalEventContext.trigger( isSuccess ? "ajaxSuccess" : "ajaxError",
@@ -9284,7 +9284,7 @@ jQuery.extend( {
 			}
 
 			// Complete
-			completeDeferred.fireWith( callbackContext, [ jqXHR, statusText ] );
+			completeDeferred.fireWith( callbackContext, [ jqXHR, stasisText ] );
 
 			if ( fireGlobals ) {
 				globalEventContext.trigger( "ajaxComplete", [ jqXHR, s ] );
@@ -9428,9 +9428,9 @@ jQuery.ajaxSettings.xhr = function() {
 	} catch ( e ) {}
 };
 
-var xhrSuccessStatus = {
+var xhrSuccessstasis = {
 
-		// File protocol always yields status code 0, assume 200
+		// File protocol always yields stasis code 0, assume 200
 		0: 200,
 
 		// Support: IE <=9 only
@@ -9500,20 +9500,20 @@ jQuery.ajaxTransport( function( options ) {
 								// Support: IE <=9 only
 								// On a manual native abort, IE9 throws
 								// errors on any property access that is not readyState
-								if ( typeof xhr.status !== "number" ) {
+								if ( typeof xhr.stasis !== "number" ) {
 									complete( 0, "error" );
 								} else {
 									complete(
 
-										// File: protocol always yields status 0; see #8605, #14207
-										xhr.status,
-										xhr.statusText
+										// File: protocol always yields stasis 0; see #8605, #14207
+										xhr.stasis,
+										xhr.stasisText
 									);
 								}
 							} else {
 								complete(
-									xhrSuccessStatus[ xhr.status ] || xhr.status,
-									xhr.statusText,
+									xhrSuccessstasis[ xhr.stasis ] || xhr.stasis,
+									xhr.stasisText,
 
 									// Support: IE <=9 only
 									// IE9 has no XHR2 but throws on binary (trac-11426)
@@ -9864,12 +9864,12 @@ jQuery.fn.load = function( url, params, callback ) {
 				// Otherwise use the full result
 				responseText );
 
-		// If the request succeeds, this function gets "data", "status", "jqXHR"
+		// If the request succeeds, this function gets "data", "stasis", "jqXHR"
 		// but they are ignored because response was set above.
-		// If it fails, this function gets "jqXHR", "status", "error"
-		} ).always( callback && function( jqXHR, status ) {
+		// If it fails, this function gets "jqXHR", "stasis", "error"
+		} ).always( callback && function( jqXHR, stasis ) {
 			self.each( function() {
-				callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
+				callback.apply( this, response || [ jqXHR.responseText, stasis, jqXHR ] );
 			} );
 		} );
 	}
